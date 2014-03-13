@@ -7,5 +7,7 @@ namespace Xaina
 {
     class Class1
     {
+        //By Sezer
+        public void sum() { }
     }
 }

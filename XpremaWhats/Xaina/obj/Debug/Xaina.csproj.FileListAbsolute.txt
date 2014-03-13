@@ -9,13 +9,6 @@ C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.exe
 C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.pdb
 C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.csprojResolveAssemblyReference.cache
 =======
-C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\bin\Debug\Xaina.exe
-C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\bin\Debug\Xaina.pdb
-C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.csprojResolveAssemblyReference.cache
-C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.MainFrm.resources
-C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.Properties.Resources.resources
-C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.csproj.GenerateResource.Cache
-C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.exe.licenses
-C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.exe
-C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.pdb
 >>>>>>> 17ec9a8a38721baeb672c4eab294ea3b14f0a748
+C:\Users\user\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.exe
+C:\Users\user\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.pdb

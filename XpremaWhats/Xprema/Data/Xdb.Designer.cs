@@ -1929,7 +1929,9 @@ namespace Xprema.Data {
             
             private global::System.Data.DataColumn columnMessageText;
             
-            private global::System.Data.DataColumn columnSamer;
+            private global::System.Data.DataColumn columnDataColumn1;
+            
+            private global::System.Data.DataColumn columnCreatedDate;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -1982,9 +1984,17 @@ namespace Xprema.Data {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn SamerColumn {
+            public global::System.Data.DataColumn DataColumn1Column {
                 get {
-                    return this.columnSamer;
+                    return this.columnDataColumn1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn CreatedDateColumn {
+                get {
+                    return this.columnCreatedDate;
                 }
             }
             
@@ -2025,12 +2035,13 @@ namespace Xprema.Data {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public AdvertismentsRow AddAdvertismentsRow(string ID, string MessageText, string Samer) {
+            public AdvertismentsRow AddAdvertismentsRow(string ID, string MessageText, string DataColumn1, string CreatedDate) {
                 AdvertismentsRow rowAdvertismentsRow = ((AdvertismentsRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         ID,
                         MessageText,
-                        Samer};
+                        DataColumn1,
+                        CreatedDate};
                 rowAdvertismentsRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowAdvertismentsRow);
                 return rowAdvertismentsRow;
@@ -2055,7 +2066,8 @@ namespace Xprema.Data {
             internal void InitVars() {
                 this.columnID = base.Columns["ID"];
                 this.columnMessageText = base.Columns["MessageText"];
-                this.columnSamer = base.Columns["Samer"];
+                this.columnDataColumn1 = base.Columns["DataColumn1"];
+                this.columnCreatedDate = base.Columns["CreatedDate"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2065,8 +2077,10 @@ namespace Xprema.Data {
                 base.Columns.Add(this.columnID);
                 this.columnMessageText = new global::System.Data.DataColumn("MessageText", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnMessageText);
-                this.columnSamer = new global::System.Data.DataColumn("Samer", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnSamer);
+                this.columnDataColumn1 = new global::System.Data.DataColumn("DataColumn1", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDataColumn1);
+                this.columnCreatedDate = new global::System.Data.DataColumn("CreatedDate", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCreatedDate);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2842,17 +2856,33 @@ namespace Xprema.Data {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Samer {
+            public string DataColumn1 {
                 get {
                     try {
-                        return ((string)(this[this.tableAdvertisments.SamerColumn]));
+                        return ((string)(this[this.tableAdvertisments.DataColumn1Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Samer\' in table \'Advertisments\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'DataColumn1\' in table \'Advertisments\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableAdvertisments.SamerColumn] = value;
+                    this[this.tableAdvertisments.DataColumn1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string CreatedDate {
+                get {
+                    try {
+                        return ((string)(this[this.tableAdvertisments.CreatedDateColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CreatedDate\' in table \'Advertisments\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableAdvertisments.CreatedDateColumn] = value;
                 }
             }
             
@@ -2882,14 +2912,26 @@ namespace Xprema.Data {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsSamerNull() {
-                return this.IsNull(this.tableAdvertisments.SamerColumn);
+            public bool IsDataColumn1Null() {
+                return this.IsNull(this.tableAdvertisments.DataColumn1Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetSamerNull() {
-                this[this.tableAdvertisments.SamerColumn] = global::System.Convert.DBNull;
+            public void SetDataColumn1Null() {
+                this[this.tableAdvertisments.DataColumn1Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsCreatedDateNull() {
+                return this.IsNull(this.tableAdvertisments.CreatedDateColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetCreatedDateNull() {
+                this[this.tableAdvertisments.CreatedDateColumn] = global::System.Convert.DBNull;
             }
         }
         

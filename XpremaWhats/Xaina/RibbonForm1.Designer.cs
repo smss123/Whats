@@ -32,17 +32,22 @@
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
+            this.xtraScrollableControl1 = new DevExpress.XtraEditors.XtraScrollableControl();
+            ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbon
             // 
-            this.ribbon.ApplicationIcon = null;
+            this.ribbon.ExpandCollapseItem.Id = 0;
+            this.ribbon.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.ribbon.ExpandCollapseItem});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
+            this.ribbon.MaxItemId = 1;
             this.ribbon.Name = "ribbon";
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
-            this.ribbon.SelectedPage = this.ribbonPage1;
-            this.ribbon.Size = new System.Drawing.Size(442, 141);
+            this.ribbon.Size = new System.Drawing.Size(789, 144);
+            this.ribbon.StatusBar = this.ribbonStatusBar;
             // 
             // ribbonPage1
             // 
@@ -58,21 +63,33 @@
             // 
             // ribbonStatusBar
             // 
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 425);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 445);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbon;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(442, 24);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(789, 31);
+            // 
+            // xtraScrollableControl1
+            // 
+            this.xtraScrollableControl1.Location = new System.Drawing.Point(0, 0);
+            this.xtraScrollableControl1.Name = "xtraScrollableControl1";
+            this.xtraScrollableControl1.Size = new System.Drawing.Size(75, 23);
+            this.xtraScrollableControl1.TabIndex = 2;
             // 
             // RibbonForm1
             // 
-            this.ClientSize = new System.Drawing.Size(442, 449);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(789, 476);
+            this.Controls.Add(this.xtraScrollableControl1);
             this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.ribbon);
+            this.Name = "RibbonForm1";
             this.Ribbon = this.ribbon;
             this.StatusBar = this.ribbonStatusBar;
             this.Text = "RibbonForm1";
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             this.ResumeLayout(false);
+
         }
 
         #endregion
@@ -81,5 +98,6 @@
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar;
+        private DevExpress.XtraEditors.XtraScrollableControl xtraScrollableControl1;
     }
 }

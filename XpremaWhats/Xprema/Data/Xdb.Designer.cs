@@ -36,8 +36,6 @@ namespace Xprema.Data {
         
         private AdvertismentsDataTable tableAdvertisments;
         
-        private global::System.Data.DataRelation relationCustomers_Advertisments;
-        
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -316,7 +314,6 @@ namespace Xprema.Data {
                     this.tableAdvertisments.InitVars();
                 }
             }
-            this.relationCustomers_Advertisments = this.Relations["Customers_Advertisments"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -339,10 +336,6 @@ namespace Xprema.Data {
             base.Tables.Add(this.tableCustomers);
             this.tableAdvertisments = new AdvertismentsDataTable();
             base.Tables.Add(this.tableAdvertisments);
-            this.relationCustomers_Advertisments = new global::System.Data.DataRelation("Customers_Advertisments", new global::System.Data.DataColumn[] {
-                        this.tableCustomers.IDColumn}, new global::System.Data.DataColumn[] {
-                        this.tableAdvertisments.CustomerIDColumn}, false);
-            this.Relations.Add(this.relationCustomers_Advertisments);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1936,12 +1929,6 @@ namespace Xprema.Data {
             
             private global::System.Data.DataColumn columnMessageText;
             
-            private global::System.Data.DataColumn columnCreatedDate;
-            
-            private global::System.Data.DataColumn columnAttachment;
-            
-            private global::System.Data.DataColumn columnCustomerID;
-            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public AdvertismentsDataTable() {
@@ -1993,30 +1980,6 @@ namespace Xprema.Data {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn CreatedDateColumn {
-                get {
-                    return this.columnCreatedDate;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn AttachmentColumn {
-                get {
-                    return this.columnAttachment;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn CustomerIDColumn {
-                get {
-                    return this.columnCustomerID;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -2052,17 +2015,11 @@ namespace Xprema.Data {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public AdvertismentsRow AddAdvertismentsRow(string ID, string MessageText, string CreatedDate, string Attachment, CustomersRow parentCustomersRowByCustomers_Advertisments) {
+            public AdvertismentsRow AddAdvertismentsRow(string ID, string MessageText) {
                 AdvertismentsRow rowAdvertismentsRow = ((AdvertismentsRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         ID,
-                        MessageText,
-                        CreatedDate,
-                        Attachment,
-                        null};
-                if ((parentCustomersRowByCustomers_Advertisments != null)) {
-                    columnValuesArray[4] = parentCustomersRowByCustomers_Advertisments[0];
-                }
+                        MessageText};
                 rowAdvertismentsRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowAdvertismentsRow);
                 return rowAdvertismentsRow;
@@ -2087,9 +2044,6 @@ namespace Xprema.Data {
             internal void InitVars() {
                 this.columnID = base.Columns["ID"];
                 this.columnMessageText = base.Columns["MessageText"];
-                this.columnCreatedDate = base.Columns["CreatedDate"];
-                this.columnAttachment = base.Columns["Attachment"];
-                this.columnCustomerID = base.Columns["CustomerID"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2099,12 +2053,6 @@ namespace Xprema.Data {
                 base.Columns.Add(this.columnID);
                 this.columnMessageText = new global::System.Data.DataColumn("MessageText", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnMessageText);
-                this.columnCreatedDate = new global::System.Data.DataColumn("CreatedDate", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCreatedDate);
-                this.columnAttachment = new global::System.Data.DataColumn("Attachment", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnAttachment);
-                this.columnCustomerID = new global::System.Data.DataColumn("CustomerID", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCustomerID);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2830,17 +2778,6 @@ namespace Xprema.Data {
             public void SetCreatedDateNull() {
                 this[this.tableCustomers.CreatedDateColumn] = global::System.Convert.DBNull;
             }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public AdvertismentsRow[] GetAdvertismentsRows() {
-                if ((this.Table.ChildRelations["Customers_Advertisments"] == null)) {
-                    return new AdvertismentsRow[0];
-                }
-                else {
-                    return ((AdvertismentsRow[])(base.GetChildRows(this.Table.ChildRelations["Customers_Advertisments"])));
-                }
-            }
         }
         
         /// <summary>
@@ -2891,65 +2828,6 @@ namespace Xprema.Data {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string CreatedDate {
-                get {
-                    try {
-                        return ((string)(this[this.tableAdvertisments.CreatedDateColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'CreatedDate\' in table \'Advertisments\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableAdvertisments.CreatedDateColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Attachment {
-                get {
-                    try {
-                        return ((string)(this[this.tableAdvertisments.AttachmentColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Attachment\' in table \'Advertisments\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableAdvertisments.AttachmentColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string CustomerID {
-                get {
-                    try {
-                        return ((string)(this[this.tableAdvertisments.CustomerIDColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'CustomerID\' in table \'Advertisments\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableAdvertisments.CustomerIDColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public CustomersRow CustomersRow {
-                get {
-                    return ((CustomersRow)(this.GetParentRow(this.Table.ParentRelations["Customers_Advertisments"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["Customers_Advertisments"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsIDNull() {
                 return this.IsNull(this.tableAdvertisments.IDColumn);
             }
@@ -2970,42 +2848,6 @@ namespace Xprema.Data {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetMessageTextNull() {
                 this[this.tableAdvertisments.MessageTextColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsCreatedDateNull() {
-                return this.IsNull(this.tableAdvertisments.CreatedDateColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetCreatedDateNull() {
-                this[this.tableAdvertisments.CreatedDateColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsAttachmentNull() {
-                return this.IsNull(this.tableAdvertisments.AttachmentColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetAttachmentNull() {
-                this[this.tableAdvertisments.AttachmentColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsCustomerIDNull() {
-                return this.IsNull(this.tableAdvertisments.CustomerIDColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetCustomerIDNull() {
-                this[this.tableAdvertisments.CustomerIDColumn] = global::System.Convert.DBNull;
             }
         }
         

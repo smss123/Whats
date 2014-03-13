@@ -1927,6 +1927,8 @@ namespace Xprema.Data {
             
             private global::System.Data.DataColumn columnID;
             
+            private global::System.Data.DataColumn columnMessageText;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public AdvertismentsDataTable() {
@@ -1970,6 +1972,14 @@ namespace Xprema.Data {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn MessageTextColumn {
+                get {
+                    return this.columnMessageText;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -2005,10 +2015,11 @@ namespace Xprema.Data {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public AdvertismentsRow AddAdvertismentsRow(string ID) {
+            public AdvertismentsRow AddAdvertismentsRow(string ID, string MessageText) {
                 AdvertismentsRow rowAdvertismentsRow = ((AdvertismentsRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        ID};
+                        ID,
+                        MessageText};
                 rowAdvertismentsRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowAdvertismentsRow);
                 return rowAdvertismentsRow;
@@ -2032,6 +2043,7 @@ namespace Xprema.Data {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
                 this.columnID = base.Columns["ID"];
+                this.columnMessageText = base.Columns["MessageText"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2039,6 +2051,8 @@ namespace Xprema.Data {
             private void InitClass() {
                 this.columnID = new global::System.Data.DataColumn("ID", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnID);
+                this.columnMessageText = new global::System.Data.DataColumn("MessageText", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMessageText);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2798,6 +2812,22 @@ namespace Xprema.Data {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string MessageText {
+                get {
+                    try {
+                        return ((string)(this[this.tableAdvertisments.MessageTextColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'MessageText\' in table \'Advertisments\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableAdvertisments.MessageTextColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsIDNull() {
                 return this.IsNull(this.tableAdvertisments.IDColumn);
             }
@@ -2806,6 +2836,18 @@ namespace Xprema.Data {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetIDNull() {
                 this[this.tableAdvertisments.IDColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsMessageTextNull() {
+                return this.IsNull(this.tableAdvertisments.MessageTextColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetMessageTextNull() {
+                this[this.tableAdvertisments.MessageTextColumn] = global::System.Convert.DBNull;
             }
         }
         

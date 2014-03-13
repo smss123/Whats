@@ -64,6 +64,7 @@
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:string" minOccurs="0" />
+              <xs:element name="MessageText" msprop:Generator_ColumnVarNameInTable="columnMessageText" msprop:Generator_ColumnPropNameInRow="MessageText" msprop:Generator_ColumnPropNameInTable="MessageTextColumn" msprop:Generator_UserColumnName="MessageText" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

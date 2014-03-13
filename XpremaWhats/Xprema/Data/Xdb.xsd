@@ -35,9 +35,6 @@
         </xs:element>
         <xs:element name="SenderQuee" msprop:Generator_TableClassName="SenderQueeDataTable" msprop:Generator_TableVarName="tableSenderQuee" msprop:Generator_RowChangedName="SenderQueeRowChanged" msprop:Generator_TablePropName="SenderQuee" msprop:Generator_RowDeletingName="SenderQueeRowDeleting" msprop:Generator_RowChangingName="SenderQueeRowChanging" msprop:Generator_RowEvHandlerName="SenderQueeRowChangeEventHandler" msprop:Generator_RowDeletedName="SenderQueeRowDeleted" msprop:Generator_RowClassName="SenderQueeRow" msprop:Generator_UserTableName="SenderQuee" msprop:Generator_RowEvArgName="SenderQueeRowChangeEvent">
           <xs:complexType>
-            <xs:sequence>
-              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:string" minOccurs="0" />
-            </xs:sequence>
           </xs:complexType>
         </xs:element>
         <xs:element name="WhatsUpNumber" msprop:Generator_TableClassName="WhatsUpNumberDataTable" msprop:Generator_TableVarName="tableWhatsUpNumber" msprop:Generator_RowChangedName="WhatsUpNumberRowChanged" msprop:Generator_TablePropName="WhatsUpNumber" msprop:Generator_RowDeletingName="WhatsUpNumberRowDeleting" msprop:Generator_RowChangingName="WhatsUpNumberRowChanging" msprop:Generator_RowEvHandlerName="WhatsUpNumberRowChangeEventHandler" msprop:Generator_RowDeletedName="WhatsUpNumberRowDeleted" msprop:Generator_RowClassName="WhatsUpNumberRow" msprop:Generator_UserTableName="WhatsUpNumber" msprop:Generator_RowEvArgName="WhatsUpNumberRowChangeEvent">
@@ -68,6 +65,7 @@
             <xs:sequence>
               <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:string" minOccurs="0" />
               <xs:element name="MessageText" msprop:Generator_ColumnVarNameInTable="columnMessageText" msprop:Generator_ColumnPropNameInRow="MessageText" msprop:Generator_ColumnPropNameInTable="MessageTextColumn" msprop:Generator_UserColumnName="MessageText" type="xs:string" minOccurs="0" />
+              <xs:element name="Samer" msprop:Generator_ColumnVarNameInTable="columnSamer" msprop:Generator_ColumnPropNameInRow="Samer" msprop:Generator_ColumnPropNameInTable="SamerColumn" msprop:Generator_UserColumnName="Samer" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

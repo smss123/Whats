@@ -3,16 +3,15 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Text;
 using System.Linq;
+using System.Text;
 using System.Windows.Forms;
-using DevExpress.XtraBars;
 
 namespace Xaina
 {
-    public partial class MainFrm : DevExpress.XtraBars.Ribbon.RibbonForm
+    public partial class Form1 : Form
     {
-        public MainFrm()
+        public Form1()
         {
             InitializeComponent();
         }

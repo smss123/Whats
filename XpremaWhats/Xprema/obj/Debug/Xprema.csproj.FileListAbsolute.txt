@@ -1,0 +1,5 @@
+C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xprema\bin\Debug\Xprema.dll
+C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xprema\bin\Debug\Xprema.pdb
+C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xprema\obj\Debug\Xprema.csprojResolveAssemblyReference.cache
+C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xprema\obj\Debug\Xprema.dll
+C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xprema\obj\Debug\Xprema.pdb

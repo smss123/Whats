@@ -40,9 +40,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Samer.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Data\" />
     <Compile Include="Data\Xdb.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

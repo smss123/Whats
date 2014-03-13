@@ -10,9 +10,9 @@ using DevExpress.XtraBars;
 
 namespace Xaina
 {
-    public partial class RibbonForm1 : DevExpress.XtraBars.Ribbon.RibbonForm
+    public partial class MainFrm : DevExpress.XtraBars.Ribbon.RibbonForm
     {
-        public RibbonForm1()
+        public MainFrm()
         {
             InitializeComponent();
         }

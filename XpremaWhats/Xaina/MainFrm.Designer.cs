@@ -32,7 +32,9 @@
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
+            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbon
@@ -67,11 +69,20 @@
             this.ribbonStatusBar.Ribbon = this.ribbon;
             this.ribbonStatusBar.Size = new System.Drawing.Size(878, 31);
             // 
+            // groupControl1
+            // 
+            this.groupControl1.Location = new System.Drawing.Point(55, 194);
+            this.groupControl1.Name = "groupControl1";
+            this.groupControl1.Size = new System.Drawing.Size(725, 272);
+            this.groupControl1.TabIndex = 2;
+            this.groupControl1.Text = "groupControl1";
+            // 
             // MainFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(878, 540);
+            this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.ribbon);
             this.Name = "MainFrm";
@@ -79,6 +90,7 @@
             this.StatusBar = this.ribbonStatusBar;
             this.Text = "MainFrm";
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -89,5 +101,6 @@
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar;
+        private DevExpress.XtraEditors.GroupControl groupControl1;
     }
 }

@@ -42,6 +42,7 @@
     <Compile Include="Commands\AdvertisemetCommand.cs" />
     <Compile Include="Commands\CustomerCommand.cs" />
     <Compile Include="Commands\SenderNumberCommand.cs" />
+    <Compile Include="Commands\SenderQueeCommand.cs" />
     <Compile Include="Commands\WhatsAppNumberCommand.cs" />
     <Compile Include="Data\Xdb1.Designer.cs">
       <AutoGen>True</AutoGen>

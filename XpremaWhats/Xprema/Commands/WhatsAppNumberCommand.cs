@@ -12,7 +12,7 @@ namespace Xprema.Commands
 
       }
 
-      public bool Add(PhoneNumber Phone, DateTime Date, Name name)
+      public bool AddPhone(PhoneNumber Phone, DateTime Date, Name name)
       {
           throw new NotImplementedException();
       }

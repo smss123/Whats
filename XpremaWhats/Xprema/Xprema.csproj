@@ -39,12 +39,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commands\AdvertisemetCommand.cs" />
+    <Compile Include="Commands\CustomerCommand.cs" />
+    <Compile Include="Commands\SenderNumberCommand.cs" />
     <Compile Include="Commands\WhatsAppNumberCommand.cs" />
     <Compile Include="Data\Xdb1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Xdb.xsd</DependentUpon>
     </Compile>
+    <Compile Include="XdataType\Email.cs" />
     <Compile Include="XdataType\Name.cs" />
     <Compile Include="XdataType\PhoneNumber.cs" />
   </ItemGroup>

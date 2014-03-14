@@ -76,6 +76,15 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="NumberGroups" msprop:Generator_TableClassName="NumberGroupsDataTable" msprop:Generator_TableVarName="tableNumberGroups" msprop:Generator_TablePropName="NumberGroups" msprop:Generator_RowDeletingName="NumberGroupsRowDeleting" msprop:Generator_RowChangingName="NumberGroupsRowChanging" msprop:Generator_RowEvHandlerName="NumberGroupsRowChangeEventHandler" msprop:Generator_RowDeletedName="NumberGroupsRowDeleted" msprop:Generator_UserTableName="NumberGroups" msprop:Generator_RowChangedName="NumberGroupsRowChanged" msprop:Generator_RowEvArgName="NumberGroupsRowChangeEvent" msprop:Generator_RowClassName="NumberGroupsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="GroupName" msprop:Generator_ColumnVarNameInTable="columnGroupName" msprop:Generator_ColumnPropNameInRow="GroupName" msprop:Generator_ColumnPropNameInTable="GroupNameColumn" msprop:Generator_UserColumnName="GroupName" type="xs:string" minOccurs="0" />
+              <xs:element name="CountOfNumbr" msprop:Generator_ColumnVarNameInTable="columnCountOfNumbr" msprop:Generator_ColumnPropNameInRow="CountOfNumbr" msprop:Generator_ColumnPropNameInTable="CountOfNumbrColumn" msprop:Generator_UserColumnName="CountOfNumbr" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
       </xs:choice>
     </xs:complexType>
     <xs:unique name="UsersKey1" msdata:PrimaryKey="true">
@@ -96,6 +105,10 @@
     </xs:unique>
     <xs:unique name="AdvertismentsKey1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:Advertisments" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+    <xs:unique name="NumberGroupsKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:NumberGroups" />
       <xs:field xpath="mstns:ID" />
     </xs:unique>
   </xs:element>

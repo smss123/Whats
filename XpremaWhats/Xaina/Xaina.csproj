@@ -59,6 +59,12 @@
       <DependentUpon>MainFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="SenderNumber\frmAddSenderNumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SenderNumber\frmAddSenderNumber.Designer.cs">
+      <DependentUpon>frmAddSenderNumber.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="MainFrm.resx">
       <DependentUpon>MainFrm.cs</DependentUpon>
     </EmbeddedResource>

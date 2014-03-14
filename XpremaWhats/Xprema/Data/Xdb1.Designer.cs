@@ -38,6 +38,8 @@ namespace Xprema.Data {
         
         private global::System.Data.DataRelation relationCustomers_Advertisments;
         
+        private global::System.Data.DataRelation relationAdvertisments_SenderQuee;
+        
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -317,6 +319,7 @@ namespace Xprema.Data {
                 }
             }
             this.relationCustomers_Advertisments = this.Relations["Customers_Advertisments"];
+            this.relationAdvertisments_SenderQuee = this.Relations["Advertisments_SenderQuee"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -343,6 +346,10 @@ namespace Xprema.Data {
                         this.tableCustomers.IDColumn}, new global::System.Data.DataColumn[] {
                         this.tableAdvertisments.CustomerIDColumn}, false);
             this.Relations.Add(this.relationCustomers_Advertisments);
+            this.relationAdvertisments_SenderQuee = new global::System.Data.DataRelation("Advertisments_SenderQuee", new global::System.Data.DataColumn[] {
+                        this.tableAdvertisments.IDColumn}, new global::System.Data.DataColumn[] {
+                        this.tableSenderQuee.AdvertismentIDColumn}, false);
+            this.Relations.Add(this.relationAdvertisments_SenderQuee);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1066,6 +1073,14 @@ namespace Xprema.Data {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class SenderQueeDataTable : global::System.Data.TypedTableBase<SenderQueeRow> {
             
+            private global::System.Data.DataColumn columnID;
+            
+            private global::System.Data.DataColumn columnAdvertismentID;
+            
+            private global::System.Data.DataColumn columnSerialNumber;
+            
+            private global::System.Data.DataColumn columnStatus;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public SenderQueeDataTable() {
@@ -1097,6 +1112,38 @@ namespace Xprema.Data {
             protected SenderQueeDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn IDColumn {
+                get {
+                    return this.columnID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn AdvertismentIDColumn {
+                get {
+                    return this.columnAdvertismentID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn SerialNumberColumn {
+                get {
+                    return this.columnSerialNumber;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn StatusColumn {
+                get {
+                    return this.columnStatus;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1136,12 +1183,26 @@ namespace Xprema.Data {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public SenderQueeRow AddSenderQueeRow() {
+            public SenderQueeRow AddSenderQueeRow(AdvertismentsRow parentAdvertismentsRowByAdvertisments_SenderQuee, string SerialNumber, bool Status) {
                 SenderQueeRow rowSenderQueeRow = ((SenderQueeRow)(this.NewRow()));
-                object[] columnValuesArray = new object[0];
+                object[] columnValuesArray = new object[] {
+                        null,
+                        null,
+                        SerialNumber,
+                        Status};
+                if ((parentAdvertismentsRowByAdvertisments_SenderQuee != null)) {
+                    columnValuesArray[1] = parentAdvertismentsRowByAdvertisments_SenderQuee[0];
+                }
                 rowSenderQueeRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowSenderQueeRow);
                 return rowSenderQueeRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public SenderQueeRow FindByID(int ID) {
+                return ((SenderQueeRow)(this.Rows.Find(new object[] {
+                            ID})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1161,11 +1222,31 @@ namespace Xprema.Data {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
+                this.columnID = base.Columns["ID"];
+                this.columnAdvertismentID = base.Columns["AdvertismentID"];
+                this.columnSerialNumber = base.Columns["SerialNumber"];
+                this.columnStatus = base.Columns["Status"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
+                this.columnID = new global::System.Data.DataColumn("ID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnID);
+                this.columnAdvertismentID = new global::System.Data.DataColumn("AdvertismentID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAdvertismentID);
+                this.columnSerialNumber = new global::System.Data.DataColumn("SerialNumber", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSerialNumber);
+                this.columnStatus = new global::System.Data.DataColumn("Status", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnStatus);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("SenderQueeKey1", new global::System.Data.DataColumn[] {
+                                this.columnID}, true));
+                this.columnID.AutoIncrement = true;
+                this.columnID.AutoIncrementSeed = 1;
+                this.columnID.AllowDBNull = false;
+                this.columnID.Unique = true;
+                this.columnAdvertismentID.AutoIncrementSeed = -1;
+                this.columnAdvertismentID.AutoIncrementStep = -1;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2047,10 +2128,10 @@ namespace Xprema.Data {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public AdvertismentsRow AddAdvertismentsRow(string ID, string MessageText, string CreatedDate, CustomersRow parentCustomersRowByCustomers_Advertisments) {
+            public AdvertismentsRow AddAdvertismentsRow(string MessageText, string CreatedDate, CustomersRow parentCustomersRowByCustomers_Advertisments) {
                 AdvertismentsRow rowAdvertismentsRow = ((AdvertismentsRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        ID,
+                        null,
                         MessageText,
                         CreatedDate,
                         null};
@@ -2064,7 +2145,7 @@ namespace Xprema.Data {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public AdvertismentsRow FindByID(string ID) {
+            public AdvertismentsRow FindByID(int ID) {
                 return ((AdvertismentsRow)(this.Rows.Find(new object[] {
                             ID})));
             }
@@ -2095,7 +2176,7 @@ namespace Xprema.Data {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
-                this.columnID = new global::System.Data.DataColumn("ID", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnID = new global::System.Data.DataColumn("ID", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnID);
                 this.columnMessageText = new global::System.Data.DataColumn("MessageText", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnMessageText);
@@ -2105,6 +2186,8 @@ namespace Xprema.Data {
                 base.Columns.Add(this.columnCustomerID);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("AdvertismentsKey1", new global::System.Data.DataColumn[] {
                                 this.columnID}, true));
+                this.columnID.AutoIncrement = true;
+                this.columnID.AutoIncrementSeed = 1;
                 this.columnID.AllowDBNull = false;
                 this.columnID.Unique = true;
             }
@@ -2511,6 +2594,112 @@ namespace Xprema.Data {
                     base(rb) {
                 this.tableSenderQuee = ((SenderQueeDataTable)(this.Table));
             }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int ID {
+                get {
+                    return ((int)(this[this.tableSenderQuee.IDColumn]));
+                }
+                set {
+                    this[this.tableSenderQuee.IDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int AdvertismentID {
+                get {
+                    try {
+                        return ((int)(this[this.tableSenderQuee.AdvertismentIDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'AdvertismentID\' in table \'SenderQuee\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSenderQuee.AdvertismentIDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string SerialNumber {
+                get {
+                    try {
+                        return ((string)(this[this.tableSenderQuee.SerialNumberColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'SerialNumber\' in table \'SenderQuee\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSenderQuee.SerialNumberColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool Status {
+                get {
+                    try {
+                        return ((bool)(this[this.tableSenderQuee.StatusColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Status\' in table \'SenderQuee\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSenderQuee.StatusColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public AdvertismentsRow AdvertismentsRow {
+                get {
+                    return ((AdvertismentsRow)(this.GetParentRow(this.Table.ParentRelations["Advertisments_SenderQuee"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["Advertisments_SenderQuee"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsAdvertismentIDNull() {
+                return this.IsNull(this.tableSenderQuee.AdvertismentIDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetAdvertismentIDNull() {
+                this[this.tableSenderQuee.AdvertismentIDColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsSerialNumberNull() {
+                return this.IsNull(this.tableSenderQuee.SerialNumberColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetSerialNumberNull() {
+                this[this.tableSenderQuee.SerialNumberColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsStatusNull() {
+                return this.IsNull(this.tableSenderQuee.StatusColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetStatusNull() {
+                this[this.tableSenderQuee.StatusColumn] = global::System.Convert.DBNull;
+            }
         }
         
         /// <summary>
@@ -2861,9 +3050,9 @@ namespace Xprema.Data {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string ID {
+            public int ID {
                 get {
-                    return ((string)(this[this.tableAdvertisments.IDColumn]));
+                    return ((int)(this[this.tableAdvertisments.IDColumn]));
                 }
                 set {
                     this[this.tableAdvertisments.IDColumn] = value;
@@ -2963,6 +3152,17 @@ namespace Xprema.Data {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetCustomerIDNull() {
                 this[this.tableAdvertisments.CustomerIDColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public SenderQueeRow[] GetSenderQueeRows() {
+                if ((this.Table.ChildRelations["Advertisments_SenderQuee"] == null)) {
+                    return new SenderQueeRow[0];
+                }
+                else {
+                    return ((SenderQueeRow[])(base.GetChildRows(this.Table.ChildRelations["Advertisments_SenderQuee"])));
+                }
             }
         }
         

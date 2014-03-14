@@ -45,7 +45,6 @@
       <DependentUpon>Xdb.xsd</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="smss.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\Xdb.Designer.cs">

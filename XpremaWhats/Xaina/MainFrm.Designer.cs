@@ -73,7 +73,7 @@
             // 
             this.groupControl1.Location = new System.Drawing.Point(520, 225);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(200, 100);
+            this.groupControl1.Size = new System.Drawing.Size(227, 118);
             this.groupControl1.TabIndex = 2;
             this.groupControl1.Text = "groupControl1";
             // 

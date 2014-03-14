@@ -339,14 +339,6 @@ namespace Xprema.Data {
             base.Tables.Add(this.tableCustomers);
             this.tableAdvertisments = new AdvertismentsDataTable();
             base.Tables.Add(this.tableAdvertisments);
-            global::System.Data.ForeignKeyConstraint fkc;
-            fkc = new global::System.Data.ForeignKeyConstraint("Customers_Advertisments", new global::System.Data.DataColumn[] {
-                        this.tableCustomers.IDColumn}, new global::System.Data.DataColumn[] {
-                        this.tableAdvertisments.CustomerIDColumn});
-            this.tableAdvertisments.Constraints.Add(fkc);
-            fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
-            fkc.DeleteRule = global::System.Data.Rule.None;
-            fkc.UpdateRule = global::System.Data.Rule.None;
             this.relationCustomers_Advertisments = new global::System.Data.DataRelation("Customers_Advertisments", new global::System.Data.DataColumn[] {
                         this.tableCustomers.IDColumn}, new global::System.Data.DataColumn[] {
                         this.tableAdvertisments.CustomerIDColumn}, false);
@@ -1757,10 +1749,10 @@ namespace Xprema.Data {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public CustomersRow AddCustomersRow(string ID, string CustomerName, string CustomerPhone, string CustomerEmail, string CreatedDate) {
+            public CustomersRow AddCustomersRow(string CustomerName, string CustomerPhone, string CustomerEmail, string CreatedDate) {
                 CustomersRow rowCustomersRow = ((CustomersRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        ID,
+                        null,
                         CustomerName,
                         CustomerPhone,
                         CustomerEmail,
@@ -1797,7 +1789,7 @@ namespace Xprema.Data {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
-                this.columnID = new global::System.Data.DataColumn("ID", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnID = new global::System.Data.DataColumn("ID", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnID);
                 this.columnCustomerName = new global::System.Data.DataColumn("CustomerName", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCustomerName);
@@ -1809,6 +1801,8 @@ namespace Xprema.Data {
                 base.Columns.Add(this.columnCreatedDate);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnID}, false));
+                this.columnID.AutoIncrement = true;
+                this.columnID.AutoIncrementSeed = 1;
                 this.columnID.Unique = true;
             }
             
@@ -2107,7 +2101,7 @@ namespace Xprema.Data {
                 base.Columns.Add(this.columnMessageText);
                 this.columnCreatedDate = new global::System.Data.DataColumn("CreatedDate", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCreatedDate);
-                this.columnCustomerID = new global::System.Data.DataColumn("CustomerID", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnCustomerID = new global::System.Data.DataColumn("CustomerID", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCustomerID);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("AdvertismentsKey1", new global::System.Data.DataColumn[] {
                                 this.columnID}, true));
@@ -2701,10 +2695,10 @@ namespace Xprema.Data {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string ID {
+            public int ID {
                 get {
                     try {
-                        return ((string)(this[this.tableCustomers.IDColumn]));
+                        return ((int)(this[this.tableCustomers.IDColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'ID\' in table \'Customers\' is DBNull.", e);
@@ -2910,10 +2904,10 @@ namespace Xprema.Data {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string CustomerID {
+            public int CustomerID {
                 get {
                     try {
-                        return ((string)(this[this.tableAdvertisments.CustomerIDColumn]));
+                        return ((int)(this[this.tableAdvertisments.CustomerIDColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'CustomerID\' in table \'Advertisments\' is DBNull.", e);

@@ -39,6 +39,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\Xdb1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Xdb.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="smss.cs" />
   </ItemGroup>
@@ -57,7 +62,7 @@
     <None Include="Data\Xdb.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Xdb.Designer.cs</LastGenOutput>
+      <LastGenOutput>Xdb1.Designer.cs</LastGenOutput>
     </None>
     <None Include="Data\Xdb.xss">
       <DependentUpon>Xdb.xsd</DependentUpon>

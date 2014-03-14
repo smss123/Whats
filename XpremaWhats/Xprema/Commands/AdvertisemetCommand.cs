@@ -25,11 +25,11 @@ namespace Xprema.Commands
 
       public List<Data.Xdb.AdvertismentsRow> GetAll()
       {
-
+          throw new NotImplementedException();
       }
       public Data.Xdb.AdvertismentsRow GetByID(int ID)
       {
-
+          throw new NotImplementedException();
       }
 
     }

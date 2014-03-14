@@ -22,7 +22,7 @@ public     class SenderNumberCommand
 
     public bool DeleteSender(int ID)
     {
-
+        throw new NotImplementedException();
     }
 
     public List<Data.Xdb.SenderNumberRow> GetAll()

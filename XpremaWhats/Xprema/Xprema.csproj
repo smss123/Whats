@@ -52,7 +52,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Xdb.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Data\Xdb.xsc">

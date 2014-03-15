@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainFrm));
+            DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem1 = new DevExpress.Utils.ToolTipTitleItem();
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.WhatsUpNumberribbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.WhatsUpNumberribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -104,7 +106,7 @@
             this.GroupsribbonPage1,
             this.UsersribbonPage,
             this.ReportsribbonPage});
-            this.ribbon.Size = new System.Drawing.Size(889, 177);
+            this.ribbon.Size = new System.Drawing.Size(889, 195);
             this.ribbon.StatusBar = this.ribbonStatusBar;
             // 
             // WhatsUpNumberribbonPage
@@ -241,8 +243,18 @@
             // AddCustomersBtn
             // 
             this.AddCustomersBtn.Caption = "Add Customers";
+            this.AddCustomersBtn.Glyph = ((System.Drawing.Image)(resources.GetObject("AddCustomersBtn.Glyph")));
             this.AddCustomersBtn.Id = 10;
+            this.AddCustomersBtn.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("AddCustomersBtn.LargeGlyph")));
+            this.AddCustomersBtn.LargeGlyphDisabled = ((System.Drawing.Image)(resources.GetObject("AddCustomersBtn.LargeGlyphDisabled")));
+            this.AddCustomersBtn.LargeWidth = 100;
             this.AddCustomersBtn.Name = "AddCustomersBtn";
+            toolTipTitleItem1.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            toolTipTitleItem1.Appearance.Options.UseImage = true;
+            toolTipTitleItem1.Image = ((System.Drawing.Image)(resources.GetObject("toolTipTitleItem1.Image")));
+            toolTipTitleItem1.Text = "Add Customers";
+            superToolTip1.Items.Add(toolTipTitleItem1);
+            this.AddCustomersBtn.SuperTip = superToolTip1;
             // 
             // EditCustomersBtn
             // 
@@ -324,9 +336,9 @@
             this.navBarControl1.Dock = System.Windows.Forms.DockStyle.Left;
             this.navBarControl1.Groups.AddRange(new DevExpress.XtraNavBar.NavBarGroup[] {
             this.navBarGroup1});
-            this.navBarControl1.Location = new System.Drawing.Point(0, 177);
+            this.navBarControl1.Location = new System.Drawing.Point(0, 195);
             this.navBarControl1.Name = "navBarControl1";
-            this.navBarControl1.Size = new System.Drawing.Size(163, 336);
+            this.navBarControl1.Size = new System.Drawing.Size(163, 318);
             this.navBarControl1.TabIndex = 5;
             this.navBarControl1.Text = "navBarControl1";
             // 
@@ -339,9 +351,9 @@
             // groupControl1
             // 
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupControl1.Location = new System.Drawing.Point(163, 177);
+            this.groupControl1.Location = new System.Drawing.Point(163, 195);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(726, 336);
+            this.groupControl1.Size = new System.Drawing.Size(726, 318);
             this.groupControl1.TabIndex = 6;
             this.groupControl1.Text = "groupControl1";
             // 

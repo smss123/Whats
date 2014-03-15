@@ -16,3 +16,5 @@ C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.Properti
 C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.SenderNumber.frmAddSenderNumber.resources
 C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.csproj.GenerateResource.Cache
 C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.exe.licenses
+C:\Users\Coder\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.exe
+C:\Users\Coder\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.pdb

@@ -45,6 +45,10 @@
     <Compile Include="Commands\SenderQueeCommand.cs" />
     <Compile Include="Commands\UsersCommand.cs" />
     <Compile Include="Commands\WhatsAppNumberCommand.cs" />
+    <Compile Include="Data\Xdb.cs">
+      <DependentUpon>Xdb.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Data\Xdb1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

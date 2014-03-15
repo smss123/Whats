@@ -31,20 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainFrm));
             DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipTitleItem toolTipTitleItem1 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip2 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem2 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip3 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem3 = new DevExpress.Utils.ToolTipTitleItem();
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.WhatsUpNumberribbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.WhatsUpNumberribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
-            this.SenderNumberribbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.SenderNumberribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.CustomersribbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.CustomersribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.AdvertisementsribbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.AdvertisementsribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.UsersribbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ReportsribbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.GroupsribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.GroupsribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.AddWhatsUpNumberBtn = new DevExpress.XtraBars.BarButtonItem();
             this.EditWhatsUpNumberBtn = new DevExpress.XtraBars.BarButtonItem();
             this.DeleteWhatsUpNumberBtn = new DevExpress.XtraBars.BarButtonItem();
@@ -60,10 +51,23 @@
             this.AddGroupsBtn = new DevExpress.XtraBars.BarButtonItem();
             this.EditGroupsBtn = new DevExpress.XtraBars.BarButtonItem();
             this.DeleteGroupsBtn = new DevExpress.XtraBars.BarButtonItem();
-            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.AddUsersBtn = new DevExpress.XtraBars.BarButtonItem();
             this.EditUsersBtn = new DevExpress.XtraBars.BarButtonItem();
             this.DeleteUsersBtn = new DevExpress.XtraBars.BarButtonItem();
+            this.WhatsUpNumberribbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.WhatsUpNumberribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.SenderNumberribbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.SenderNumberribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.CustomersribbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.CustomersribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.AdvertisementsribbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.AdvertisementsribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.GroupsribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.GroupsribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.UsersribbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ReportsribbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.navBarControl1 = new DevExpress.XtraNavBar.NavBarControl();
             this.navBarGroup1 = new DevExpress.XtraNavBar.NavBarGroup();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
@@ -109,101 +113,6 @@
             this.ribbon.Size = new System.Drawing.Size(889, 195);
             this.ribbon.StatusBar = this.ribbonStatusBar;
             // 
-            // WhatsUpNumberribbonPage
-            // 
-            this.WhatsUpNumberribbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.WhatsUpNumberribbonPageGroup});
-            this.WhatsUpNumberribbonPage.Name = "WhatsUpNumberribbonPage";
-            this.WhatsUpNumberribbonPage.Text = "Whats Up Numbers";
-            // 
-            // WhatsUpNumberribbonPageGroup
-            // 
-            this.WhatsUpNumberribbonPageGroup.ItemLinks.Add(this.AddWhatsUpNumberBtn);
-            this.WhatsUpNumberribbonPageGroup.ItemLinks.Add(this.EditWhatsUpNumberBtn);
-            this.WhatsUpNumberribbonPageGroup.ItemLinks.Add(this.DeleteWhatsUpNumberBtn);
-            this.WhatsUpNumberribbonPageGroup.Name = "WhatsUpNumberribbonPageGroup";
-            this.WhatsUpNumberribbonPageGroup.Text = "Whats Up Numbers";
-            // 
-            // ribbonStatusBar
-            // 
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 513);
-            this.ribbonStatusBar.Name = "ribbonStatusBar";
-            this.ribbonStatusBar.Ribbon = this.ribbon;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(889, 31);
-            // 
-            // SenderNumberribbonPage
-            // 
-            this.SenderNumberribbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.SenderNumberribbonPageGroup});
-            this.SenderNumberribbonPage.Name = "SenderNumberribbonPage";
-            this.SenderNumberribbonPage.Text = "Sender Numbers";
-            // 
-            // SenderNumberribbonPageGroup
-            // 
-            this.SenderNumberribbonPageGroup.ItemLinks.Add(this.AddSenderNumberBtn);
-            this.SenderNumberribbonPageGroup.ItemLinks.Add(this.EditSenderNumberBtn);
-            this.SenderNumberribbonPageGroup.ItemLinks.Add(this.DeleteSenderNumberBtn);
-            this.SenderNumberribbonPageGroup.Name = "SenderNumberribbonPageGroup";
-            this.SenderNumberribbonPageGroup.Text = "Sender Number";
-            // 
-            // CustomersribbonPage
-            // 
-            this.CustomersribbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.CustomersribbonPageGroup});
-            this.CustomersribbonPage.Image = ((System.Drawing.Image)(resources.GetObject("CustomersribbonPage.Image")));
-            this.CustomersribbonPage.Name = "CustomersribbonPage";
-            this.CustomersribbonPage.Text = "Customers";
-            // 
-            // CustomersribbonPageGroup
-            // 
-            this.CustomersribbonPageGroup.ItemLinks.Add(this.AddCustomersBtn);
-            this.CustomersribbonPageGroup.ItemLinks.Add(this.EditCustomersBtn);
-            this.CustomersribbonPageGroup.ItemLinks.Add(this.DeleteCustomersBtn);
-            this.CustomersribbonPageGroup.Name = "CustomersribbonPageGroup";
-            this.CustomersribbonPageGroup.Text = "Customers";
-            // 
-            // AdvertisementsribbonPage
-            // 
-            this.AdvertisementsribbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.AdvertisementsribbonPageGroup});
-            this.AdvertisementsribbonPage.Name = "AdvertisementsribbonPage";
-            this.AdvertisementsribbonPage.Text = "Advertisements";
-            // 
-            // AdvertisementsribbonPageGroup
-            // 
-            this.AdvertisementsribbonPageGroup.ItemLinks.Add(this.addAdvertisementsBtn);
-            this.AdvertisementsribbonPageGroup.ItemLinks.Add(this.EditAdvertisementsBtn);
-            this.AdvertisementsribbonPageGroup.ItemLinks.Add(this.DeleteAdvertisementBtn);
-            this.AdvertisementsribbonPageGroup.Name = "AdvertisementsribbonPageGroup";
-            this.AdvertisementsribbonPageGroup.Text = "Advertisements";
-            // 
-            // UsersribbonPage
-            // 
-            this.UsersribbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup1});
-            this.UsersribbonPage.Name = "UsersribbonPage";
-            this.UsersribbonPage.Text = "Users";
-            // 
-            // ReportsribbonPage
-            // 
-            this.ReportsribbonPage.Name = "ReportsribbonPage";
-            this.ReportsribbonPage.Text = "Reports";
-            // 
-            // GroupsribbonPage1
-            // 
-            this.GroupsribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.GroupsribbonPageGroup});
-            this.GroupsribbonPage1.Name = "GroupsribbonPage1";
-            this.GroupsribbonPage1.Text = "Groups";
-            // 
-            // GroupsribbonPageGroup
-            // 
-            this.GroupsribbonPageGroup.ItemLinks.Add(this.AddGroupsBtn);
-            this.GroupsribbonPageGroup.ItemLinks.Add(this.EditGroupsBtn);
-            this.GroupsribbonPageGroup.ItemLinks.Add(this.DeleteGroupsBtn);
-            this.GroupsribbonPageGroup.Name = "GroupsribbonPageGroup";
-            this.GroupsribbonPageGroup.Text = "Groups";
-            // 
             // AddWhatsUpNumberBtn
             // 
             this.AddWhatsUpNumberBtn.Caption = "Add Number";
@@ -243,15 +152,14 @@
             // AddCustomersBtn
             // 
             this.AddCustomersBtn.Caption = "Add Customers";
-            this.AddCustomersBtn.Glyph = ((System.Drawing.Image)(resources.GetObject("AddCustomersBtn.Glyph")));
             this.AddCustomersBtn.Id = 10;
-            this.AddCustomersBtn.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("AddCustomersBtn.LargeGlyph")));
+            this.AddCustomersBtn.LargeGlyph = global::Xaina.Properties.Resources.CustomerAdd;
             this.AddCustomersBtn.LargeGlyphDisabled = ((System.Drawing.Image)(resources.GetObject("AddCustomersBtn.LargeGlyphDisabled")));
             this.AddCustomersBtn.LargeWidth = 100;
             this.AddCustomersBtn.Name = "AddCustomersBtn";
-            toolTipTitleItem1.Appearance.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
+            toolTipTitleItem1.Appearance.Image = global::Xaina.Properties.Resources.CustomerAdd;
             toolTipTitleItem1.Appearance.Options.UseImage = true;
-            toolTipTitleItem1.Image = ((System.Drawing.Image)(resources.GetObject("toolTipTitleItem1.Image")));
+            toolTipTitleItem1.Image = global::Xaina.Properties.Resources.CustomerAdd;
             toolTipTitleItem1.Text = "Add Customers";
             superToolTip1.Items.Add(toolTipTitleItem1);
             this.AddCustomersBtn.SuperTip = superToolTip1;
@@ -260,13 +168,29 @@
             // 
             this.EditCustomersBtn.Caption = "Edit Customers";
             this.EditCustomersBtn.Id = 11;
+            this.EditCustomersBtn.LargeGlyph = global::Xaina.Properties.Resources.CUstomerEdit;
+            this.EditCustomersBtn.LargeWidth = 100;
             this.EditCustomersBtn.Name = "EditCustomersBtn";
+            toolTipTitleItem2.Appearance.Image = global::Xaina.Properties.Resources.CUstomerEdit;
+            toolTipTitleItem2.Appearance.Options.UseImage = true;
+            toolTipTitleItem2.Image = global::Xaina.Properties.Resources.CUstomerEdit;
+            toolTipTitleItem2.Text = "Edit Customer";
+            superToolTip2.Items.Add(toolTipTitleItem2);
+            this.EditCustomersBtn.SuperTip = superToolTip2;
             // 
             // DeleteCustomersBtn
             // 
             this.DeleteCustomersBtn.Caption = "Delete Customers";
             this.DeleteCustomersBtn.Id = 12;
+            this.DeleteCustomersBtn.LargeGlyph = global::Xaina.Properties.Resources.CustomerDel;
+            this.DeleteCustomersBtn.LargeWidth = 100;
             this.DeleteCustomersBtn.Name = "DeleteCustomersBtn";
+            toolTipTitleItem3.Appearance.Image = global::Xaina.Properties.Resources.CustomerDel;
+            toolTipTitleItem3.Appearance.Options.UseImage = true;
+            toolTipTitleItem3.Image = global::Xaina.Properties.Resources.CustomerDel;
+            toolTipTitleItem3.Text = "Delete Customer";
+            superToolTip3.Items.Add(toolTipTitleItem3);
+            this.DeleteCustomersBtn.SuperTip = superToolTip3;
             // 
             // addAdvertisementsBtn
             // 
@@ -304,14 +228,6 @@
             this.DeleteGroupsBtn.Id = 18;
             this.DeleteGroupsBtn.Name = "DeleteGroupsBtn";
             // 
-            // ribbonPageGroup1
-            // 
-            this.ribbonPageGroup1.ItemLinks.Add(this.AddUsersBtn);
-            this.ribbonPageGroup1.ItemLinks.Add(this.EditUsersBtn);
-            this.ribbonPageGroup1.ItemLinks.Add(this.DeleteUsersBtn);
-            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "ribbonPageGroup1";
-            // 
             // AddUsersBtn
             // 
             this.AddUsersBtn.Caption = "Add User";
@@ -330,6 +246,109 @@
             this.DeleteUsersBtn.Id = 21;
             this.DeleteUsersBtn.Name = "DeleteUsersBtn";
             // 
+            // WhatsUpNumberribbonPage
+            // 
+            this.WhatsUpNumberribbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.WhatsUpNumberribbonPageGroup});
+            this.WhatsUpNumberribbonPage.Name = "WhatsUpNumberribbonPage";
+            this.WhatsUpNumberribbonPage.Text = "Whats Up Numbers";
+            // 
+            // WhatsUpNumberribbonPageGroup
+            // 
+            this.WhatsUpNumberribbonPageGroup.ItemLinks.Add(this.AddWhatsUpNumberBtn);
+            this.WhatsUpNumberribbonPageGroup.ItemLinks.Add(this.EditWhatsUpNumberBtn);
+            this.WhatsUpNumberribbonPageGroup.ItemLinks.Add(this.DeleteWhatsUpNumberBtn);
+            this.WhatsUpNumberribbonPageGroup.Name = "WhatsUpNumberribbonPageGroup";
+            this.WhatsUpNumberribbonPageGroup.Text = "Whats Up Numbers";
+            // 
+            // SenderNumberribbonPage
+            // 
+            this.SenderNumberribbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.SenderNumberribbonPageGroup});
+            this.SenderNumberribbonPage.Name = "SenderNumberribbonPage";
+            this.SenderNumberribbonPage.Text = "Sender Numbers";
+            // 
+            // SenderNumberribbonPageGroup
+            // 
+            this.SenderNumberribbonPageGroup.ItemLinks.Add(this.AddSenderNumberBtn);
+            this.SenderNumberribbonPageGroup.ItemLinks.Add(this.EditSenderNumberBtn);
+            this.SenderNumberribbonPageGroup.ItemLinks.Add(this.DeleteSenderNumberBtn);
+            this.SenderNumberribbonPageGroup.Name = "SenderNumberribbonPageGroup";
+            this.SenderNumberribbonPageGroup.Text = "Sender Number";
+            // 
+            // CustomersribbonPage
+            // 
+            this.CustomersribbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.CustomersribbonPageGroup});
+            this.CustomersribbonPage.Image = global::Xaina.Properties.Resources.Cutomers;
+            this.CustomersribbonPage.Name = "CustomersribbonPage";
+            this.CustomersribbonPage.Text = "Customers";
+            // 
+            // CustomersribbonPageGroup
+            // 
+            this.CustomersribbonPageGroup.ItemLinks.Add(this.AddCustomersBtn);
+            this.CustomersribbonPageGroup.ItemLinks.Add(this.EditCustomersBtn);
+            this.CustomersribbonPageGroup.ItemLinks.Add(this.DeleteCustomersBtn);
+            this.CustomersribbonPageGroup.Name = "CustomersribbonPageGroup";
+            this.CustomersribbonPageGroup.Text = "Customers";
+            // 
+            // AdvertisementsribbonPage
+            // 
+            this.AdvertisementsribbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.AdvertisementsribbonPageGroup});
+            this.AdvertisementsribbonPage.Name = "AdvertisementsribbonPage";
+            this.AdvertisementsribbonPage.Text = "Advertisements";
+            // 
+            // AdvertisementsribbonPageGroup
+            // 
+            this.AdvertisementsribbonPageGroup.ItemLinks.Add(this.addAdvertisementsBtn);
+            this.AdvertisementsribbonPageGroup.ItemLinks.Add(this.EditAdvertisementsBtn);
+            this.AdvertisementsribbonPageGroup.ItemLinks.Add(this.DeleteAdvertisementBtn);
+            this.AdvertisementsribbonPageGroup.Name = "AdvertisementsribbonPageGroup";
+            this.AdvertisementsribbonPageGroup.Text = "Advertisements";
+            // 
+            // GroupsribbonPage1
+            // 
+            this.GroupsribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.GroupsribbonPageGroup});
+            this.GroupsribbonPage1.Name = "GroupsribbonPage1";
+            this.GroupsribbonPage1.Text = "Groups";
+            // 
+            // GroupsribbonPageGroup
+            // 
+            this.GroupsribbonPageGroup.ItemLinks.Add(this.AddGroupsBtn);
+            this.GroupsribbonPageGroup.ItemLinks.Add(this.EditGroupsBtn);
+            this.GroupsribbonPageGroup.ItemLinks.Add(this.DeleteGroupsBtn);
+            this.GroupsribbonPageGroup.Name = "GroupsribbonPageGroup";
+            this.GroupsribbonPageGroup.Text = "Groups";
+            // 
+            // UsersribbonPage
+            // 
+            this.UsersribbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup1});
+            this.UsersribbonPage.Name = "UsersribbonPage";
+            this.UsersribbonPage.Text = "Users";
+            // 
+            // ribbonPageGroup1
+            // 
+            this.ribbonPageGroup1.ItemLinks.Add(this.AddUsersBtn);
+            this.ribbonPageGroup1.ItemLinks.Add(this.EditUsersBtn);
+            this.ribbonPageGroup1.ItemLinks.Add(this.DeleteUsersBtn);
+            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            this.ribbonPageGroup1.Text = "ribbonPageGroup1";
+            // 
+            // ReportsribbonPage
+            // 
+            this.ReportsribbonPage.Name = "ReportsribbonPage";
+            this.ReportsribbonPage.Text = "Reports";
+            // 
+            // ribbonStatusBar
+            // 
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 513);
+            this.ribbonStatusBar.Name = "ribbonStatusBar";
+            this.ribbonStatusBar.Ribbon = this.ribbon;
+            this.ribbonStatusBar.Size = new System.Drawing.Size(889, 31);
+            // 
             // navBarControl1
             // 
             this.navBarControl1.ActiveGroup = this.navBarGroup1;
@@ -338,6 +357,7 @@
             this.navBarGroup1});
             this.navBarControl1.Location = new System.Drawing.Point(0, 195);
             this.navBarControl1.Name = "navBarControl1";
+            this.navBarControl1.OptionsNavPane.ExpandedWidth = 163;
             this.navBarControl1.Size = new System.Drawing.Size(163, 318);
             this.navBarControl1.TabIndex = 5;
             this.navBarControl1.Text = "navBarControl1";

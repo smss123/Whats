@@ -7,3 +7,7 @@ C:\Users\user\Documents\GitHub\Whats\XpremaWhats\Xprema\obj\Debug\Xprema.dll
 C:\Users\user\Documents\GitHub\Whats\XpremaWhats\Xprema\obj\Debug\Xprema.pdb
 C:\Users\user\Documents\GitHub\Whats\XpremaWhats\Xprema\bin\Debug\Xprema.dll
 C:\Users\user\Documents\GitHub\Whats\XpremaWhats\Xprema\bin\Debug\Xprema.pdb
+C:\Users\Coder\Documents\GitHub\Whats\XpremaWhats\Xprema\bin\Debug\Xprema.dll
+C:\Users\Coder\Documents\GitHub\Whats\XpremaWhats\Xprema\bin\Debug\Xprema.pdb
+C:\Users\Coder\Documents\GitHub\Whats\XpremaWhats\Xprema\obj\Debug\Xprema.dll
+C:\Users\Coder\Documents\GitHub\Whats\XpremaWhats\Xprema\obj\Debug\Xprema.pdb

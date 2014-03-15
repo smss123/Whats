@@ -104,7 +104,7 @@
             this.GroupsribbonPage1,
             this.UsersribbonPage,
             this.ReportsribbonPage});
-            this.ribbon.Size = new System.Drawing.Size(878, 177);
+            this.ribbon.Size = new System.Drawing.Size(889, 177);
             this.ribbon.StatusBar = this.ribbonStatusBar;
             // 
             // WhatsUpNumberribbonPage
@@ -124,10 +124,10 @@
             // 
             // ribbonStatusBar
             // 
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 509);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 513);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbon;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(878, 31);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(889, 31);
             // 
             // SenderNumberribbonPage
             // 
@@ -326,7 +326,7 @@
             this.navBarGroup1});
             this.navBarControl1.Location = new System.Drawing.Point(0, 177);
             this.navBarControl1.Name = "navBarControl1";
-            this.navBarControl1.Size = new System.Drawing.Size(163, 332);
+            this.navBarControl1.Size = new System.Drawing.Size(163, 336);
             this.navBarControl1.TabIndex = 5;
             this.navBarControl1.Text = "navBarControl1";
             // 
@@ -341,7 +341,7 @@
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl1.Location = new System.Drawing.Point(163, 177);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(715, 332);
+            this.groupControl1.Size = new System.Drawing.Size(726, 336);
             this.groupControl1.TabIndex = 6;
             this.groupControl1.Text = "groupControl1";
             // 
@@ -349,7 +349,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(878, 540);
+            this.ClientSize = new System.Drawing.Size(889, 544);
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.navBarControl1);
             this.Controls.Add(this.ribbonStatusBar);

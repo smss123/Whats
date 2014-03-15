@@ -50,6 +50,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Xdb.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Data\Xdb2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Xdb.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Data\XpremaFileManager.cs" />
     <Compile Include="XdataType\Email.cs" />
     <Compile Include="XdataType\Name.cs" />
@@ -69,7 +74,7 @@
     <None Include="Data\Xdb.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Xdb1.Designer.cs</LastGenOutput>
+      <LastGenOutput>Xdb2.Designer.cs</LastGenOutput>
     </None>
     <None Include="Data\Xdb.xss">
       <DependentUpon>Xdb.xsd</DependentUpon>

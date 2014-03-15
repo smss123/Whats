@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainFrm));
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.WhatsUpNumberribbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.WhatsUpNumberribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -103,7 +104,7 @@
             this.GroupsribbonPage1,
             this.UsersribbonPage,
             this.ReportsribbonPage});
-            this.ribbon.Size = new System.Drawing.Size(878, 144);
+            this.ribbon.Size = new System.Drawing.Size(878, 177);
             this.ribbon.StatusBar = this.ribbonStatusBar;
             // 
             // WhatsUpNumberribbonPage
@@ -147,6 +148,7 @@
             // 
             this.CustomersribbonPage.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.CustomersribbonPageGroup});
+            this.CustomersribbonPage.Image = ((System.Drawing.Image)(resources.GetObject("CustomersribbonPage.Image")));
             this.CustomersribbonPage.Name = "CustomersribbonPage";
             this.CustomersribbonPage.Text = "Customers";
             // 
@@ -322,9 +324,9 @@
             this.navBarControl1.Dock = System.Windows.Forms.DockStyle.Left;
             this.navBarControl1.Groups.AddRange(new DevExpress.XtraNavBar.NavBarGroup[] {
             this.navBarGroup1});
-            this.navBarControl1.Location = new System.Drawing.Point(0, 144);
+            this.navBarControl1.Location = new System.Drawing.Point(0, 177);
             this.navBarControl1.Name = "navBarControl1";
-            this.navBarControl1.Size = new System.Drawing.Size(163, 365);
+            this.navBarControl1.Size = new System.Drawing.Size(163, 332);
             this.navBarControl1.TabIndex = 5;
             this.navBarControl1.Text = "navBarControl1";
             // 
@@ -337,9 +339,9 @@
             // groupControl1
             // 
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupControl1.Location = new System.Drawing.Point(163, 144);
+            this.groupControl1.Location = new System.Drawing.Point(163, 177);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(715, 365);
+            this.groupControl1.Size = new System.Drawing.Size(715, 332);
             this.groupControl1.TabIndex = 6;
             this.groupControl1.Text = "groupControl1";
             // 

@@ -10,7 +10,6 @@ C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.exe
 C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.pdb
 C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\bin\Debug\Xaina.exe
 C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\bin\Debug\Xaina.pdb
-C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.csprojResolveAssemblyReference.cache
 C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.MainFrm.resources
 C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.Properties.Resources.resources
 C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.SenderNumber.frmAddSenderNumber.resources

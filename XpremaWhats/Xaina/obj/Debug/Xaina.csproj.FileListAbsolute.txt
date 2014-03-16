@@ -25,3 +25,9 @@ C:\Users\Coder\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.SenderNu
 C:\Users\Coder\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.csproj.GenerateResource.Cache
 C:\Users\Coder\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.exe.licenses
 C:\Users\Coder\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.csprojResolveAssemblyReference.cache
+C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.csprojResolveAssemblyReference.cache
+C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.SenderNumber.EditSenderNumberFrm.resources
+C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.WhatsAppNumberForms.AddWhatsappNumbersfrm.resources
+C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.WhatsAppNumberForms.EditWhatsAppNumbersFrm.resources
+C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.NumberGroupsFroms.AddGroupsFrm.resources
+C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.NumberGroupsFroms.EditGroupsFrm.resources

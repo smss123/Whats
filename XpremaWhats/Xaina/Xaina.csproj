@@ -37,6 +37,7 @@
     <Reference Include="DevExpress.Utils.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraBars.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraLayout.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraNavBar.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraPrinting.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -52,21 +53,75 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomersForms\AddCustomerFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomersForms\AddCustomerFrm.Designer.cs">
+      <DependentUpon>AddCustomerFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomersForms\EditCustomersFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomersForms\EditCustomersFrm.Designer.cs">
+      <DependentUpon>EditCustomersFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainFrm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainFrm.Designer.cs">
       <DependentUpon>MainFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="NumberGroupsFroms\AddGroupsFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NumberGroupsFroms\AddGroupsFrm.Designer.cs">
+      <DependentUpon>AddGroupsFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NumberGroupsFroms\EditGroupsFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NumberGroupsFroms\EditGroupsFrm.Designer.cs">
+      <DependentUpon>EditGroupsFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="SenderNumber\EditSenderNumberFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SenderNumber\EditSenderNumberFrm.Designer.cs">
+      <DependentUpon>EditSenderNumberFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SenderNumber\frmAddSenderNumber.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SenderNumber\frmAddSenderNumber.Designer.cs">
       <DependentUpon>frmAddSenderNumber.cs</DependentUpon>
     </Compile>
+    <Compile Include="WhatsAppNumberForms\AddWhatsappNumbersfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WhatsAppNumberForms\AddWhatsappNumbersfrm.Designer.cs">
+      <DependentUpon>AddWhatsappNumbersfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WhatsAppNumberForms\EditWhatsAppNumbersFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WhatsAppNumberForms\EditWhatsAppNumbersFrm.Designer.cs">
+      <DependentUpon>EditWhatsAppNumbersFrm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CustomersForms\AddCustomerFrm.resx">
+      <DependentUpon>AddCustomerFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomersForms\EditCustomersFrm.resx">
+      <DependentUpon>EditCustomersFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainFrm.resx">
       <DependentUpon>MainFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NumberGroupsFroms\AddGroupsFrm.resx">
+      <DependentUpon>AddGroupsFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NumberGroupsFroms\EditGroupsFrm.resx">
+      <DependentUpon>EditGroupsFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -79,8 +134,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SenderNumber\EditSenderNumberFrm.resx">
+      <DependentUpon>EditSenderNumberFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SenderNumber\frmAddSenderNumber.resx">
       <DependentUpon>frmAddSenderNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WhatsAppNumberForms\AddWhatsappNumbersfrm.resx">
+      <DependentUpon>AddWhatsappNumbersfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WhatsAppNumberForms\EditWhatsAppNumbersFrm.resx">
+      <DependentUpon>EditWhatsAppNumbersFrm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

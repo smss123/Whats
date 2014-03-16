@@ -100,6 +100,10 @@ public     class XpremaFileManager
         {
             BackUpData(FullPath, ToPath);
         }
+        public void Restore(string fromPath)
+        {
+            BackUpData(fromPath, FullPath);
+        }
 
 
         public XpremaFileManager() {
@@ -116,8 +120,7 @@ public     class XpremaFileManager
     }
 
 
-    // this Class To Mange Xml File
-        //
+ 
 
     }
 }

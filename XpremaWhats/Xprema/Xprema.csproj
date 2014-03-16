@@ -32,6 +32,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,17 +47,6 @@
     <Compile Include="Commands\UsersCommand.cs" />
     <Compile Include="Commands\WhatsAppNumberCommand.cs" />
     <Compile Include="Data\Xdb.cs">
-      <DependentUpon>Xdb.xsd</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Data\Xdb1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Xdb.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Data\Xdb2.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
       <DependentUpon>Xdb.xsd</DependentUpon>
     </Compile>
     <Compile Include="Data\XpremaFileManager.cs" />

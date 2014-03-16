@@ -31,3 +31,9 @@ C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.WhatsApp
 C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.WhatsAppNumberForms.EditWhatsAppNumbersFrm.resources
 C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.NumberGroupsFroms.AddGroupsFrm.resources
 C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.NumberGroupsFroms.EditGroupsFrm.resources
+C:\Users\user\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.CustomersForms.AddCustomerFrm.resources
+C:\Users\user\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.CustomersForms.EditCustomersFrm.resources
+C:\Users\user\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.SenderNumber.frmAddSenderNumber.resources
+C:\Users\user\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.WhatsAppNumberForms.AddWhatsappNumbersfrm.resources
+C:\Users\user\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.WhatsAppNumberForms.EditWhatsAppNumbersFrm.resources

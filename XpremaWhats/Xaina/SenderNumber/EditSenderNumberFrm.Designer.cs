@@ -28,50 +28,73 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditSenderNumberFrm));
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.SelectNumberlookUpEdit = new DevExpress.XtraEditors.LookUpEdit();
-            this.SelectNumberlayoutControlItem = new DevExpress.XtraLayout.LayoutControlItem();
+            this.EditNumberMessagetextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.EditSenderNumberBtn = new DevExpress.XtraEditors.SimpleButton();
+            this.EditCountrycomboBoxEdit = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.EditCountertextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.EditpasswordtextEdit = new DevExpress.XtraEditors.TextEdit();
             this.EditNumbertextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.SelectNumberlookUpEdit = new DevExpress.XtraEditors.LookUpEdit();
+            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.SelectNumberlayoutControlItem = new DevExpress.XtraLayout.LayoutControlItem();
             this.EditNumberlayoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.EditpasswordlayoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.EditStatuslayoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.EditNumberMessagelayoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.NAmelayoutControlItem = new DevExpress.XtraLayout.LayoutControlItem();
             this.NumberOfmassagelayoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.CounterlayoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             this.CountrylayoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.EditpasswordtextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.EditpasswordlayoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.EditCountertextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.EditCountrycomboBoxEdit = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.EditStatuslayoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.EditSenderNumberBtn = new DevExpress.XtraEditors.SimpleButton();
-            this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.EditNumberMessagetextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.EditNumberMessagelayoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.simpleSeparator1 = new DevExpress.XtraLayout.SimpleSeparator();
+            this.simpleSeparator2 = new DevExpress.XtraLayout.SimpleSeparator();
+            this.simpleSeparator3 = new DevExpress.XtraLayout.SimpleSeparator();
+            this.simpleSeparator4 = new DevExpress.XtraLayout.SimpleSeparator();
+            this.simpleSeparator5 = new DevExpress.XtraLayout.SimpleSeparator();
+            this.simpleSeparator6 = new DevExpress.XtraLayout.SimpleSeparator();
+            this.simpleSeparator7 = new DevExpress.XtraLayout.SimpleSeparator();
+            this.simpleSeparator8 = new DevExpress.XtraLayout.SimpleSeparator();
+            this.simpleSeparator9 = new DevExpress.XtraLayout.SimpleSeparator();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SelectNumberlookUpEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SelectNumberlayoutControlItem)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EditNumberMessagetextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EditCountrycomboBoxEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EditCountertextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EditpasswordtextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EditNumbertextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SelectNumberlookUpEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SelectNumberlayoutControlItem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EditNumberlayoutControlItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EditpasswordlayoutControlItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EditStatuslayoutControlItem4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EditNumberMessagelayoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NAmelayoutControlItem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumberOfmassagelayoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CounterlayoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CountrylayoutControlItem3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EditpasswordtextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EditpasswordlayoutControlItem2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EditCountertextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EditCountrycomboBoxEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EditStatuslayoutControlItem4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EditNumberMessagetextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EditNumberMessagelayoutControlItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
             // 
+            this.layoutControl1.Controls.Add(this.simpleButton1);
             this.layoutControl1.Controls.Add(this.EditNumberMessagetextEdit);
             this.layoutControl1.Controls.Add(this.EditSenderNumberBtn);
             this.layoutControl1.Controls.Add(this.EditCountrycomboBoxEdit);
@@ -79,13 +102,75 @@
             this.layoutControl1.Controls.Add(this.EditpasswordtextEdit);
             this.layoutControl1.Controls.Add(this.EditNumbertextEdit);
             this.layoutControl1.Controls.Add(this.SelectNumberlookUpEdit);
-            this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
             this.layoutControl1.Name = "layoutControl1";
+            this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(571, 131, 250, 350);
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(336, 305);
+            this.layoutControl1.Size = new System.Drawing.Size(373, 334);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
+            // 
+            // EditNumberMessagetextEdit
+            // 
+            this.EditNumberMessagetextEdit.Location = new System.Drawing.Point(12, 160);
+            this.EditNumberMessagetextEdit.Name = "EditNumberMessagetextEdit";
+            this.EditNumberMessagetextEdit.Size = new System.Drawing.Size(347, 20);
+            this.EditNumberMessagetextEdit.StyleController = this.layoutControl1;
+            this.EditNumberMessagetextEdit.TabIndex = 10;
+            // 
+            // EditSenderNumberBtn
+            // 
+            this.EditSenderNumberBtn.Location = new System.Drawing.Point(12, 274);
+            this.EditSenderNumberBtn.Name = "EditSenderNumberBtn";
+            this.EditSenderNumberBtn.Size = new System.Drawing.Size(347, 22);
+            this.EditSenderNumberBtn.StyleController = this.layoutControl1;
+            this.EditSenderNumberBtn.TabIndex = 9;
+            this.EditSenderNumberBtn.Text = "Save";
+            // 
+            // EditCountrycomboBoxEdit
+            // 
+            this.EditCountrycomboBoxEdit.Location = new System.Drawing.Point(12, 248);
+            this.EditCountrycomboBoxEdit.Name = "EditCountrycomboBoxEdit";
+            this.EditCountrycomboBoxEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.EditCountrycomboBoxEdit.Size = new System.Drawing.Size(347, 20);
+            this.EditCountrycomboBoxEdit.StyleController = this.layoutControl1;
+            this.EditCountrycomboBoxEdit.TabIndex = 8;
+            // 
+            // EditCountertextEdit
+            // 
+            this.EditCountertextEdit.Location = new System.Drawing.Point(12, 204);
+            this.EditCountertextEdit.Name = "EditCountertextEdit";
+            this.EditCountertextEdit.Size = new System.Drawing.Size(347, 20);
+            this.EditCountertextEdit.StyleController = this.layoutControl1;
+            this.EditCountertextEdit.TabIndex = 7;
+            // 
+            // EditpasswordtextEdit
+            // 
+            this.EditpasswordtextEdit.Location = new System.Drawing.Point(12, 118);
+            this.EditpasswordtextEdit.Name = "EditpasswordtextEdit";
+            this.EditpasswordtextEdit.Size = new System.Drawing.Size(347, 20);
+            this.EditpasswordtextEdit.StyleController = this.layoutControl1;
+            this.EditpasswordtextEdit.TabIndex = 6;
+            // 
+            // EditNumbertextEdit
+            // 
+            this.EditNumbertextEdit.Location = new System.Drawing.Point(12, 76);
+            this.EditNumbertextEdit.Name = "EditNumbertextEdit";
+            this.EditNumbertextEdit.Size = new System.Drawing.Size(347, 20);
+            this.EditNumbertextEdit.StyleController = this.layoutControl1;
+            this.EditNumbertextEdit.TabIndex = 5;
+            // 
+            // SelectNumberlookUpEdit
+            // 
+            this.SelectNumberlookUpEdit.Location = new System.Drawing.Point(12, 34);
+            this.SelectNumberlookUpEdit.Name = "SelectNumberlookUpEdit";
+            this.SelectNumberlookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.SelectNumberlookUpEdit.Size = new System.Drawing.Size(347, 20);
+            this.SelectNumberlookUpEdit.StyleController = this.layoutControl1;
+            this.SelectNumberlookUpEdit.TabIndex = 4;
             // 
             // layoutControlGroup1
             // 
@@ -99,52 +184,109 @@
             this.layoutControlItem3,
             this.EditStatuslayoutControlItem4,
             this.layoutControlItem5,
-            this.EditNumberMessagelayoutControlItem1});
+            this.EditNumberMessagelayoutControlItem1,
+            this.simpleSeparator1,
+            this.simpleSeparator2,
+            this.simpleSeparator3,
+            this.simpleSeparator4,
+            this.simpleSeparator5,
+            this.simpleSeparator6,
+            this.simpleSeparator7,
+            this.simpleSeparator8,
+            this.simpleSeparator9,
+            this.layoutControlItem1});
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlGroup1.Name = "layoutControlGroup1";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(336, 305);
-            this.layoutControlGroup1.Text = "layoutControlGroup1";
+            this.layoutControlGroup1.Name = "Root";
+            this.layoutControlGroup1.Size = new System.Drawing.Size(373, 334);
+            this.layoutControlGroup1.Text = "Root";
             this.layoutControlGroup1.TextVisible = false;
-            // 
-            // SelectNumberlookUpEdit
-            // 
-            this.SelectNumberlookUpEdit.Location = new System.Drawing.Point(12, 28);
-            this.SelectNumberlookUpEdit.Name = "SelectNumberlookUpEdit";
-            this.SelectNumberlookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.SelectNumberlookUpEdit.Size = new System.Drawing.Size(312, 20);
-            this.SelectNumberlookUpEdit.StyleController = this.layoutControl1;
-            this.SelectNumberlookUpEdit.TabIndex = 4;
             // 
             // SelectNumberlayoutControlItem
             // 
+            this.SelectNumberlayoutControlItem.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SelectNumberlayoutControlItem.AppearanceItemCaption.ForeColor = System.Drawing.Color.White;
+            this.SelectNumberlayoutControlItem.AppearanceItemCaption.Image = ((System.Drawing.Image)(resources.GetObject("SelectNumberlayoutControlItem.AppearanceItemCaption.Image")));
+            this.SelectNumberlayoutControlItem.AppearanceItemCaption.Options.UseFont = true;
+            this.SelectNumberlayoutControlItem.AppearanceItemCaption.Options.UseForeColor = true;
+            this.SelectNumberlayoutControlItem.AppearanceItemCaption.Options.UseImage = true;
             this.SelectNumberlayoutControlItem.Control = this.SelectNumberlookUpEdit;
             this.SelectNumberlayoutControlItem.CustomizationFormText = "SelectNumberlayoutControlItem1";
+            this.SelectNumberlayoutControlItem.ImageAlignment = System.Drawing.ContentAlignment.BottomCenter;
             this.SelectNumberlayoutControlItem.Location = new System.Drawing.Point(0, 0);
+            this.SelectNumberlayoutControlItem.MinSize = new System.Drawing.Size(159, 46);
             this.SelectNumberlayoutControlItem.Name = "SelectNumberlayoutControlItem";
-            this.SelectNumberlayoutControlItem.Size = new System.Drawing.Size(316, 40);
+            this.SelectNumberlayoutControlItem.Size = new System.Drawing.Size(351, 46);
+            this.SelectNumberlayoutControlItem.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.SelectNumberlayoutControlItem.Text = "Select Number:";
             this.SelectNumberlayoutControlItem.TextLocation = DevExpress.Utils.Locations.Top;
-            this.SelectNumberlayoutControlItem.TextSize = new System.Drawing.Size(155, 13);
-            // 
-            // EditNumbertextEdit
-            // 
-            this.EditNumbertextEdit.Location = new System.Drawing.Point(12, 68);
-            this.EditNumbertextEdit.Name = "EditNumbertextEdit";
-            this.EditNumbertextEdit.Size = new System.Drawing.Size(312, 20);
-            this.EditNumbertextEdit.StyleController = this.layoutControl1;
-            this.EditNumbertextEdit.TabIndex = 5;
+            this.SelectNumberlayoutControlItem.TextSize = new System.Drawing.Size(155, 19);
             // 
             // EditNumberlayoutControlItem1
             // 
             this.EditNumberlayoutControlItem1.Control = this.EditNumbertextEdit;
             this.EditNumberlayoutControlItem1.CustomizationFormText = "layoutControlItem1";
-            this.EditNumberlayoutControlItem1.Location = new System.Drawing.Point(0, 40);
+            this.EditNumberlayoutControlItem1.Location = new System.Drawing.Point(0, 48);
             this.EditNumberlayoutControlItem1.Name = "EditNumberlayoutControlItem1";
-            this.EditNumberlayoutControlItem1.Size = new System.Drawing.Size(316, 40);
+            this.EditNumberlayoutControlItem1.Size = new System.Drawing.Size(351, 40);
             this.EditNumberlayoutControlItem1.Text = "Edit Number:";
             this.EditNumberlayoutControlItem1.TextLocation = DevExpress.Utils.Locations.Top;
             this.EditNumberlayoutControlItem1.TextSize = new System.Drawing.Size(155, 13);
+            // 
+            // EditpasswordlayoutControlItem2
+            // 
+            this.EditpasswordlayoutControlItem2.Control = this.EditpasswordtextEdit;
+            this.EditpasswordlayoutControlItem2.CustomizationFormText = "layoutControlItem2";
+            this.EditpasswordlayoutControlItem2.Location = new System.Drawing.Point(0, 90);
+            this.EditpasswordlayoutControlItem2.Name = "EditpasswordlayoutControlItem2";
+            this.EditpasswordlayoutControlItem2.Size = new System.Drawing.Size(351, 40);
+            this.EditpasswordlayoutControlItem2.Text = "Edit Password:";
+            this.EditpasswordlayoutControlItem2.TextLocation = DevExpress.Utils.Locations.Top;
+            this.EditpasswordlayoutControlItem2.TextSize = new System.Drawing.Size(155, 13);
+            // 
+            // layoutControlItem3
+            // 
+            this.layoutControlItem3.Control = this.EditCountertextEdit;
+            this.layoutControlItem3.CustomizationFormText = "layoutControlItem3";
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 176);
+            this.layoutControlItem3.Name = "layoutControlItem3";
+            this.layoutControlItem3.Size = new System.Drawing.Size(351, 40);
+            this.layoutControlItem3.Text = "Edit Counter:";
+            this.layoutControlItem3.TextLocation = DevExpress.Utils.Locations.Top;
+            this.layoutControlItem3.TextSize = new System.Drawing.Size(155, 13);
+            // 
+            // EditStatuslayoutControlItem4
+            // 
+            this.EditStatuslayoutControlItem4.Control = this.EditCountrycomboBoxEdit;
+            this.EditStatuslayoutControlItem4.CustomizationFormText = "layoutControlItem4";
+            this.EditStatuslayoutControlItem4.Location = new System.Drawing.Point(0, 220);
+            this.EditStatuslayoutControlItem4.Name = "EditStatuslayoutControlItem4";
+            this.EditStatuslayoutControlItem4.Size = new System.Drawing.Size(351, 40);
+            this.EditStatuslayoutControlItem4.Text = "Edit Status:";
+            this.EditStatuslayoutControlItem4.TextLocation = DevExpress.Utils.Locations.Top;
+            this.EditStatuslayoutControlItem4.TextSize = new System.Drawing.Size(155, 13);
+            // 
+            // layoutControlItem5
+            // 
+            this.layoutControlItem5.Control = this.EditSenderNumberBtn;
+            this.layoutControlItem5.CustomizationFormText = "layoutControlItem5";
+            this.layoutControlItem5.Location = new System.Drawing.Point(0, 262);
+            this.layoutControlItem5.Name = "layoutControlItem5";
+            this.layoutControlItem5.Size = new System.Drawing.Size(351, 26);
+            this.layoutControlItem5.Text = "layoutControlItem5";
+            this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem5.TextToControlDistance = 0;
+            this.layoutControlItem5.TextVisible = false;
+            // 
+            // EditNumberMessagelayoutControlItem1
+            // 
+            this.EditNumberMessagelayoutControlItem1.Control = this.EditNumberMessagetextEdit;
+            this.EditNumberMessagelayoutControlItem1.CustomizationFormText = "Edit Number of Message In Day:";
+            this.EditNumberMessagelayoutControlItem1.Location = new System.Drawing.Point(0, 132);
+            this.EditNumberMessagelayoutControlItem1.Name = "EditNumberMessagelayoutControlItem1";
+            this.EditNumberMessagelayoutControlItem1.Size = new System.Drawing.Size(351, 40);
+            this.EditNumberMessagelayoutControlItem1.Text = "Edit Number of Message In Day:";
+            this.EditNumberMessagelayoutControlItem1.TextLocation = DevExpress.Utils.Locations.Top;
+            this.EditNumberMessagelayoutControlItem1.TextSize = new System.Drawing.Size(155, 13);
             // 
             // NAmelayoutControlItem
             // 
@@ -190,133 +332,146 @@
             this.CountrylayoutControlItem3.TextSize = new System.Drawing.Size(132, 13);
             this.CountrylayoutControlItem3.TextToControlDistance = 5;
             // 
-            // EditpasswordtextEdit
+            // simpleSeparator1
             // 
-            this.EditpasswordtextEdit.Location = new System.Drawing.Point(12, 108);
-            this.EditpasswordtextEdit.Name = "EditpasswordtextEdit";
-            this.EditpasswordtextEdit.Size = new System.Drawing.Size(312, 20);
-            this.EditpasswordtextEdit.StyleController = this.layoutControl1;
-            this.EditpasswordtextEdit.TabIndex = 6;
+            this.simpleSeparator1.AllowHotTrack = false;
+            this.simpleSeparator1.CustomizationFormText = "simpleSeparator1";
+            this.simpleSeparator1.Location = new System.Drawing.Point(351, 0);
+            this.simpleSeparator1.Name = "simpleSeparator1";
+            this.simpleSeparator1.Size = new System.Drawing.Size(2, 288);
+            this.simpleSeparator1.Text = "simpleSeparator1";
             // 
-            // EditpasswordlayoutControlItem2
+            // simpleSeparator2
             // 
-            this.EditpasswordlayoutControlItem2.Control = this.EditpasswordtextEdit;
-            this.EditpasswordlayoutControlItem2.CustomizationFormText = "layoutControlItem2";
-            this.EditpasswordlayoutControlItem2.Location = new System.Drawing.Point(0, 80);
-            this.EditpasswordlayoutControlItem2.Name = "EditpasswordlayoutControlItem2";
-            this.EditpasswordlayoutControlItem2.Size = new System.Drawing.Size(316, 40);
-            this.EditpasswordlayoutControlItem2.Text = "Edit Password:";
-            this.EditpasswordlayoutControlItem2.TextLocation = DevExpress.Utils.Locations.Top;
-            this.EditpasswordlayoutControlItem2.TextSize = new System.Drawing.Size(155, 13);
+            this.simpleSeparator2.AllowHotTrack = false;
+            this.simpleSeparator2.CustomizationFormText = "simpleSeparator2";
+            this.simpleSeparator2.Location = new System.Drawing.Point(0, 46);
+            this.simpleSeparator2.Name = "simpleSeparator2";
+            this.simpleSeparator2.Size = new System.Drawing.Size(351, 2);
+            this.simpleSeparator2.Text = "simpleSeparator2";
             // 
-            // EditCountertextEdit
+            // simpleSeparator3
             // 
-            this.EditCountertextEdit.Location = new System.Drawing.Point(12, 188);
-            this.EditCountertextEdit.Name = "EditCountertextEdit";
-            this.EditCountertextEdit.Size = new System.Drawing.Size(312, 20);
-            this.EditCountertextEdit.StyleController = this.layoutControl1;
-            this.EditCountertextEdit.TabIndex = 7;
+            this.simpleSeparator3.AllowHotTrack = false;
+            this.simpleSeparator3.CustomizationFormText = "simpleSeparator3";
+            this.simpleSeparator3.Location = new System.Drawing.Point(0, 88);
+            this.simpleSeparator3.Name = "simpleSeparator3";
+            this.simpleSeparator3.Size = new System.Drawing.Size(351, 2);
+            this.simpleSeparator3.Text = "simpleSeparator3";
             // 
-            // layoutControlItem3
+            // simpleSeparator4
             // 
-            this.layoutControlItem3.Control = this.EditCountertextEdit;
-            this.layoutControlItem3.CustomizationFormText = "layoutControlItem3";
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 160);
-            this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(316, 40);
-            this.layoutControlItem3.Text = "Edit Counter:";
-            this.layoutControlItem3.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(155, 13);
+            this.simpleSeparator4.AllowHotTrack = false;
+            this.simpleSeparator4.CustomizationFormText = "simpleSeparator4";
+            this.simpleSeparator4.Location = new System.Drawing.Point(0, 130);
+            this.simpleSeparator4.Name = "simpleSeparator4";
+            this.simpleSeparator4.Size = new System.Drawing.Size(351, 2);
+            this.simpleSeparator4.Text = "simpleSeparator4";
             // 
-            // EditCountrycomboBoxEdit
+            // simpleSeparator5
             // 
-            this.EditCountrycomboBoxEdit.Location = new System.Drawing.Point(12, 228);
-            this.EditCountrycomboBoxEdit.Name = "EditCountrycomboBoxEdit";
-            this.EditCountrycomboBoxEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.EditCountrycomboBoxEdit.Size = new System.Drawing.Size(312, 20);
-            this.EditCountrycomboBoxEdit.StyleController = this.layoutControl1;
-            this.EditCountrycomboBoxEdit.TabIndex = 8;
+            this.simpleSeparator5.AllowHotTrack = false;
+            this.simpleSeparator5.CustomizationFormText = "simpleSeparator5";
+            this.simpleSeparator5.Location = new System.Drawing.Point(0, 174);
+            this.simpleSeparator5.Name = "simpleSeparator5";
+            this.simpleSeparator5.Size = new System.Drawing.Size(351, 2);
+            this.simpleSeparator5.Text = "simpleSeparator5";
             // 
-            // EditStatuslayoutControlItem4
+            // simpleSeparator6
             // 
-            this.EditStatuslayoutControlItem4.Control = this.EditCountrycomboBoxEdit;
-            this.EditStatuslayoutControlItem4.CustomizationFormText = "layoutControlItem4";
-            this.EditStatuslayoutControlItem4.Location = new System.Drawing.Point(0, 200);
-            this.EditStatuslayoutControlItem4.Name = "EditStatuslayoutControlItem4";
-            this.EditStatuslayoutControlItem4.Size = new System.Drawing.Size(316, 40);
-            this.EditStatuslayoutControlItem4.Text = "Edit Status:";
-            this.EditStatuslayoutControlItem4.TextLocation = DevExpress.Utils.Locations.Top;
-            this.EditStatuslayoutControlItem4.TextSize = new System.Drawing.Size(155, 13);
+            this.simpleSeparator6.AllowHotTrack = false;
+            this.simpleSeparator6.CustomizationFormText = "simpleSeparator6";
+            this.simpleSeparator6.Location = new System.Drawing.Point(0, 172);
+            this.simpleSeparator6.Name = "simpleSeparator6";
+            this.simpleSeparator6.Size = new System.Drawing.Size(351, 2);
+            this.simpleSeparator6.Text = "simpleSeparator6";
             // 
-            // EditSenderNumberBtn
+            // simpleSeparator7
             // 
-            this.EditSenderNumberBtn.Location = new System.Drawing.Point(12, 252);
-            this.EditSenderNumberBtn.Name = "EditSenderNumberBtn";
-            this.EditSenderNumberBtn.Size = new System.Drawing.Size(312, 22);
-            this.EditSenderNumberBtn.StyleController = this.layoutControl1;
-            this.EditSenderNumberBtn.TabIndex = 9;
-            this.EditSenderNumberBtn.Text = "Edit";
+            this.simpleSeparator7.AllowHotTrack = false;
+            this.simpleSeparator7.CustomizationFormText = "simpleSeparator7";
+            this.simpleSeparator7.Location = new System.Drawing.Point(0, 218);
+            this.simpleSeparator7.Name = "simpleSeparator7";
+            this.simpleSeparator7.Size = new System.Drawing.Size(351, 2);
+            this.simpleSeparator7.Text = "simpleSeparator7";
             // 
-            // layoutControlItem5
+            // simpleSeparator8
             // 
-            this.layoutControlItem5.Control = this.EditSenderNumberBtn;
-            this.layoutControlItem5.CustomizationFormText = "layoutControlItem5";
-            this.layoutControlItem5.Location = new System.Drawing.Point(0, 240);
-            this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(316, 45);
-            this.layoutControlItem5.Text = "layoutControlItem5";
-            this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem5.TextToControlDistance = 0;
-            this.layoutControlItem5.TextVisible = false;
+            this.simpleSeparator8.AllowHotTrack = false;
+            this.simpleSeparator8.CustomizationFormText = "simpleSeparator8";
+            this.simpleSeparator8.Location = new System.Drawing.Point(0, 260);
+            this.simpleSeparator8.Name = "simpleSeparator8";
+            this.simpleSeparator8.Size = new System.Drawing.Size(351, 2);
+            this.simpleSeparator8.Text = "simpleSeparator8";
             // 
-            // EditNumberMessagetextEdit
+            // simpleSeparator9
             // 
-            this.EditNumberMessagetextEdit.Location = new System.Drawing.Point(12, 148);
-            this.EditNumberMessagetextEdit.Name = "EditNumberMessagetextEdit";
-            this.EditNumberMessagetextEdit.Size = new System.Drawing.Size(312, 20);
-            this.EditNumberMessagetextEdit.StyleController = this.layoutControl1;
-            this.EditNumberMessagetextEdit.TabIndex = 10;
+            this.simpleSeparator9.AllowHotTrack = false;
+            this.simpleSeparator9.CustomizationFormText = "simpleSeparator9";
+            this.simpleSeparator9.Location = new System.Drawing.Point(0, 216);
+            this.simpleSeparator9.Name = "simpleSeparator9";
+            this.simpleSeparator9.Size = new System.Drawing.Size(351, 2);
+            this.simpleSeparator9.Text = "simpleSeparator9";
             // 
-            // EditNumberMessagelayoutControlItem1
+            // simpleButton1
             // 
-            this.EditNumberMessagelayoutControlItem1.Control = this.EditNumberMessagetextEdit;
-            this.EditNumberMessagelayoutControlItem1.CustomizationFormText = "Edit Number of Message In Day:";
-            this.EditNumberMessagelayoutControlItem1.Location = new System.Drawing.Point(0, 120);
-            this.EditNumberMessagelayoutControlItem1.Name = "EditNumberMessagelayoutControlItem1";
-            this.EditNumberMessagelayoutControlItem1.Size = new System.Drawing.Size(316, 40);
-            this.EditNumberMessagelayoutControlItem1.Text = "Edit Number of Message In Day:";
-            this.EditNumberMessagelayoutControlItem1.TextLocation = DevExpress.Utils.Locations.Top;
-            this.EditNumberMessagelayoutControlItem1.TextSize = new System.Drawing.Size(155, 13);
+            this.simpleButton1.Location = new System.Drawing.Point(12, 300);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(349, 22);
+            this.simpleButton1.StyleController = this.layoutControl1;
+            this.simpleButton1.TabIndex = 11;
+            this.simpleButton1.Text = "Custom Edit";
+            // 
+            // layoutControlItem1
+            // 
+            this.layoutControlItem1.Control = this.simpleButton1;
+            this.layoutControlItem1.CustomizationFormText = "layoutControlItem1";
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 288);
+            this.layoutControlItem1.Name = "layoutControlItem1";
+            this.layoutControlItem1.Size = new System.Drawing.Size(353, 26);
+            this.layoutControlItem1.Text = "layoutControlItem1";
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem1.TextToControlDistance = 0;
+            this.layoutControlItem1.TextVisible = false;
             // 
             // EditSenderNumberFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(336, 283);
+            this.ClientSize = new System.Drawing.Size(373, 334);
             this.Controls.Add(this.layoutControl1);
             this.Name = "EditSenderNumberFrm";
             this.Text = "EditSenderNumberFrm";
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SelectNumberlookUpEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SelectNumberlayoutControlItem)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EditNumberMessagetextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EditCountrycomboBoxEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EditCountertextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EditpasswordtextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EditNumbertextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SelectNumberlookUpEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SelectNumberlayoutControlItem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EditNumberlayoutControlItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EditpasswordlayoutControlItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EditStatuslayoutControlItem4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EditNumberMessagelayoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NAmelayoutControlItem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumberOfmassagelayoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CounterlayoutControlItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CountrylayoutControlItem3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EditpasswordtextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EditpasswordlayoutControlItem2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EditCountertextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EditCountrycomboBoxEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EditStatuslayoutControlItem4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EditNumberMessagetextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EditNumberMessagelayoutControlItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -343,5 +498,16 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
         private DevExpress.XtraEditors.TextEdit EditNumberMessagetextEdit;
         private DevExpress.XtraLayout.LayoutControlItem EditNumberMessagelayoutControlItem1;
+        private DevExpress.XtraLayout.SimpleSeparator simpleSeparator1;
+        private DevExpress.XtraLayout.SimpleSeparator simpleSeparator2;
+        private DevExpress.XtraLayout.SimpleSeparator simpleSeparator3;
+        private DevExpress.XtraLayout.SimpleSeparator simpleSeparator4;
+        private DevExpress.XtraLayout.SimpleSeparator simpleSeparator5;
+        private DevExpress.XtraLayout.SimpleSeparator simpleSeparator6;
+        private DevExpress.XtraLayout.SimpleSeparator simpleSeparator7;
+        private DevExpress.XtraLayout.SimpleSeparator simpleSeparator8;
+        private DevExpress.XtraLayout.SimpleSeparator simpleSeparator9;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
     }
 }

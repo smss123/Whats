@@ -53,17 +53,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Advertisement Forms\AddAdvertisementFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Advertisement Forms\AddAdvertisementFrm.Designer.cs">
+      <DependentUpon>AddAdvertisementFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomersForms\AddCustomerFrm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CustomersForms\AddCustomerFrm.Designer.cs">
       <DependentUpon>AddCustomerFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomersForms\DeleteCustomersFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomersForms\DeleteCustomersFrm.Designer.cs">
+      <DependentUpon>DeleteCustomersFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomersForms\EditCustomersFrm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CustomersForms\EditCustomersFrm.Designer.cs">
       <DependentUpon>EditCustomersFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomersForms\GridCustomersEditFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomersForms\GridCustomersEditFrm.Designer.cs">
+      <DependentUpon>GridCustomersEditFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="MainFrm.cs">
       <SubType>Form</SubType>
@@ -77,13 +95,31 @@
     <Compile Include="NumberGroupsFroms\AddGroupsFrm.Designer.cs">
       <DependentUpon>AddGroupsFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="NumberGroupsFroms\DeleteGroupsFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NumberGroupsFroms\DeleteGroupsFrm.Designer.cs">
+      <DependentUpon>DeleteGroupsFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="NumberGroupsFroms\EditGroupsFrm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="NumberGroupsFroms\EditGroupsFrm.Designer.cs">
       <DependentUpon>EditGroupsFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="NumberGroupsFroms\GridGroupsEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NumberGroupsFroms\GridGroupsEdit.Designer.cs">
+      <DependentUpon>GridGroupsEdit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="SenderNumber\DeleteSenderNumbersFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SenderNumber\DeleteSenderNumbersFrm.Designer.cs">
+      <DependentUpon>DeleteSenderNumbersFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SenderNumber\EditSenderNumberFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,11 +132,23 @@
     <Compile Include="SenderNumber\frmAddSenderNumber.Designer.cs">
       <DependentUpon>frmAddSenderNumber.cs</DependentUpon>
     </Compile>
+    <Compile Include="SenderNumber\GridEditSenderNumbersFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SenderNumber\GridEditSenderNumbersFrm.Designer.cs">
+      <DependentUpon>GridEditSenderNumbersFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="WhatsAppNumberForms\AddWhatsappNumbersfrm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="WhatsAppNumberForms\AddWhatsappNumbersfrm.Designer.cs">
       <DependentUpon>AddWhatsappNumbersfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WhatsAppNumberForms\DeleteWhatsAppNumbersFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WhatsAppNumberForms\DeleteWhatsAppNumbersFrm.Designer.cs">
+      <DependentUpon>DeleteWhatsAppNumbersFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="WhatsAppNumberForms\EditWhatsAppNumbersFrm.cs">
       <SubType>Form</SubType>
@@ -108,17 +156,35 @@
     <Compile Include="WhatsAppNumberForms\EditWhatsAppNumbersFrm.Designer.cs">
       <DependentUpon>EditWhatsAppNumbersFrm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Advertisement Forms\AddAdvertisementFrm.resx">
+      <DependentUpon>AddAdvertisementFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomersForms\AddCustomerFrm.resx">
       <DependentUpon>AddCustomerFrm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CustomersForms\DeleteCustomersFrm.resx">
+      <DependentUpon>DeleteCustomersFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomersForms\EditCustomersFrm.resx">
       <DependentUpon>EditCustomersFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomersForms\GridCustomersEditFrm.resx">
+      <DependentUpon>GridCustomersEditFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainFrm.resx">
       <DependentUpon>MainFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NumberGroupsFroms\AddGroupsFrm.resx">
       <DependentUpon>AddGroupsFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NumberGroupsFroms\DeleteGroupsFrm.resx">
+      <DependentUpon>DeleteGroupsFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NumberGroupsFroms\EditGroupsFrm.resx">
+      <DependentUpon>EditGroupsFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NumberGroupsFroms\GridGroupsEdit.resx">
+      <DependentUpon>GridGroupsEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -131,14 +197,23 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SenderNumber\DeleteSenderNumbersFrm.resx">
+      <DependentUpon>DeleteSenderNumbersFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SenderNumber\EditSenderNumberFrm.resx">
       <DependentUpon>EditSenderNumberFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SenderNumber\frmAddSenderNumber.resx">
       <DependentUpon>frmAddSenderNumber.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SenderNumber\GridEditSenderNumbersFrm.resx">
+      <DependentUpon>GridEditSenderNumbersFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WhatsAppNumberForms\AddWhatsappNumbersfrm.resx">
       <DependentUpon>AddWhatsappNumbersfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WhatsAppNumberForms\DeleteWhatsAppNumbersFrm.resx">
+      <DependentUpon>DeleteWhatsAppNumbersFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WhatsAppNumberForms\EditWhatsAppNumbersFrm.resx">
       <DependentUpon>EditWhatsAppNumbersFrm.cs</DependentUpon>

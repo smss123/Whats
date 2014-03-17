@@ -120,9 +120,6 @@
     <EmbeddedResource Include="NumberGroupsFroms\AddGroupsFrm.resx">
       <DependentUpon>AddGroupsFrm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NumberGroupsFroms\EditGroupsFrm.resx">
-      <DependentUpon>EditGroupsFrm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

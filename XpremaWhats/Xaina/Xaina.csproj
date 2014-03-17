@@ -59,6 +59,18 @@
     <Compile Include="Advertisement Forms\AddAdvertisementFrm.Designer.cs">
       <DependentUpon>AddAdvertisementFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Advertisement Forms\deleteAdvertisementFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Advertisement Forms\deleteAdvertisementFrm.Designer.cs">
+      <DependentUpon>deleteAdvertisementFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Advertisement Forms\EditAdvertisementFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Advertisement Forms\EditAdvertisementFrm.Designer.cs">
+      <DependentUpon>EditAdvertisementFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomersForms\AddCustomerFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +170,12 @@
     </Compile>
     <EmbeddedResource Include="Advertisement Forms\AddAdvertisementFrm.resx">
       <DependentUpon>AddAdvertisementFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Advertisement Forms\deleteAdvertisementFrm.resx">
+      <DependentUpon>deleteAdvertisementFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Advertisement Forms\EditAdvertisementFrm.resx">
+      <DependentUpon>EditAdvertisementFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CustomersForms\AddCustomerFrm.resx">
       <DependentUpon>AddCustomerFrm.cs</DependentUpon>

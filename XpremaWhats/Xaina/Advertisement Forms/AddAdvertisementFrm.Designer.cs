@@ -69,7 +69,7 @@
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.Root = this.AddAdvertisementlayoutControlGroup;
-            this.layoutControl1.Size = new System.Drawing.Size(861, 280);
+            this.layoutControl1.Size = new System.Drawing.Size(869, 314);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -89,7 +89,7 @@
             this.layoutControlItem4});
             this.AddAdvertisementlayoutControlGroup.Location = new System.Drawing.Point(0, 0);
             this.AddAdvertisementlayoutControlGroup.Name = "Root";
-            this.AddAdvertisementlayoutControlGroup.Size = new System.Drawing.Size(861, 280);
+            this.AddAdvertisementlayoutControlGroup.Size = new System.Drawing.Size(869, 314);
             this.AddAdvertisementlayoutControlGroup.Text = "Root";
             this.AddAdvertisementlayoutControlGroup.TextVisible = false;
             // 
@@ -97,7 +97,7 @@
             // 
             this.textEdit1.Location = new System.Drawing.Point(113, 14);
             this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(237, 20);
+            this.textEdit1.Size = new System.Drawing.Size(240, 20);
             this.textEdit1.StyleController = this.layoutControl1;
             this.textEdit1.TabIndex = 4;
             // 
@@ -106,8 +106,10 @@
             this.TitleAdvertisementayoutControlItem.Control = this.textEdit1;
             this.TitleAdvertisementayoutControlItem.CustomizationFormText = "Title Advertisement:";
             this.TitleAdvertisementayoutControlItem.Location = new System.Drawing.Point(0, 2);
+            this.TitleAdvertisementayoutControlItem.MinSize = new System.Drawing.Size(155, 24);
             this.TitleAdvertisementayoutControlItem.Name = "TitleAdvertisementayoutControlItem";
-            this.TitleAdvertisementayoutControlItem.Size = new System.Drawing.Size(342, 24);
+            this.TitleAdvertisementayoutControlItem.Size = new System.Drawing.Size(345, 24);
+            this.TitleAdvertisementayoutControlItem.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.TitleAdvertisementayoutControlItem.Text = "Title Advertisement:";
             this.TitleAdvertisementayoutControlItem.TextSize = new System.Drawing.Size(97, 13);
             // 
@@ -117,14 +119,14 @@
             this.simpleSeparator1.CustomizationFormText = "simpleSeparator1";
             this.simpleSeparator1.Location = new System.Drawing.Point(0, 0);
             this.simpleSeparator1.Name = "simpleSeparator1";
-            this.simpleSeparator1.Size = new System.Drawing.Size(841, 2);
+            this.simpleSeparator1.Size = new System.Drawing.Size(849, 2);
             this.simpleSeparator1.Text = "simpleSeparator1";
             // 
             // simpleSeparator2
             // 
             this.simpleSeparator2.AllowHotTrack = false;
             this.simpleSeparator2.CustomizationFormText = "simpleSeparator2";
-            this.simpleSeparator2.Location = new System.Drawing.Point(828, 2);
+            this.simpleSeparator2.Location = new System.Drawing.Point(845, 2);
             this.simpleSeparator2.Name = "simpleSeparator2";
             this.simpleSeparator2.Size = new System.Drawing.Size(2, 24);
             this.simpleSeparator2.Text = "simpleSeparator2";
@@ -133,7 +135,7 @@
             // 
             this.simpleSeparator3.AllowHotTrack = false;
             this.simpleSeparator3.CustomizationFormText = "simpleSeparator3";
-            this.simpleSeparator3.Location = new System.Drawing.Point(342, 2);
+            this.simpleSeparator3.Location = new System.Drawing.Point(345, 2);
             this.simpleSeparator3.Name = "simpleSeparator3";
             this.simpleSeparator3.Size = new System.Drawing.Size(2, 24);
             this.simpleSeparator3.Text = "simpleSeparator3";
@@ -142,16 +144,16 @@
             // 
             this.simpleSeparator4.AllowHotTrack = false;
             this.simpleSeparator4.CustomizationFormText = "simpleSeparator4";
-            this.simpleSeparator4.Location = new System.Drawing.Point(830, 2);
+            this.simpleSeparator4.Location = new System.Drawing.Point(847, 2);
             this.simpleSeparator4.Name = "simpleSeparator4";
-            this.simpleSeparator4.Size = new System.Drawing.Size(11, 24);
+            this.simpleSeparator4.Size = new System.Drawing.Size(2, 24);
             this.simpleSeparator4.Text = "simpleSeparator4";
             // 
             // richTextBox1
             // 
             this.richTextBox1.Location = new System.Drawing.Point(113, 38);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(736, 230);
+            this.richTextBox1.Size = new System.Drawing.Size(744, 264);
             this.richTextBox1.TabIndex = 7;
             this.richTextBox1.Text = "";
             // 
@@ -161,20 +163,20 @@
             this.layoutControlItem3.CustomizationFormText = "layoutControlItem3";
             this.layoutControlItem3.Location = new System.Drawing.Point(0, 26);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(841, 234);
+            this.layoutControlItem3.Size = new System.Drawing.Size(849, 268);
             this.layoutControlItem3.Text = "Message Text:";
             this.layoutControlItem3.TextSize = new System.Drawing.Size(97, 13);
             // 
             // dateEdit1
             // 
             this.dateEdit1.EditValue = null;
-            this.dateEdit1.Location = new System.Drawing.Point(457, 14);
+            this.dateEdit1.Location = new System.Drawing.Point(460, 14);
             this.dateEdit1.Name = "dateEdit1";
             this.dateEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit1.Size = new System.Drawing.Size(161, 20);
+            this.dateEdit1.Size = new System.Drawing.Size(131, 20);
             this.dateEdit1.StyleController = this.layoutControl1;
             this.dateEdit1.TabIndex = 8;
             // 
@@ -182,19 +184,21 @@
             // 
             this.layoutControlItem1.Control = this.dateEdit1;
             this.layoutControlItem1.CustomizationFormText = "layoutControlItem1";
-            this.layoutControlItem1.Location = new System.Drawing.Point(344, 2);
+            this.layoutControlItem1.Location = new System.Drawing.Point(347, 2);
+            this.layoutControlItem1.MinSize = new System.Drawing.Size(155, 24);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(266, 24);
+            this.layoutControlItem1.Size = new System.Drawing.Size(236, 24);
+            this.layoutControlItem1.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem1.Text = "Date";
             this.layoutControlItem1.TextSize = new System.Drawing.Size(97, 13);
             // 
             // lookUpEdit1
             // 
-            this.lookUpEdit1.Location = new System.Drawing.Point(723, 14);
+            this.lookUpEdit1.Location = new System.Drawing.Point(696, 14);
             this.lookUpEdit1.Name = "lookUpEdit1";
             this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.lookUpEdit1.Size = new System.Drawing.Size(113, 20);
+            this.lookUpEdit1.Size = new System.Drawing.Size(157, 20);
             this.lookUpEdit1.StyleController = this.layoutControl1;
             this.lookUpEdit1.TabIndex = 10;
             // 
@@ -202,9 +206,11 @@
             // 
             this.layoutControlItem4.Control = this.lookUpEdit1;
             this.layoutControlItem4.CustomizationFormText = "Customers:";
-            this.layoutControlItem4.Location = new System.Drawing.Point(610, 2);
+            this.layoutControlItem4.Location = new System.Drawing.Point(583, 2);
+            this.layoutControlItem4.MinSize = new System.Drawing.Size(155, 24);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(218, 24);
+            this.layoutControlItem4.Size = new System.Drawing.Size(262, 24);
+            this.layoutControlItem4.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.layoutControlItem4.Text = "Customers:";
             this.layoutControlItem4.TextSize = new System.Drawing.Size(97, 13);
             // 
@@ -212,7 +218,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(861, 280);
+            this.ClientSize = new System.Drawing.Size(869, 314);
             this.Controls.Add(this.layoutControl1);
             this.Name = "AddAdvertisementFrm";
             this.Text = "AddAdvertisementFrm";

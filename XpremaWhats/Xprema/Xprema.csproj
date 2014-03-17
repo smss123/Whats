@@ -48,18 +48,17 @@
     <Compile Include="Commands\WhatsAppNumberCommand.cs" />
     <Compile Include="Data\Xdb.cs">
       <DependentUpon>Xdb.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Data\Xdb2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Xdb.xsd</DependentUpon>
     </Compile>
     <Compile Include="Data\XpremaFileManager.cs" />
     <Compile Include="XdataType\Email.cs" />
     <Compile Include="XdataType\Name.cs" />
     <Compile Include="XdataType\PhoneNumber.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Data\Xdb.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Xdb.xsd</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Data\Xdb.xsc">

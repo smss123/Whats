@@ -62,7 +62,7 @@
               <xs:element name="CustomerName" msprop:Generator_ColumnVarNameInTable="columnCustomerName" msprop:Generator_ColumnPropNameInRow="CustomerName" msprop:Generator_ColumnPropNameInTable="CustomerNameColumn" msprop:Generator_UserColumnName="CustomerName" type="xs:string" minOccurs="0" />
               <xs:element name="CustomerPhone" msprop:Generator_ColumnVarNameInTable="columnCustomerPhone" msprop:Generator_ColumnPropNameInRow="CustomerPhone" msprop:Generator_ColumnPropNameInTable="CustomerPhoneColumn" msprop:Generator_UserColumnName="CustomerPhone" type="xs:string" minOccurs="0" />
               <xs:element name="CustomerEmail" msprop:Generator_ColumnVarNameInTable="columnCustomerEmail" msprop:Generator_ColumnPropNameInRow="CustomerEmail" msprop:Generator_ColumnPropNameInTable="CustomerEmailColumn" msprop:Generator_UserColumnName="CustomerEmail" type="xs:string" minOccurs="0" />
-              <xs:element name="CreatedDate" msprop:Generator_ColumnVarNameInTable="columnCreatedDate" msprop:Generator_ColumnPropNameInRow="CreatedDate" msprop:Generator_ColumnPropNameInTable="CreatedDateColumn" msprop:Generator_UserColumnName="CreatedDate" type="xs:string" minOccurs="0" />
+              <xs:element name="CreatedDate" msprop:Generator_ColumnVarNameInTable="columnCreatedDate" msprop:Generator_ColumnPropNameInRow="CreatedDate" msprop:Generator_ColumnPropNameInTable="CreatedDateColumn" msprop:Generator_UserColumnName="CreatedDate" type="xs:dateTime" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -71,7 +71,7 @@
             <xs:sequence>
               <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
               <xs:element name="MessageText" msprop:Generator_ColumnVarNameInTable="columnMessageText" msprop:Generator_ColumnPropNameInRow="MessageText" msprop:Generator_ColumnPropNameInTable="MessageTextColumn" msprop:Generator_UserColumnName="MessageText" type="xs:string" minOccurs="0" />
-              <xs:element name="CreatedDate" msprop:Generator_ColumnVarNameInTable="columnCreatedDate" msprop:Generator_ColumnPropNameInRow="CreatedDate" msprop:Generator_ColumnPropNameInTable="CreatedDateColumn" msprop:Generator_UserColumnName="CreatedDate" type="xs:string" minOccurs="0" />
+              <xs:element name="CreatedDate" msprop:Generator_ColumnVarNameInTable="columnCreatedDate" msprop:Generator_ColumnPropNameInRow="CreatedDate" msprop:Generator_ColumnPropNameInTable="CreatedDateColumn" msprop:Generator_UserColumnName="CreatedDate" type="xs:dateTime" minOccurs="0" />
               <xs:element name="CustomerID" msprop:Generator_ColumnVarNameInTable="columnCustomerID" msprop:Generator_ColumnPropNameInRow="CustomerID" msprop:Generator_ColumnPropNameInTable="CustomerIDColumn" msprop:Generator_UserColumnName="CustomerID" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>

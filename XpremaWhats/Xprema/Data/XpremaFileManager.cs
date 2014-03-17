@@ -6,7 +6,7 @@ using System.Windows.Forms;
  using System.IO;
 namespace Xprema.Data
 {
-public     class XpremaFileManager
+public     class XpremaFileManager  :IDisposable
     {
 
 
@@ -16,6 +16,20 @@ public     class XpremaFileManager
 
         public Xdb  DB { get; set; }
 
+        private bool WriteChanges()
+        {
+            try
+            {
+                  DB.GetChanges().WriteXml(FullPath);
+            return true;
+            }
+            catch (Exception ex)
+            {
+                
+                throw ex;
+            }
+
+        }
         private bool initlizationData(string Path)
         {
             try
@@ -108,7 +122,10 @@ public     class XpremaFileManager
         {
             BackUpData(fromPath, FullPath);
         }
-
+        public bool CommitData()
+        {
+            return WriteChanges();
+        }
 
         public XpremaFileManager() {
      Dir = Application.StartupPath+"\\XpremaData";
@@ -124,7 +141,13 @@ public     class XpremaFileManager
     }
 
 
- 
+        ~XpremaFileManager() { }
 
+
+        public void Dispose()
+        {
+            GC.SuppressFinalize(this);
+            
+        }
     }
 }

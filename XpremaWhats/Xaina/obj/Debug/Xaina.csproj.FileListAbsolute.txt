@@ -33,3 +33,6 @@ C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.NumberGr
 C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.NumberGroupsFroms.EditGroupsFrm.resources
 C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.CustomersForms.AddCustomerFrm.resources
 C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.CustomersForms.EditCustomersFrm.resources
+C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.CustomersForms.DeleteCustomersFrm.resources
+C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.CustomersForms.GridCustomersEditFrm.resources
+C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.NumberGroupsFroms.GridGroupsEdit.resources

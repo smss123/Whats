@@ -16,6 +16,20 @@ public     class XpremaFileManager  :IDisposable
 
         public Xdb  DB { get; set; }
 
+        private bool WriteChanges()
+        {
+            try
+            {
+                  DB.GetChanges().WriteXml(FullPath);
+            return true;
+            }
+            catch (Exception ex)
+            {
+                
+                throw ex;
+            }
+
+        }
         private bool initlizationData(string Path)
         {
             try
@@ -110,7 +124,7 @@ public     class XpremaFileManager  :IDisposable
         }
         public bool CommitData()
         {
-            return WriteData( FullPath);
+            return WriteChanges();
         }
 
         public XpremaFileManager() {

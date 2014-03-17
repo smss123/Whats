@@ -40,3 +40,12 @@ C:\Users\user\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.SenderNum
 C:\Users\user\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.SenderNumber.frmAddSenderNumber.resources
 C:\Users\user\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.WhatsAppNumberForms.AddWhatsappNumbersfrm.resources
 C:\Users\user\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.WhatsAppNumberForms.EditWhatsAppNumbersFrm.resources
+C:\Users\user\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.Advertisement_Forms.AddAdvertisementFrm.resources
+C:\Users\user\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.CustomersForms.DeleteCustomersFrm.resources
+C:\Users\user\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.CustomersForms.GridCustomersEditFrm.resources
+C:\Users\user\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.NumberGroupsFroms.DeleteGroupsFrm.resources
+C:\Users\user\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.NumberGroupsFroms.EditGroupsFrm.resources
+C:\Users\user\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.NumberGroupsFroms.GridGroupsEdit.resources
+C:\Users\user\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.SenderNumber.DeleteSenderNumbersFrm.resources
+C:\Users\user\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.SenderNumber.GridEditSenderNumbersFrm.resources
+C:\Users\user\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.WhatsAppNumberForms.DeleteWhatsAppNumbersFrm.resources

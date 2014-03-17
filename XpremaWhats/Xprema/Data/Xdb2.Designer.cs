@@ -2198,7 +2198,7 @@ namespace Xprema.Data {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public AdvertismentsRow AddAdvertismentsRow(string MessageText, string CreatedDate, CustomersRow parentCustomersRowByCustomers_Advertisments) {
+            public AdvertismentsRow AddAdvertismentsRow(string MessageText, System.DateTime CreatedDate, CustomersRow parentCustomersRowByCustomers_Advertisments) {
                 AdvertismentsRow rowAdvertismentsRow = ((AdvertismentsRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -2250,7 +2250,7 @@ namespace Xprema.Data {
                 base.Columns.Add(this.columnID);
                 this.columnMessageText = new global::System.Data.DataColumn("MessageText", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnMessageText);
-                this.columnCreatedDate = new global::System.Data.DataColumn("CreatedDate", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnCreatedDate = new global::System.Data.DataColumn("CreatedDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCreatedDate);
                 this.columnCustomerID = new global::System.Data.DataColumn("CustomerID", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCustomerID);
@@ -3682,10 +3682,10 @@ namespace Xprema.Data {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string CreatedDate {
+            public System.DateTime CreatedDate {
                 get {
                     try {
-                        return ((string)(this[this.tableAdvertisments.CreatedDateColumn]));
+                        return ((global::System.DateTime)(this[this.tableAdvertisments.CreatedDateColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'CreatedDate\' in table \'Advertisments\' is DBNull.", e);

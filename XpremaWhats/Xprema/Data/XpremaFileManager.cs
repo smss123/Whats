@@ -37,6 +37,8 @@ public     class XpremaFileManager
             try
             {
                 DB.ReadXml(path);
+                Application.DoEvents();
+                return true;
             }
             catch (Exception ex)
             {
@@ -49,6 +51,8 @@ public     class XpremaFileManager
             try
             {
                 DB.WriteXml(Path);
+                Application.DoEvents();
+                return true;
             }
             catch (Exception ex)
             {

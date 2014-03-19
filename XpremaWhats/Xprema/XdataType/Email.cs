@@ -21,7 +21,7 @@ public     class Email
 
         private void checkEmail(string value)
         {
-            throw new NotImplementedException();
+           // throw new NotImplementedException();
         }
 
 

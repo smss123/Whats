@@ -956,7 +956,7 @@ namespace Xprema.Data {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public SenderNumberRow AddSenderNumberRow(string ID, string SenderNumber, string Password, string NumberOfMessageInDay, string Counter, string Status) {
+            public SenderNumberRow AddSenderNumberRow(string ID, string SenderNumber, string Password, string NumberOfMessageInDay, long Counter, bool Status) {
                 SenderNumberRow rowSenderNumberRow = ((SenderNumberRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         ID,
@@ -1006,9 +1006,9 @@ namespace Xprema.Data {
                 base.Columns.Add(this.columnPassword);
                 this.columnNumberOfMessageInDay = new global::System.Data.DataColumn("NumberOfMessageInDay", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnNumberOfMessageInDay);
-                this.columnCounter = new global::System.Data.DataColumn("Counter", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnCounter = new global::System.Data.DataColumn("Counter", typeof(long), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCounter);
-                this.columnStatus = new global::System.Data.DataColumn("Status", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnStatus = new global::System.Data.DataColumn("Status", typeof(bool), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnStatus);
             }
             
@@ -3083,10 +3083,10 @@ namespace Xprema.Data {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Counter {
+            public long Counter {
                 get {
                     try {
-                        return ((string)(this[this.tableSenderNumber.CounterColumn]));
+                        return ((long)(this[this.tableSenderNumber.CounterColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'Counter\' in table \'SenderNumber\' is DBNull.", e);
@@ -3099,10 +3099,10 @@ namespace Xprema.Data {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string Status {
+            public bool Status {
                 get {
                     try {
-                        return ((string)(this[this.tableSenderNumber.StatusColumn]));
+                        return ((bool)(this[this.tableSenderNumber.StatusColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'Status\' in table \'SenderNumber\' is DBNull.", e);

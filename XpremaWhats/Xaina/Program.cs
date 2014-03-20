@@ -13,8 +13,12 @@ namespace Xaina
         [STAThread]
         static void Main()
         {
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            DevExpress.Skins.SkinManager.EnableFormSkins();
+            DevExpress.Skins.SkinManager.EnableMdiFormSkins();
+            DevExpress.UserSkins.BonusSkins.Register();
            Application.Run(new MainFrm());
         }
     }

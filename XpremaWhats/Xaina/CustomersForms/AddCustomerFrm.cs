@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using Xprema.Commands;
 using Xprema.Data;
+using Xprema.XdataType;
 
 namespace Xaina.CustomersForms
 {
@@ -28,15 +29,16 @@ namespace Xaina.CustomersForms
 
         private void AddCoustmersBtn_Click(object sender, EventArgs e)
         {
-            //if (CustomerNametextEdit.Text == "")
-            //{
-            //    fr.Show_Error_MSG(this, "please enter customer name ");
-            //    CustomerNametextEdit.Focus();
-            //    return;
+            if (CustomerNametextEdit.Text == "")
+            {
+                fr.Show_Error_MSG(this, "please enter customer name ");
+                CustomerNametextEdit.Focus();
+                return;
 
-            //}
+            }
+          
+            CusClss.AddNewCustomer(new Name( CustomerNametextEdit.Text,"",""), new PhoneNumber("","", CustomerPhonetextEdit.Text), new Email( CustomerEmailtextEdit.Text));
 
-            //CusClss.AddNewCustomer(CustomerNametextEdit.Text, CustomerPhonetextEdit.Text, CustomerEmailtextEdit.Text);
 
 
 

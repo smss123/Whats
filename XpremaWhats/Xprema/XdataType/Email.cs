@@ -16,14 +16,18 @@ public     class Email
         public string FullEmail
         {
             get { return EmailName + "@"+EmailHost; }
-            set { checkEmail( value); }
+            set { fullEmail = value; }
         }
 
         private void checkEmail(string value)
         {
            // throw new NotImplementedException();
+            FullEmail=value;
         }
-
+        public Email(string yourEmail)
+        {
+            checkEmail(yourEmail);
+        }
 
     }
 }

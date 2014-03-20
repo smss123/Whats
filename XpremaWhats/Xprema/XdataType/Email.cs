@@ -15,7 +15,7 @@ public     class Email
 
         public string FullEmail
         {
-            get { return EmailName + "@"+EmailHost; }
+          
             set { fullEmail = value; }
         }
 

@@ -32,10 +32,10 @@
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
+            this.StatusSerchlookUpEdit = new DevExpress.XtraEditors.LookUpEdit();
             this.SenderNumberSearchlookUpEdit = new DevExpress.XtraEditors.LookUpEdit();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.SenderNumbersSearchlayoutControlItem = new DevExpress.XtraLayout.LayoutControlItem();
-            this.StatusSerchlookUpEdit = new DevExpress.XtraEditors.LookUpEdit();
             this.StatuslayoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.SenderNumberEditGridControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
@@ -43,10 +43,10 @@
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.StatusSerchlookUpEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SenderNumberSearchlookUpEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SenderNumbersSearchlayoutControlItem)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.StatusSerchlookUpEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StatuslayoutControlItem1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -88,6 +88,16 @@
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
+            // StatusSerchlookUpEdit
+            // 
+            this.StatusSerchlookUpEdit.Location = new System.Drawing.Point(586, 12);
+            this.StatusSerchlookUpEdit.Name = "StatusSerchlookUpEdit";
+            this.StatusSerchlookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.StatusSerchlookUpEdit.Size = new System.Drawing.Size(249, 20);
+            this.StatusSerchlookUpEdit.StyleController = this.layoutControl1;
+            this.StatusSerchlookUpEdit.TabIndex = 5;
+            // 
             // SenderNumberSearchlookUpEdit
             // 
             this.SenderNumberSearchlookUpEdit.Location = new System.Drawing.Point(115, 12);
@@ -122,16 +132,6 @@
             this.SenderNumbersSearchlayoutControlItem.Text = "Search By Numbers :";
             this.SenderNumbersSearchlayoutControlItem.TextSize = new System.Drawing.Size(100, 13);
             // 
-            // StatusSerchlookUpEdit
-            // 
-            this.StatusSerchlookUpEdit.Location = new System.Drawing.Point(586, 12);
-            this.StatusSerchlookUpEdit.Name = "StatusSerchlookUpEdit";
-            this.StatusSerchlookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.StatusSerchlookUpEdit.Size = new System.Drawing.Size(249, 20);
-            this.StatusSerchlookUpEdit.StyleController = this.layoutControl1;
-            this.StatusSerchlookUpEdit.TabIndex = 5;
-            // 
             // StatuslayoutControlItem1
             // 
             this.StatuslayoutControlItem1.Control = this.StatusSerchlookUpEdit;
@@ -157,10 +157,10 @@
             this.groupControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.StatusSerchlookUpEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SenderNumberSearchlookUpEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SenderNumbersSearchlayoutControlItem)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.StatusSerchlookUpEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.StatuslayoutControlItem1)).EndInit();
             this.ResumeLayout(false);
 

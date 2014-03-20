@@ -56,6 +56,9 @@
       <DependentUpon>Xdb.xsd</DependentUpon>
     </Compile>
     <Compile Include="Data\XpremaFileManager.cs" />
+    <Compile Include="Services\CheckNumbers.cs" />
+    <Compile Include="Services\CheckSending.cs" />
+    <Compile Include="Services\GeneratNumbers.cs" />
     <Compile Include="XdataType\Email.cs" />
     <Compile Include="XdataType\Name.cs" />
     <Compile Include="XdataType\PhoneNumber.cs" />

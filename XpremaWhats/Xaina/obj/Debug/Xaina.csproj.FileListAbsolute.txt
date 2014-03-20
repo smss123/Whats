@@ -65,3 +65,7 @@ C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\bin\Debug\Alerts.dll
 C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\bin\Debug\Xprema.dll
 C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\bin\Debug\DevComponents.DotNetBar2.dll
 C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\bin\Debug\Xprema.pdb
+C:\Users\user\Documents\GitHub\Whats\XpremaWhats\Xaina\bin\Debug\Alerts.dll
+C:\Users\user\Documents\GitHub\Whats\XpremaWhats\Xaina\bin\Debug\Xprema.dll
+C:\Users\user\Documents\GitHub\Whats\XpremaWhats\Xaina\bin\Debug\Xprema.pdb
+C:\Users\user\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.csprojResolveAssemblyReference.cache

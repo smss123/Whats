@@ -134,6 +134,7 @@ public     class XpremaFileManager  :IDisposable
 	        {
             	Directory.CreateDirectory(Dir);	 
         	}
+      DB = new Xdb();
       //------------------------- End Createing Directory
         DataFileName = "Data.Xprema";
         FullPath = Dir+"\\"+DataFileName;

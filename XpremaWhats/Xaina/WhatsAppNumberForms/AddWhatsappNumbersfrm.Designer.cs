@@ -94,6 +94,7 @@
             this.WhatsAppNumberAddBtn.StyleController = this.layoutControl1;
             this.WhatsAppNumberAddBtn.TabIndex = 9;
             this.WhatsAppNumberAddBtn.Text = "Add";
+            this.WhatsAppNumberAddBtn.Click += new System.EventHandler(this.WhatsAppNumberAddBtn_Click);
             // 
             // ContrycomboBoxEdit
             // 

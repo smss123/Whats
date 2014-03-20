@@ -286,6 +286,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(334, 269);
             this.Controls.Add(this.layoutControl1);
+            this.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
             this.Name = "AddWhatsappNumbersfrm";
             this.Text = "AddWhatsappNumbers";
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();

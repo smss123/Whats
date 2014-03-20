@@ -28,15 +28,15 @@ namespace Xaina.CustomersForms
 
         private void AddCoustmersBtn_Click(object sender, EventArgs e)
         {
-            if (CustomerNametextEdit.Text == "")
-            {
-                fr.Show_Error_MSG(this, "please enter customer name ");
-                CustomerNametextEdit.Focus();
-                return;
+            //if (CustomerNametextEdit.Text == "")
+            //{
+            //    fr.Show_Error_MSG(this, "please enter customer name ");
+            //    CustomerNametextEdit.Focus();
+            //    return;
 
-            }
-          
-            CusClss.AddNewCustomer(CustomerNametextEdit.Text, CustomerPhonetextEdit.Text, CustomerEmailtextEdit.Text);
+            //}
+
+            //CusClss.AddNewCustomer(CustomerNametextEdit.Text, CustomerPhonetextEdit.Text, CustomerEmailtextEdit.Text);
 
 
 

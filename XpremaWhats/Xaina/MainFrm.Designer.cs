@@ -35,6 +35,8 @@
             DevExpress.Utils.ToolTipTitleItem toolTipTitleItem2 = new DevExpress.Utils.ToolTipTitleItem();
             DevExpress.Utils.SuperToolTip superToolTip3 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipTitleItem toolTipTitleItem3 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup1 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
+            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup2 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.AddWhatsUpNumberBtn = new DevExpress.XtraBars.BarButtonItem();
             this.EditWhatsUpNumberBtn = new DevExpress.XtraBars.BarButtonItem();
@@ -54,6 +56,8 @@
             this.AddUsersBtn = new DevExpress.XtraBars.BarButtonItem();
             this.EditUsersBtn = new DevExpress.XtraBars.BarButtonItem();
             this.DeleteUsersBtn = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbonGalleryBarItem1 = new DevExpress.XtraBars.RibbonGalleryBarItem();
+            this.ribbonGalleryBarItem2 = new DevExpress.XtraBars.RibbonGalleryBarItem();
             this.WhatsUpNumberribbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.WhatsUpNumberribbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.SenderNumberribbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -98,9 +102,11 @@
             this.DeleteGroupsBtn,
             this.AddUsersBtn,
             this.EditUsersBtn,
-            this.DeleteUsersBtn});
+            this.DeleteUsersBtn,
+            this.ribbonGalleryBarItem1,
+            this.ribbonGalleryBarItem2});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
-            this.ribbon.MaxItemId = 22;
+            this.ribbon.MaxItemId = 24;
             this.ribbon.Name = "ribbon";
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.WhatsUpNumberribbonPage,
@@ -110,6 +116,7 @@
             this.GroupsribbonPage1,
             this.UsersribbonPage,
             this.ReportsribbonPage});
+            this.ribbon.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
             this.ribbon.Size = new System.Drawing.Size(889, 195);
             this.ribbon.StatusBar = this.ribbonStatusBar;
             // 
@@ -250,6 +257,30 @@
             this.DeleteUsersBtn.Caption = "Delete User";
             this.DeleteUsersBtn.Id = 21;
             this.DeleteUsersBtn.Name = "DeleteUsersBtn";
+            // 
+            // ribbonGalleryBarItem1
+            // 
+            this.ribbonGalleryBarItem1.Caption = "InplaceGallery1";
+            // 
+            // 
+            // 
+            galleryItemGroup1.Caption = "Group1";
+            this.ribbonGalleryBarItem1.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
+            galleryItemGroup1});
+            this.ribbonGalleryBarItem1.Id = 22;
+            this.ribbonGalleryBarItem1.Name = "ribbonGalleryBarItem1";
+            // 
+            // ribbonGalleryBarItem2
+            // 
+            this.ribbonGalleryBarItem2.Caption = "InplaceGallery2";
+            // 
+            // 
+            // 
+            galleryItemGroup2.Caption = "Group2";
+            this.ribbonGalleryBarItem2.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
+            galleryItemGroup2});
+            this.ribbonGalleryBarItem2.Id = 23;
+            this.ribbonGalleryBarItem2.Name = "ribbonGalleryBarItem2";
             // 
             // WhatsUpNumberribbonPage
             // 
@@ -441,5 +472,7 @@
         private DevExpress.XtraNavBar.NavBarControl navBarControl1;
         private DevExpress.XtraNavBar.NavBarGroup navBarGroup1;
         private DevExpress.XtraEditors.GroupControl groupControl1;
+        private DevExpress.XtraBars.RibbonGalleryBarItem ribbonGalleryBarItem1;
+        private DevExpress.XtraBars.RibbonGalleryBarItem ribbonGalleryBarItem2;
     }
 }

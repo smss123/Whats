@@ -240,6 +240,7 @@
     <EmbeddedResource Include="WhatsAppNumberForms\EditWhatsAppNumbersFrm.resx">
       <DependentUpon>EditWhatsAppNumbersFrm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Properties\DataSources\Xprema.Data.Xdb.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

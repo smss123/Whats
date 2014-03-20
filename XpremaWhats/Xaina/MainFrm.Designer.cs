@@ -189,6 +189,7 @@
             toolTipTitleItem2.Text = "Edit Customer";
             superToolTip2.Items.Add(toolTipTitleItem2);
             this.EditCustomersBtn.SuperTip = superToolTip2;
+            this.EditCustomersBtn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.EditCustomersBtn_ItemClick);
             // 
             // DeleteCustomersBtn
             // 

@@ -38,9 +38,7 @@ namespace Xaina.CustomersForms
             }
           
             CusClss.AddNewCustomer(new Name( CustomerNametextEdit.Text,"",""), new PhoneNumber("","", CustomerPhonetextEdit.Text), new Email( CustomerEmailtextEdit.Text));
-
-
-
+            fr.Show_Info_MSG(this, "Done");
 
         }
 

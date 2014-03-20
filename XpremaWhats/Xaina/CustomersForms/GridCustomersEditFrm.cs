@@ -7,6 +7,8 @@ using System.Text;
 using System.Linq;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
+using Xprema.Data;
+using Xprema.Commands;
 
 namespace Xaina.CustomersForms
 {
@@ -15,6 +17,13 @@ namespace Xaina.CustomersForms
         public GridCustomersEditFrm()
         {
             InitializeComponent();
+        }
+        private XpremaFileManager cmd = new XpremaFileManager();
+        private CustomerCommand CusClss = new CustomerCommand();
+        private Alerts.Alerts fr = new Alerts.Alerts();
+        private void GridCustomersEditFrm_Load(object sender, EventArgs e)
+        {
+            customersBindingSource.DataSource = 
         }
     }
 }

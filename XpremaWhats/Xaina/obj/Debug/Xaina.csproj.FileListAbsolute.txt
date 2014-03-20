@@ -61,9 +61,7 @@ C:\Users\user\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.SenderNum
 C:\Users\user\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.WhatsAppNumberForms.AddWhatsappNumbersfrm.resources
 C:\Users\user\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.WhatsAppNumberForms.DeleteWhatsAppNumbersFrm.resources
 C:\Users\user\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.WhatsAppNumberForms.EditWhatsAppNumbersFrm.resources
-C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\bin\Debug\Alerts.dll
 C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\bin\Debug\Xprema.dll
-C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\bin\Debug\DevComponents.DotNetBar2.dll
 C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\bin\Debug\Xprema.pdb
 C:\Users\user\Documents\GitHub\Whats\XpremaWhats\Xaina\bin\Debug\Alerts.dll
 C:\Users\user\Documents\GitHub\Whats\XpremaWhats\Xaina\bin\Debug\Xprema.dll

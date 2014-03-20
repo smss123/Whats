@@ -94,6 +94,7 @@
             this.WhatsAppNumberAddBtn.StyleController = this.layoutControl1;
             this.WhatsAppNumberAddBtn.TabIndex = 9;
             this.WhatsAppNumberAddBtn.Text = "Add";
+            this.WhatsAppNumberAddBtn.Click += new System.EventHandler(this.WhatsAppNumberAddBtn_Click);
             // 
             // ContrycomboBoxEdit
             // 
@@ -286,6 +287,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(334, 269);
             this.Controls.Add(this.layoutControl1);
+            this.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
             this.Name = "AddWhatsappNumbersfrm";
             this.Text = "AddWhatsappNumbers";
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();

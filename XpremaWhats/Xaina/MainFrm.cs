@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using DevExpress.XtraBars;
 using Xaina.WhatsAppNumberForms;
 using Xaina.SenderNumber;
+using Xaina.CustomersForms;
 
 namespace Xaina
 {
@@ -43,6 +44,18 @@ namespace Xaina
             EditSenderNumberFrm editsend = new EditSenderNumberFrm();
             editsend.ShowDialog();
 
+        }
+
+        private void AddCustomersBtn_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            AddCustomerFrm CusAddFrm = new AddCustomerFrm();
+            CusAddFrm.ShowDialog();
+        }
+
+        private void EditCustomersBtn_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            EditCustomersFrm CusEdit = new EditCustomersFrm();
+            CusEdit.ShowDialog();
         }
     }
 }

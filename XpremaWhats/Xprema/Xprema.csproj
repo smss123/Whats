@@ -64,6 +64,9 @@
     <Compile Include="XdataType\PhoneNumber.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Data\Xdb.xsc">
+      <DependentUpon>Xdb.xsd</DependentUpon>
+    </None>
     <None Include="Data\Xdb.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>

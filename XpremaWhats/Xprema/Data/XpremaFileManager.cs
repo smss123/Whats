@@ -56,8 +56,9 @@ public     class XpremaFileManager  :IDisposable
             }
             catch (Exception ex)
             {
-                
-                throw new Exception("Error in Reading Data File ");
+                DB.WriteXmlSchema(FullPath);
+                return true;
+               // throw new Exception("Error in Reading Data File ");
             }
         }
         private bool WriteData(string Path)

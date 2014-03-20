@@ -67,3 +67,5 @@ C:\Users\user\Documents\GitHub\Whats\XpremaWhats\Xaina\bin\Debug\Alerts.dll
 C:\Users\user\Documents\GitHub\Whats\XpremaWhats\Xaina\bin\Debug\Xprema.dll
 C:\Users\user\Documents\GitHub\Whats\XpremaWhats\Xaina\bin\Debug\Xprema.pdb
 C:\Users\user\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.csprojResolveAssemblyReference.cache
+C:\Users\abu_ehab\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.exe
+C:\Users\abu_ehab\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.pdb

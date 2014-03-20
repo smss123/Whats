@@ -65,6 +65,15 @@
     <Compile Include="XdataType\Email.cs" />
     <Compile Include="XdataType\Name.cs" />
     <Compile Include="XdataType\PhoneNumber.cs" />
+    <Compile Include="xWatsApp\Contact.cs" />
+    <Compile Include="xWatsApp\ContactStore.cs" />
+    <Compile Include="xWatsApp\Helper.cs" />
+    <Compile Include="xWatsApp\Message.cs" />
+    <Compile Include="xWatsApp\MessageStore.cs" />
+    <Compile Include="xWatsApp\SQLite.cs" />
+    <Compile Include="xWatsApp\SQLite.MonoTouchAdmin.cs" />
+    <Compile Include="xWatsApp\SQLiteAsync.cs" />
+    <Compile Include="xWatsApp\WappSocket.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Data\Xdb.xsc">
@@ -81,6 +90,14 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Libraries\Google.GData.Client.dll" />
+    <Content Include="Libraries\Google.GData.Contacts.dll" />
+    <Content Include="Libraries\Google.GData.Extensions.dll" />
+    <Content Include="Libraries\PhoneNumbers.dll" />
+    <Content Include="Libraries\System.Data.SQLite.dll" />
+    <Content Include="Libraries\WhatsAppApi.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

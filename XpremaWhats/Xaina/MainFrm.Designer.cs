@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainFrm));
-            DevExpress.Utils.SuperToolTip superToolTip10 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem10 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip11 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem11 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip12 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem12 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem1 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip2 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem2 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip3 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem3 = new DevExpress.Utils.ToolTipTitleItem();
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.AddWhatsUpNumberBtn = new DevExpress.XtraBars.BarButtonItem();
             this.EditWhatsUpNumberBtn = new DevExpress.XtraBars.BarButtonItem();
@@ -161,12 +161,13 @@
             this.AddCustomersBtn.LargeGlyphDisabled = ((System.Drawing.Image)(resources.GetObject("AddCustomersBtn.LargeGlyphDisabled")));
             this.AddCustomersBtn.LargeWidth = 100;
             this.AddCustomersBtn.Name = "AddCustomersBtn";
-            toolTipTitleItem10.Appearance.Image = global::Xaina.Properties.Resources.CustomerAdd;
-            toolTipTitleItem10.Appearance.Options.UseImage = true;
-            toolTipTitleItem10.Image = global::Xaina.Properties.Resources.CustomerAdd;
-            toolTipTitleItem10.Text = "Add Customers";
-            superToolTip10.Items.Add(toolTipTitleItem10);
-            this.AddCustomersBtn.SuperTip = superToolTip10;
+            toolTipTitleItem1.Appearance.Image = global::Xaina.Properties.Resources.CustomerAdd;
+            toolTipTitleItem1.Appearance.Options.UseImage = true;
+            toolTipTitleItem1.Image = global::Xaina.Properties.Resources.CustomerAdd;
+            toolTipTitleItem1.Text = "Add Customers";
+            superToolTip1.Items.Add(toolTipTitleItem1);
+            this.AddCustomersBtn.SuperTip = superToolTip1;
+            this.AddCustomersBtn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.AddCustomersBtn_ItemClick);
             // 
             // EditCustomersBtn
             // 
@@ -175,12 +176,12 @@
             this.EditCustomersBtn.LargeGlyph = global::Xaina.Properties.Resources.CUstomerEdit;
             this.EditCustomersBtn.LargeWidth = 100;
             this.EditCustomersBtn.Name = "EditCustomersBtn";
-            toolTipTitleItem11.Appearance.Image = global::Xaina.Properties.Resources.CUstomerEdit;
-            toolTipTitleItem11.Appearance.Options.UseImage = true;
-            toolTipTitleItem11.Image = global::Xaina.Properties.Resources.CUstomerEdit;
-            toolTipTitleItem11.Text = "Edit Customer";
-            superToolTip11.Items.Add(toolTipTitleItem11);
-            this.EditCustomersBtn.SuperTip = superToolTip11;
+            toolTipTitleItem2.Appearance.Image = global::Xaina.Properties.Resources.CUstomerEdit;
+            toolTipTitleItem2.Appearance.Options.UseImage = true;
+            toolTipTitleItem2.Image = global::Xaina.Properties.Resources.CUstomerEdit;
+            toolTipTitleItem2.Text = "Edit Customer";
+            superToolTip2.Items.Add(toolTipTitleItem2);
+            this.EditCustomersBtn.SuperTip = superToolTip2;
             // 
             // DeleteCustomersBtn
             // 
@@ -189,12 +190,12 @@
             this.DeleteCustomersBtn.LargeGlyph = global::Xaina.Properties.Resources.CustomerDel;
             this.DeleteCustomersBtn.LargeWidth = 100;
             this.DeleteCustomersBtn.Name = "DeleteCustomersBtn";
-            toolTipTitleItem12.Appearance.Image = global::Xaina.Properties.Resources.CustomerDel;
-            toolTipTitleItem12.Appearance.Options.UseImage = true;
-            toolTipTitleItem12.Image = global::Xaina.Properties.Resources.CustomerDel;
-            toolTipTitleItem12.Text = "Delete Customer";
-            superToolTip12.Items.Add(toolTipTitleItem12);
-            this.DeleteCustomersBtn.SuperTip = superToolTip12;
+            toolTipTitleItem3.Appearance.Image = global::Xaina.Properties.Resources.CustomerDel;
+            toolTipTitleItem3.Appearance.Options.UseImage = true;
+            toolTipTitleItem3.Image = global::Xaina.Properties.Resources.CustomerDel;
+            toolTipTitleItem3.Text = "Delete Customer";
+            superToolTip3.Items.Add(toolTipTitleItem3);
+            this.DeleteCustomersBtn.SuperTip = superToolTip3;
             // 
             // addAdvertisementsBtn
             // 

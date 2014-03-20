@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Alerts">
+      <HintPath>E:\برمجة\DLlFile\Alerts.dll</HintPath>
+    </Reference>
     <Reference Include="DevExpress.Data.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Printing.v13.2.Core, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Utils.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -257,6 +260,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\CustomerDel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xprema\Xprema.csproj">
+      <Project>{e8198a7c-da76-449e-837c-e86e7753609d}</Project>
+      <Name>Xprema</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

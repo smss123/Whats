@@ -51,5 +51,11 @@ namespace Xaina
             AddCustomerFrm CusAddFrm = new AddCustomerFrm();
             CusAddFrm.ShowDialog();
         }
+
+        private void EditCustomersBtn_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            EditCustomersFrm CusEdit = new EditCustomersFrm();
+            CusEdit.ShowDialog();
+        }
     }
 }

@@ -29,9 +29,8 @@
         private void InitializeComponent()
         {
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.GridEditBtn = new DevExpress.XtraEditors.SimpleButton();
             this.SaveCustomersimpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.EditCreatDatedateEdit = new DevExpress.XtraEditors.DateEdit();
             this.EditCoustmerEmailtextEdit = new DevExpress.XtraEditors.TextEdit();
             this.EditCustomerPhonetextEdit = new DevExpress.XtraEditors.TextEdit();
             this.EditCustomertextEdit = new DevExpress.XtraEditors.TextEdit();
@@ -41,13 +40,11 @@
             this.EditCustomerNamelayoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.EditCustomerPhonelayoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.EditCustomerEmaillayoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.CreatDatelayoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.customersBindingSource = new System.Windows.Forms.BindingSource();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.EditCreatDatedateEdit.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EditCreatDatedateEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EditCoustmerEmailtextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EditCustomerPhonetextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EditCustomertextEdit.Properties)).BeginInit();
@@ -57,16 +54,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.EditCustomerNamelayoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EditCustomerPhonelayoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EditCustomerEmaillayoutControlItem4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CreatDatelayoutControlItem5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
             // 
-            this.layoutControl1.Controls.Add(this.simpleButton1);
+            this.layoutControl1.Controls.Add(this.GridEditBtn);
             this.layoutControl1.Controls.Add(this.SaveCustomersimpleButton1);
-            this.layoutControl1.Controls.Add(this.EditCreatDatedateEdit);
             this.layoutControl1.Controls.Add(this.EditCoustmerEmailtextEdit);
             this.layoutControl1.Controls.Add(this.EditCustomerPhonetextEdit);
             this.layoutControl1.Controls.Add(this.EditCustomertextEdit);
@@ -79,36 +75,25 @@
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
-            // simpleButton1
+            // GridEditBtn
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(12, 238);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(378, 22);
-            this.simpleButton1.StyleController = this.layoutControl1;
-            this.simpleButton1.TabIndex = 10;
-            this.simpleButton1.Text = "simpleButton1";
+            this.GridEditBtn.Location = new System.Drawing.Point(12, 198);
+            this.GridEditBtn.Name = "GridEditBtn";
+            this.GridEditBtn.Size = new System.Drawing.Size(378, 22);
+            this.GridEditBtn.StyleController = this.layoutControl1;
+            this.GridEditBtn.TabIndex = 10;
+            this.GridEditBtn.Text = "simpleButton1";
+            this.GridEditBtn.Click += new System.EventHandler(this.GridEditBtn_Click);
             // 
             // SaveCustomersimpleButton1
             // 
-            this.SaveCustomersimpleButton1.Location = new System.Drawing.Point(12, 212);
+            this.SaveCustomersimpleButton1.Location = new System.Drawing.Point(12, 172);
             this.SaveCustomersimpleButton1.Name = "SaveCustomersimpleButton1";
             this.SaveCustomersimpleButton1.Size = new System.Drawing.Size(378, 22);
             this.SaveCustomersimpleButton1.StyleController = this.layoutControl1;
             this.SaveCustomersimpleButton1.TabIndex = 9;
             this.SaveCustomersimpleButton1.Text = "Save";
-            // 
-            // EditCreatDatedateEdit
-            // 
-            this.EditCreatDatedateEdit.EditValue = null;
-            this.EditCreatDatedateEdit.Location = new System.Drawing.Point(12, 188);
-            this.EditCreatDatedateEdit.Name = "EditCreatDatedateEdit";
-            this.EditCreatDatedateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.EditCreatDatedateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.EditCreatDatedateEdit.Size = new System.Drawing.Size(378, 20);
-            this.EditCreatDatedateEdit.StyleController = this.layoutControl1;
-            this.EditCreatDatedateEdit.TabIndex = 8;
+            this.SaveCustomersimpleButton1.Click += new System.EventHandler(this.SaveCustomersimpleButton1_Click);
             // 
             // EditCoustmerEmailtextEdit
             // 
@@ -140,9 +125,14 @@
             this.SelectCostumerlookUpEdit.Name = "SelectCostumerlookUpEdit";
             this.SelectCostumerlookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.SelectCostumerlookUpEdit.Properties.DataSource = this.customersBindingSource;
+            this.SelectCostumerlookUpEdit.Properties.DisplayMember = "CustomerName";
+            this.SelectCostumerlookUpEdit.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
+            this.SelectCostumerlookUpEdit.Properties.ValueMember = "ID";
             this.SelectCostumerlookUpEdit.Size = new System.Drawing.Size(378, 20);
             this.SelectCostumerlookUpEdit.StyleController = this.layoutControl1;
             this.SelectCostumerlookUpEdit.TabIndex = 4;
+            this.SelectCostumerlookUpEdit.EditValueChanged += new System.EventHandler(this.SelectCostumerlookUpEdit_EditValueChanged);
             // 
             // layoutControlGroup1
             // 
@@ -154,7 +144,6 @@
             this.EditCustomerNamelayoutControlItem2,
             this.EditCustomerPhonelayoutControlItem3,
             this.EditCustomerEmaillayoutControlItem4,
-            this.CreatDatelayoutControlItem5,
             this.layoutControlItem6,
             this.layoutControlItem1});
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
@@ -207,22 +196,11 @@
             this.EditCustomerEmaillayoutControlItem4.TextLocation = DevExpress.Utils.Locations.Top;
             this.EditCustomerEmaillayoutControlItem4.TextSize = new System.Drawing.Size(104, 13);
             // 
-            // CreatDatelayoutControlItem5
-            // 
-            this.CreatDatelayoutControlItem5.Control = this.EditCreatDatedateEdit;
-            this.CreatDatelayoutControlItem5.CustomizationFormText = "Edit Creat Date:";
-            this.CreatDatelayoutControlItem5.Location = new System.Drawing.Point(0, 160);
-            this.CreatDatelayoutControlItem5.Name = "CreatDatelayoutControlItem5";
-            this.CreatDatelayoutControlItem5.Size = new System.Drawing.Size(382, 40);
-            this.CreatDatelayoutControlItem5.Text = "Edit Creat Date:";
-            this.CreatDatelayoutControlItem5.TextLocation = DevExpress.Utils.Locations.Top;
-            this.CreatDatelayoutControlItem5.TextSize = new System.Drawing.Size(104, 13);
-            // 
             // layoutControlItem6
             // 
             this.layoutControlItem6.Control = this.SaveCustomersimpleButton1;
             this.layoutControlItem6.CustomizationFormText = "layoutControlItem6";
-            this.layoutControlItem6.Location = new System.Drawing.Point(0, 200);
+            this.layoutControlItem6.Location = new System.Drawing.Point(0, 160);
             this.layoutControlItem6.Name = "layoutControlItem6";
             this.layoutControlItem6.Size = new System.Drawing.Size(382, 26);
             this.layoutControlItem6.Text = "layoutControlItem6";
@@ -232,15 +210,20 @@
             // 
             // layoutControlItem1
             // 
-            this.layoutControlItem1.Control = this.simpleButton1;
+            this.layoutControlItem1.Control = this.GridEditBtn;
             this.layoutControlItem1.CustomizationFormText = "layoutControlItem1";
-            this.layoutControlItem1.Location = new System.Drawing.Point(0, 226);
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 186);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(382, 44);
+            this.layoutControlItem1.Size = new System.Drawing.Size(382, 84);
             this.layoutControlItem1.Text = "layoutControlItem1";
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextToControlDistance = 0;
             this.layoutControlItem1.TextVisible = false;
+            // 
+            // customersBindingSource
+            // 
+            this.customersBindingSource.DataMember = "Customers";
+            this.customersBindingSource.DataSource = typeof(Xprema.Data.Xdb);
             // 
             // EditCustomersFrm
             // 
@@ -250,10 +233,9 @@
             this.Controls.Add(this.layoutControl1);
             this.Name = "EditCustomersFrm";
             this.Text = "EditCustomersFrm";
+            this.Load += new System.EventHandler(this.EditCustomersFrm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.EditCreatDatedateEdit.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EditCreatDatedateEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EditCoustmerEmailtextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EditCustomerPhonetextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EditCustomertextEdit.Properties)).EndInit();
@@ -263,9 +245,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.EditCustomerNamelayoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EditCustomerPhonelayoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EditCustomerEmaillayoutControlItem4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CreatDatelayoutControlItem5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -274,7 +256,6 @@
 
         private DevExpress.XtraLayout.LayoutControl layoutControl1;
         private DevExpress.XtraEditors.SimpleButton SaveCustomersimpleButton1;
-        private DevExpress.XtraEditors.DateEdit EditCreatDatedateEdit;
         private DevExpress.XtraEditors.TextEdit EditCoustmerEmailtextEdit;
         private DevExpress.XtraEditors.TextEdit EditCustomerPhonetextEdit;
         private DevExpress.XtraEditors.TextEdit EditCustomertextEdit;
@@ -284,9 +265,9 @@
         private DevExpress.XtraLayout.LayoutControlItem EditCustomerNamelayoutControlItem2;
         private DevExpress.XtraLayout.LayoutControlItem EditCustomerPhonelayoutControlItem3;
         private DevExpress.XtraLayout.LayoutControlItem EditCustomerEmaillayoutControlItem4;
-        private DevExpress.XtraLayout.LayoutControlItem CreatDatelayoutControlItem5;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton GridEditBtn;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
+        private System.Windows.Forms.BindingSource customersBindingSource;
     }
 }

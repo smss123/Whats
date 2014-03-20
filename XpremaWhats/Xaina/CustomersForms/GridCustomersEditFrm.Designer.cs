@@ -30,6 +30,11 @@
         {
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colID = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCustomerName = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCustomerPhone = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCustomerEmail = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCreatedDate = new DevExpress.XtraGrid.Columns.GridColumn();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.CustomerSearchlookUpEdit = new DevExpress.XtraEditors.LookUpEdit();
@@ -59,8 +64,49 @@
             // 
             // gridView1
             // 
+            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colID,
+            this.colCustomerName,
+            this.colCustomerPhone,
+            this.colCustomerEmail,
+            this.colCreatedDate});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
+            // 
+            // colID
+            // 
+            this.colID.FieldName = "ID";
+            this.colID.Name = "colID";
+            this.colID.Visible = true;
+            this.colID.VisibleIndex = 0;
+            // 
+            // colCustomerName
+            // 
+            this.colCustomerName.FieldName = "CustomerName";
+            this.colCustomerName.Name = "colCustomerName";
+            this.colCustomerName.Visible = true;
+            this.colCustomerName.VisibleIndex = 1;
+            // 
+            // colCustomerPhone
+            // 
+            this.colCustomerPhone.FieldName = "CustomerPhone";
+            this.colCustomerPhone.Name = "colCustomerPhone";
+            this.colCustomerPhone.Visible = true;
+            this.colCustomerPhone.VisibleIndex = 2;
+            // 
+            // colCustomerEmail
+            // 
+            this.colCustomerEmail.FieldName = "CustomerEmail";
+            this.colCustomerEmail.Name = "colCustomerEmail";
+            this.colCustomerEmail.Visible = true;
+            this.colCustomerEmail.VisibleIndex = 3;
+            // 
+            // colCreatedDate
+            // 
+            this.colCreatedDate.FieldName = "CreatedDate";
+            this.colCreatedDate.Name = "colCreatedDate";
+            this.colCreatedDate.Visible = true;
+            this.colCreatedDate.VisibleIndex = 4;
             // 
             // groupControl1
             // 
@@ -125,6 +171,7 @@
             this.Controls.Add(this.groupControl1);
             this.Name = "GridCustomersEditFrm";
             this.Text = "GridCustomersEditFrm";
+            this.Load += new System.EventHandler(this.GridCustomersEditFrm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
@@ -147,6 +194,11 @@
         private DevExpress.XtraEditors.LookUpEdit CustomerSearchlookUpEdit;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup1;
         private DevExpress.XtraLayout.LayoutControlItem CustomerSearchlayoutControlItem;
+        private DevExpress.XtraGrid.Columns.GridColumn colID;
+        private DevExpress.XtraGrid.Columns.GridColumn colCustomerName;
+        private DevExpress.XtraGrid.Columns.GridColumn colCustomerPhone;
+        private DevExpress.XtraGrid.Columns.GridColumn colCustomerEmail;
+        private DevExpress.XtraGrid.Columns.GridColumn colCreatedDate;
 
     }
 }

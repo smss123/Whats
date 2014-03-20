@@ -23,7 +23,7 @@ namespace Xaina.CustomersForms
         private Alerts.Alerts fr = new Alerts.Alerts();
         private void GridCustomersEditFrm_Load(object sender, EventArgs e)
         {
-            customersBindingSource.DataSource = 
+            customersBindingSource.DataSource = null;
         }
     }
 }

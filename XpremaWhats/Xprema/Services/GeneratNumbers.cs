@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using System.Threading;
 namespace Xprema.Services
 {
     class GeneratNumbers
@@ -255,6 +255,7 @@ namespace Xprema.Services
 		"ZW:Zimbabwe:263"
 
 	};
+        //=
         // This Function Populate Countries Whith It's Keys
         public List<string> PopulateCountries()
         {
@@ -288,41 +289,26 @@ namespace Xprema.Services
             return List;
         }
 
-
-
-        public List<string> CreateNumbers()
+       public  IEnumerable<string> CreateCounter()
 
         {
-
-            List<string> C = new List<string>();
-            //Get Keys Once Againe
-            string b = string.Empty;
-            List<string> List = new List<string>();
-            List.Clear();
-            foreach (string item in Countries)
+            // Generate Numbers :  000000000, 000000001, ..., 999999999
+            for (int i = 0; i < 1000000000; ++i)
             {
-                for (int i = 0; i < item.Length; i++)
-                {
-                    if (Char.IsDigit(item[i]))
-                    {
-                        b += item[i];
-                    }
-                }
-                List.Add(b);
-                b = null;
-            }
-            // Start Generate Numbers : 9999999
-
-            foreach (var item in List)
-            {
-                for (int i = 0; i < 9999999; i++)
-                {
-                    C.Add(item + i);
-                }
+                yield return i.ToString("000000000");
             }
 
-            return C;
+            foreach (var item in AllKeys() )
+            {
+                for (int i = 0; i < 100000000; ++i)
+                {
+                    yield return item + i.ToString("00000000");
+                }
+            }
+        
+          
         }
+
 
     }
 }

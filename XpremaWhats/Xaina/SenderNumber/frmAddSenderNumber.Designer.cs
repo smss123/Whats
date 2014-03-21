@@ -105,6 +105,7 @@
             this.AddSenderNUmberBtn.StyleController = this.layoutControl1;
             this.AddSenderNUmberBtn.TabIndex = 9;
             this.AddSenderNUmberBtn.Text = "Add";
+            this.AddSenderNUmberBtn.Click += new System.EventHandler(this.AddSenderNUmberBtn_Click);
             // 
             // StatuscomboBoxEdit
             // 
@@ -112,6 +113,9 @@
             this.StatuscomboBoxEdit.Name = "StatuscomboBoxEdit";
             this.StatuscomboBoxEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.StatuscomboBoxEdit.Properties.Items.AddRange(new object[] {
+            "true",
+            "false"});
             this.StatuscomboBoxEdit.Size = new System.Drawing.Size(327, 20);
             this.StatuscomboBoxEdit.StyleController = this.layoutControl1;
             this.StatuscomboBoxEdit.TabIndex = 8;
@@ -247,6 +251,7 @@
             this.Controls.Add(this.layoutControl1);
             this.Name = "frmAddSenderNumber";
             this.Text = "frmAddSenderNumber";
+            this.Load += new System.EventHandler(this.frmAddSenderNumber_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.CountertextEdit.Properties)).EndInit();

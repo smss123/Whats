@@ -106,7 +106,7 @@
             this.ribbonGalleryBarItem1,
             this.ribbonGalleryBarItem2});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
-            this.ribbon.MaxItemId = 24;
+            this.ribbon.MaxItemId = 26;
             this.ribbon.Name = "ribbon";
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.WhatsUpNumberribbonPage,

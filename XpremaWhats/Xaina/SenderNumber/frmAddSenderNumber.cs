@@ -26,14 +26,21 @@ namespace Xaina.SenderNumber
        private Alerts.Alerts fr = new Alerts.Alerts();
         private void frmAddSenderNumber_Load(object sender, EventArgs e)
         {
-
+            cmd = new XpremaFileManager();
         }
 
         private void AddSenderNUmberBtn_Click(object sender, EventArgs e)
         {
-           
-            sendNumClass.AddSender(new PhoneNumber("", "", SenderNumbertextEdit.Text), PasswordtextEdit.Text, int.Parse(NumberOfmessagetextEdit.Text),Convert.ToBoolean(StatuscomboBoxEdit.Text), int.Parse(CountertextEdit.Text));
-             //CusClss.AddNewCustomer(new Name( CustomerNametextEdit.Text,"",""), new PhoneNumber("","", CustomerPhonetextEdit.Text), new Email( CustomerEmailtextEdit.Text));
+            if (SenderNumbertextEdit.Text == "")
+            {
+                fr.Show_Error_MSG(this, "please enter customer name ");
+                SenderNumbertextEdit.Focus();
+                return;
+
+            }
+            bool status = Boolean.Parse(StatuscomboBoxEdit.Text);
+            sendNumClass.AddSender(new PhoneNumber("", "", SenderNumbertextEdit.Text), PasswordtextEdit.Text, int.Parse(NumberOfmessagetextEdit.Text), status, int.Parse(CountertextEdit.Text));
+           fr.Show_Info_MSG(this, "Done");
         }
     }
 }

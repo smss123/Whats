@@ -210,12 +210,14 @@
             this.addAdvertisementsBtn.Caption = "Add Advertisement";
             this.addAdvertisementsBtn.Id = 13;
             this.addAdvertisementsBtn.Name = "addAdvertisementsBtn";
+            this.addAdvertisementsBtn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.addAdvertisementsBtn_ItemClick);
             // 
             // EditAdvertisementsBtn
             // 
             this.EditAdvertisementsBtn.Caption = "Edit Advertisement";
             this.EditAdvertisementsBtn.Id = 14;
             this.EditAdvertisementsBtn.Name = "EditAdvertisementsBtn";
+            this.EditAdvertisementsBtn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.EditAdvertisementsBtn_ItemClick);
             // 
             // DeleteAdvertisementBtn
             // 

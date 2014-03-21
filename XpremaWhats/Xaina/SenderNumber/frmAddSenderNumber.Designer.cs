@@ -115,7 +115,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.StatuscomboBoxEdit.Properties.Items.AddRange(new object[] {
             "true",
-            "false"});
+            "False"});
             this.StatuscomboBoxEdit.Size = new System.Drawing.Size(327, 20);
             this.StatuscomboBoxEdit.StyleController = this.layoutControl1;
             this.StatuscomboBoxEdit.TabIndex = 8;

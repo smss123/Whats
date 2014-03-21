@@ -75,6 +75,12 @@
     <Compile Include="Advertisement Forms\EditAdvertisementFrm.Designer.cs">
       <DependentUpon>EditAdvertisementFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Advertisement Forms\GridEditAdvertisementFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Advertisement Forms\GridEditAdvertisementFrm.Designer.cs">
+      <DependentUpon>GridEditAdvertisementFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomersForms\AddCustomerFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,6 +186,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Advertisement Forms\EditAdvertisementFrm.resx">
       <DependentUpon>EditAdvertisementFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Advertisement Forms\GridEditAdvertisementFrm.resx">
+      <DependentUpon>GridEditAdvertisementFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CustomersForms\AddCustomerFrm.resx">
       <DependentUpon>AddCustomerFrm.cs</DependentUpon>

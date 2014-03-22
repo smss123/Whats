@@ -98,9 +98,6 @@
     <Compile Include="xWatsApp\ContactStore.cs" />
     <Compile Include="xWatsApp\Message.cs" />
     <Compile Include="xWatsApp\MessageStore.cs" />
-    <Compile Include="xWatsApp\SQLite.cs" />
-    <Compile Include="xWatsApp\SQLite.MonoTouchAdmin.cs" />
-    <Compile Include="xWatsApp\SQLiteAsync.cs" />
     <Compile Include="xWatsApp\WappSocket.cs" />
   </ItemGroup>
   <ItemGroup>

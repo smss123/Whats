@@ -24,7 +24,8 @@ namespace Xaina.SenderNumber
         private Alerts.Alerts fr = new Alerts.Alerts();
         private void EditSenderNumberFrm_Load(object sender, EventArgs e)
         {
-            senderNumberBindingSource.DataSource = cmd.DB.SenderNumber;
+            cmd = new XpremaFileManager();
+            SelectNumberlookUpEdit.Properties.DataSource = cmd.DB.SenderNumber;
 
         }
 
@@ -33,7 +34,7 @@ namespace Xaina.SenderNumber
             var q = sendNumClass.GetById(int.Parse(SelectNumberlookUpEdit.EditValue.ToString()));
             EditNumbertextEdit.Text = q.SenderNumber;
             EditpasswordtextEdit.Text = q.Password;
-            EditNumberMessagetextEdit.Text = q.NumberOfMessageInDay;
+            EditNumberMessagetextEdit.Text = q.NumberOfMessageInDay.ToString();
             EditCountertextEdit.Text = q.Counter.ToString();
             EditStatuscomboBoxEdit.Text = q.Status.ToString();
         }
@@ -53,5 +54,7 @@ namespace Xaina.SenderNumber
                 fr.Show_Info_MSG(this, "Done");
             }
         }
+
+        
     }
 }

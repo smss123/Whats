@@ -23,7 +23,26 @@ namespace Xaina.CustomersForms
         private Alerts.Alerts fr = new Alerts.Alerts();
         private void GridCustomersEditFrm_Load(object sender, EventArgs e)
         {
-           // customersBindingSource.DataSource = 
+            FillGridView();
+           
+            gridView1.ViewCaption = "Customers Data";
+
+        }
+
+        private void FillGridView()
+        {
+            cmd = new XpremaFileManager();
+            customersBindingSource.DataSource = cmd.DB.Customers;
+        }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            customersBindingSource.EndEdit();
+            cmd.CommitData();
+
+            FillGridView();
+
+
         }
     }
 }

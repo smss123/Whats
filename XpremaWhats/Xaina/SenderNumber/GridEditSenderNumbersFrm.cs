@@ -16,5 +16,10 @@ namespace Xaina.SenderNumber
         {
             InitializeComponent();
         }
+
+        private   void GridEditSenderNumbersFrm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

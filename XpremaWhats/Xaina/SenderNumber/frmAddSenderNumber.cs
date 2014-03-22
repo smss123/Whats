@@ -40,7 +40,9 @@ namespace Xaina.SenderNumber
             }
             bool status = Boolean.Parse(StatuscomboBoxEdit.Text);
             sendNumClass.AddSender(new PhoneNumber("", "", SenderNumbertextEdit.Text), PasswordtextEdit.Text, int.Parse(NumberOfmessagetextEdit.Text), status, int.Parse(CountertextEdit.Text));
-           fr.Show_Info_MSG(this, "Done");
+            GC.SuppressFinalize(sendNumClass);
+          // fr.Show_Info_MSG(this, "Done");
+            
         }
     }
 }

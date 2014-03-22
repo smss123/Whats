@@ -68,3 +68,5 @@ C:\Users\user\Documents\GitHub\Whats\XpremaWhats\Xaina\bin\Debug\Xprema.dll
 C:\Users\user\Documents\GitHub\Whats\XpremaWhats\Xaina\bin\Debug\Xprema.pdb
 C:\Users\user\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.csprojResolveAssemblyReference.cache
 C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.Advertisement_Forms.GridEditAdvertisementFrm.resources
+C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\bin\Debug\WhatsAppApi.dll
+C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xaina\bin\Debug\System.Data.SQLite.dll

@@ -151,6 +151,7 @@
             this.Controls.Add(this.groupControl1);
             this.Name = "GridEditSenderNumbersFrm";
             this.Text = "GridEditSenderNumbersFrm";
+            this.Load += new System.EventHandler(this.GridEditSenderNumbersFrm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.SenderNumberEditGridControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();

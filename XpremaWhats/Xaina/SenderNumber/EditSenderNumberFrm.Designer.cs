@@ -28,12 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditSenderNumberFrm));
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.EditNumberMessagetextEdit = new DevExpress.XtraEditors.TextEdit();
             this.EditSenderNumberBtn = new DevExpress.XtraEditors.SimpleButton();
-            this.EditCountrycomboBoxEdit = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.EditStatuscomboBoxEdit = new DevExpress.XtraEditors.ComboBoxEdit();
             this.EditCountertextEdit = new DevExpress.XtraEditors.TextEdit();
             this.EditpasswordtextEdit = new DevExpress.XtraEditors.TextEdit();
             this.EditNumbertextEdit = new DevExpress.XtraEditors.TextEdit();
@@ -60,10 +61,11 @@
             this.NumberOfmassagelayoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.CounterlayoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             this.CountrylayoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.senderNumberBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.EditNumberMessagetextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EditCountrycomboBoxEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EditStatuscomboBoxEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EditCountertextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EditpasswordtextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EditNumbertextEdit.Properties)).BeginInit();
@@ -90,6 +92,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.NumberOfmassagelayoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CounterlayoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CountrylayoutControlItem3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.senderNumberBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
@@ -97,7 +100,7 @@
             this.layoutControl1.Controls.Add(this.simpleButton1);
             this.layoutControl1.Controls.Add(this.EditNumberMessagetextEdit);
             this.layoutControl1.Controls.Add(this.EditSenderNumberBtn);
-            this.layoutControl1.Controls.Add(this.EditCountrycomboBoxEdit);
+            this.layoutControl1.Controls.Add(this.EditStatuscomboBoxEdit);
             this.layoutControl1.Controls.Add(this.EditCountertextEdit);
             this.layoutControl1.Controls.Add(this.EditpasswordtextEdit);
             this.layoutControl1.Controls.Add(this.EditNumbertextEdit);
@@ -136,16 +139,17 @@
             this.EditSenderNumberBtn.StyleController = this.layoutControl1;
             this.EditSenderNumberBtn.TabIndex = 9;
             this.EditSenderNumberBtn.Text = "Save";
+            this.EditSenderNumberBtn.Click += new System.EventHandler(this.EditSenderNumberBtn_Click);
             // 
-            // EditCountrycomboBoxEdit
+            // EditStatuscomboBoxEdit
             // 
-            this.EditCountrycomboBoxEdit.Location = new System.Drawing.Point(12, 248);
-            this.EditCountrycomboBoxEdit.Name = "EditCountrycomboBoxEdit";
-            this.EditCountrycomboBoxEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.EditStatuscomboBoxEdit.Location = new System.Drawing.Point(12, 248);
+            this.EditStatuscomboBoxEdit.Name = "EditStatuscomboBoxEdit";
+            this.EditStatuscomboBoxEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.EditCountrycomboBoxEdit.Size = new System.Drawing.Size(347, 20);
-            this.EditCountrycomboBoxEdit.StyleController = this.layoutControl1;
-            this.EditCountrycomboBoxEdit.TabIndex = 8;
+            this.EditStatuscomboBoxEdit.Size = new System.Drawing.Size(347, 20);
+            this.EditStatuscomboBoxEdit.StyleController = this.layoutControl1;
+            this.EditStatuscomboBoxEdit.TabIndex = 8;
             // 
             // EditCountertextEdit
             // 
@@ -177,9 +181,21 @@
             this.SelectNumberlookUpEdit.Name = "SelectNumberlookUpEdit";
             this.SelectNumberlookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.SelectNumberlookUpEdit.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("ID", "ID", 34, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("SenderNumber", "Sender Number", 84, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Password", "Password", 56, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("NumberOfMessageInDay", "Number Of Message In Day", 142, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Counter", "Counter", 49, DevExpress.Utils.FormatType.Numeric, "", true, DevExpress.Utils.HorzAlignment.Far),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Status", "Status", 41, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near)});
+            this.SelectNumberlookUpEdit.Properties.DataSource = this.senderNumberBindingSource;
+            this.SelectNumberlookUpEdit.Properties.DisplayMember = "SenderNumber";
+            this.SelectNumberlookUpEdit.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
+            this.SelectNumberlookUpEdit.Properties.ValueMember = "ID";
             this.SelectNumberlookUpEdit.Size = new System.Drawing.Size(347, 20);
             this.SelectNumberlookUpEdit.StyleController = this.layoutControl1;
             this.SelectNumberlookUpEdit.TabIndex = 4;
+            this.SelectNumberlookUpEdit.EditValueChanged += new System.EventHandler(this.SelectNumberlookUpEdit_EditValueChanged);
             // 
             // layoutControlGroup1
             // 
@@ -265,7 +281,7 @@
             // 
             // EditStatuslayoutControlItem4
             // 
-            this.EditStatuslayoutControlItem4.Control = this.EditCountrycomboBoxEdit;
+            this.EditStatuslayoutControlItem4.Control = this.EditStatuscomboBoxEdit;
             this.EditStatuslayoutControlItem4.CustomizationFormText = "layoutControlItem4";
             this.EditStatuslayoutControlItem4.Location = new System.Drawing.Point(0, 220);
             this.EditStatuslayoutControlItem4.Name = "EditStatuslayoutControlItem4";
@@ -434,6 +450,11 @@
             this.CountrylayoutControlItem3.TextSize = new System.Drawing.Size(132, 13);
             this.CountrylayoutControlItem3.TextToControlDistance = 5;
             // 
+            // senderNumberBindingSource
+            // 
+            this.senderNumberBindingSource.DataMember = "SenderNumber";
+            this.senderNumberBindingSource.DataSource = typeof(Xprema.Data.Xdb);
+            // 
             // EditSenderNumberFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -442,10 +463,11 @@
             this.Controls.Add(this.layoutControl1);
             this.Name = "EditSenderNumberFrm";
             this.Text = "EditSenderNumberFrm";
+            this.Load += new System.EventHandler(this.EditSenderNumberFrm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.EditNumberMessagetextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EditCountrycomboBoxEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EditStatuscomboBoxEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EditCountertextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EditpasswordtextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EditNumbertextEdit.Properties)).EndInit();
@@ -472,6 +494,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.NumberOfmassagelayoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CounterlayoutControlItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CountrylayoutControlItem3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.senderNumberBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -493,7 +516,7 @@
         private DevExpress.XtraEditors.TextEdit EditCountertextEdit;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
         private DevExpress.XtraEditors.SimpleButton EditSenderNumberBtn;
-        private DevExpress.XtraEditors.ComboBoxEdit EditCountrycomboBoxEdit;
+        private DevExpress.XtraEditors.ComboBoxEdit EditStatuscomboBoxEdit;
         private DevExpress.XtraLayout.LayoutControlItem EditStatuslayoutControlItem4;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
         private DevExpress.XtraEditors.TextEdit EditNumberMessagetextEdit;
@@ -509,5 +532,6 @@
         private DevExpress.XtraLayout.SimpleSeparator simpleSeparator9;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
+        private System.Windows.Forms.BindingSource senderNumberBindingSource;
     }
 }

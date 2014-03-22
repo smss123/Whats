@@ -77,6 +77,11 @@
       <DependentUpon>Xdb.xsd</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Data\Xdb.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Xdb.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Data\Xdb2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

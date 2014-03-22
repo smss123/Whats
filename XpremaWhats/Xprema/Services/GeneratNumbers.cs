@@ -290,7 +290,6 @@ namespace Xprema.Services
         }
 
        public  IEnumerable<string> CreateCounter()
-
         {
             // Generate Numbers :  000000000, 000000001, ..., 999999999
             for (int i = 0; i < 1000000000; ++i)
@@ -304,9 +303,8 @@ namespace Xprema.Services
                 {
                     yield return item + i.ToString("00000000");
                 }
-            }
-        
-          
+            }       
+       
         }
 
 

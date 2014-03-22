@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Xprema.XdataType;
+using Xprema.Data;
 namespace Xprema.Commands
 {
   public   class WhatsAppNumberCommand
@@ -14,7 +15,9 @@ namespace Xprema.Commands
 
       public bool AddPhone(PhoneNumber Phone, DateTime Date, Name name, bool status, string Contry)
       {
+
           throw new NotImplementedException();
+     
       }
 
       public bool EditPhone(PhoneNumber Phone, DateTime Date, Name name, bool status, string Contry, int ID)

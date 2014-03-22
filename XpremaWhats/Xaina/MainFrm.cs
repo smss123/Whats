@@ -10,6 +10,7 @@ using DevExpress.XtraBars;
 using Xaina.WhatsAppNumberForms;
 using Xaina.SenderNumber;
 using Xaina.CustomersForms;
+using Xaina.Advertisement_Forms;
 
 namespace Xaina
 {
@@ -56,6 +57,18 @@ namespace Xaina
         {
             EditCustomersFrm CusEdit = new EditCustomersFrm();
             CusEdit.ShowDialog();
+        }
+
+        private void addAdvertisementsBtn_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            AddAdvertisementFrm AdvaddFrm = new AddAdvertisementFrm();
+            AdvaddFrm.ShowDialog();
+        }
+
+        private void EditAdvertisementsBtn_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            EditAdvertisementFrm editAdvFrm = new EditAdvertisementFrm();
+            editAdvFrm.ShowDialog();
         }
     }
 }

@@ -28,10 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.AdvertisemenEditgridControl = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.TitleAdvertisementColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.components = new System.ComponentModel.Container();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.SearchDateBtn = new DevExpress.XtraEditors.SimpleButton();
@@ -45,8 +42,15 @@
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
-            ((System.ComponentModel.ISupportInitialize)(this.AdvertisemenEditgridControl)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.advertismentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.colID = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMessageText = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCreatedDate = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colCustomerID = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.repositoryItemLookUpEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
+            this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
@@ -63,40 +67,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.advertismentsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEdit1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // AdvertisemenEditgridControl
-            // 
-            this.AdvertisemenEditgridControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AdvertisemenEditgridControl.Location = new System.Drawing.Point(0, 98);
-            this.AdvertisemenEditgridControl.MainView = this.gridView1;
-            this.AdvertisemenEditgridControl.Name = "AdvertisemenEditgridControl";
-            this.AdvertisemenEditgridControl.Size = new System.Drawing.Size(1050, 499);
-            this.AdvertisemenEditgridControl.TabIndex = 3;
-            this.AdvertisemenEditgridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
-            // 
-            // gridView1
-            // 
-            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.TitleAdvertisementColumn1,
-            this.gridColumn1});
-            this.gridView1.GridControl = this.AdvertisemenEditgridControl;
-            this.gridView1.Name = "gridView1";
-            // 
-            // TitleAdvertisementColumn1
-            // 
-            this.TitleAdvertisementColumn1.Caption = "gridColumn1";
-            this.TitleAdvertisementColumn1.Name = "TitleAdvertisementColumn1";
-            this.TitleAdvertisementColumn1.Visible = true;
-            this.TitleAdvertisementColumn1.VisibleIndex = 0;
-            // 
-            // gridColumn1
-            // 
-            this.gridColumn1.Caption = "gridColumn1";
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 1;
             // 
             // groupControl1
             // 
@@ -245,17 +221,89 @@
             this.layoutControlItem5.TextToControlDistance = 0;
             this.layoutControlItem5.TextVisible = false;
             // 
+            // gridControl1
+            // 
+            this.gridControl1.DataSource = this.advertismentsBindingSource;
+            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl1.Location = new System.Drawing.Point(0, 98);
+            this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Name = "gridControl1";
+            this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.repositoryItemLookUpEdit1});
+            this.gridControl1.Size = new System.Drawing.Size(1050, 499);
+            this.gridControl1.TabIndex = 3;
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // gridView1
+            // 
+            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colID,
+            this.colMessageText,
+            this.colCreatedDate,
+            this.colCustomerID});
+            this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.Name = "gridView1";
+            // 
+            // advertismentsBindingSource
+            // 
+            this.advertismentsBindingSource.DataMember = "Advertisments";
+            this.advertismentsBindingSource.DataSource = typeof(Xprema.Data.Xdb);
+            // 
+            // colID
+            // 
+            this.colID.FieldName = "ID";
+            this.colID.Name = "colID";
+            this.colID.Visible = true;
+            this.colID.VisibleIndex = 0;
+            // 
+            // colMessageText
+            // 
+            this.colMessageText.FieldName = "MessageText";
+            this.colMessageText.Name = "colMessageText";
+            this.colMessageText.Visible = true;
+            this.colMessageText.VisibleIndex = 1;
+            // 
+            // colCreatedDate
+            // 
+            this.colCreatedDate.FieldName = "CreatedDate";
+            this.colCreatedDate.Name = "colCreatedDate";
+            this.colCreatedDate.Visible = true;
+            this.colCreatedDate.VisibleIndex = 2;
+            // 
+            // colCustomerID
+            // 
+            this.colCustomerID.ColumnEdit = this.repositoryItemLookUpEdit1;
+            this.colCustomerID.FieldName = "CustomerID";
+            this.colCustomerID.Name = "colCustomerID";
+            this.colCustomerID.Visible = true;
+            this.colCustomerID.VisibleIndex = 3;
+            // 
+            // repositoryItemLookUpEdit1
+            // 
+            this.repositoryItemLookUpEdit1.AutoHeight = false;
+            this.repositoryItemLookUpEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.repositoryItemLookUpEdit1.DataSource = this.customersBindingSource;
+            this.repositoryItemLookUpEdit1.DisplayMember = "CustomerName";
+            this.repositoryItemLookUpEdit1.Name = "repositoryItemLookUpEdit1";
+            this.repositoryItemLookUpEdit1.ValueMember = "ID";
+            // 
+            // customersBindingSource
+            // 
+            this.customersBindingSource.DataMember = "Customers";
+            this.customersBindingSource.DataSource = typeof(Xprema.Data.Xdb);
+            // 
             // GridEditAdvertisementFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1050, 597);
-            this.Controls.Add(this.AdvertisemenEditgridControl);
+            this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.groupControl1);
             this.Name = "GridEditAdvertisementFrm";
             this.Text = "GridEditAdvertisementFrm";
-            ((System.ComponentModel.ISupportInitialize)(this.AdvertisemenEditgridControl)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            this.Load += new System.EventHandler(this.GridEditAdvertisementFrm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
@@ -272,16 +320,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.advertismentsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemLookUpEdit1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private DevExpress.XtraGrid.GridControl AdvertisemenEditgridControl;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private DevExpress.XtraGrid.Columns.GridColumn TitleAdvertisementColumn1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraLayout.LayoutControl layoutControl1;
         private DevExpress.XtraEditors.SimpleButton SearchDateBtn;
@@ -295,5 +344,14 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
+        private DevExpress.XtraGrid.GridControl gridControl1;
+        private System.Windows.Forms.BindingSource advertismentsBindingSource;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraGrid.Columns.GridColumn colID;
+        private DevExpress.XtraGrid.Columns.GridColumn colMessageText;
+        private DevExpress.XtraGrid.Columns.GridColumn colCreatedDate;
+        private DevExpress.XtraGrid.Columns.GridColumn colCustomerID;
+        private DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit repositoryItemLookUpEdit1;
+        private System.Windows.Forms.BindingSource customersBindingSource;
     }
 }

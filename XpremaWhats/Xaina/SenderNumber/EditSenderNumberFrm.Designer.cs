@@ -39,6 +39,7 @@
             this.EditpasswordtextEdit = new DevExpress.XtraEditors.TextEdit();
             this.EditNumbertextEdit = new DevExpress.XtraEditors.TextEdit();
             this.SelectNumberlookUpEdit = new DevExpress.XtraEditors.LookUpEdit();
+            this.senderNumberBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.SelectNumberlayoutControlItem = new DevExpress.XtraLayout.LayoutControlItem();
             this.EditNumberlayoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -61,7 +62,6 @@
             this.NumberOfmassagelayoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.CounterlayoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             this.CountrylayoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.senderNumberBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.EditNumberMessagetextEdit.Properties)).BeginInit();
@@ -70,6 +70,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.EditpasswordtextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EditNumbertextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SelectNumberlookUpEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.senderNumberBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SelectNumberlayoutControlItem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EditNumberlayoutControlItem1)).BeginInit();
@@ -92,7 +93,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.NumberOfmassagelayoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CounterlayoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CountrylayoutControlItem3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.senderNumberBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
@@ -122,6 +122,7 @@
             this.simpleButton1.StyleController = this.layoutControl1;
             this.simpleButton1.TabIndex = 11;
             this.simpleButton1.Text = "Custom Edit";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // EditNumberMessagetextEdit
             // 
@@ -196,6 +197,11 @@
             this.SelectNumberlookUpEdit.StyleController = this.layoutControl1;
             this.SelectNumberlookUpEdit.TabIndex = 4;
             this.SelectNumberlookUpEdit.EditValueChanged += new System.EventHandler(this.SelectNumberlookUpEdit_EditValueChanged);
+            // 
+            // senderNumberBindingSource
+            // 
+            this.senderNumberBindingSource.DataMember = "SenderNumber";
+            this.senderNumberBindingSource.DataSource = typeof(Xprema.Data.Xdb);
             // 
             // layoutControlGroup1
             // 
@@ -450,11 +456,6 @@
             this.CountrylayoutControlItem3.TextSize = new System.Drawing.Size(132, 13);
             this.CountrylayoutControlItem3.TextToControlDistance = 5;
             // 
-            // senderNumberBindingSource
-            // 
-            this.senderNumberBindingSource.DataMember = "SenderNumber";
-            this.senderNumberBindingSource.DataSource = typeof(Xprema.Data.Xdb);
-            // 
             // EditSenderNumberFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -472,6 +473,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.EditpasswordtextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EditNumbertextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SelectNumberlookUpEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.senderNumberBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SelectNumberlayoutControlItem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EditNumberlayoutControlItem1)).EndInit();
@@ -494,7 +496,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.NumberOfmassagelayoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CounterlayoutControlItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CountrylayoutControlItem3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.senderNumberBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

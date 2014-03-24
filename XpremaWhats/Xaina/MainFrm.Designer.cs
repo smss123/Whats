@@ -204,6 +204,7 @@
             toolTipTitleItem3.Text = "Delete Customer";
             superToolTip3.Items.Add(toolTipTitleItem3);
             this.DeleteCustomersBtn.SuperTip = superToolTip3;
+            this.DeleteCustomersBtn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.DeleteCustomersBtn_ItemClick);
             // 
             // addAdvertisementsBtn
             // 
@@ -224,6 +225,7 @@
             this.DeleteAdvertisementBtn.Caption = "Delete Advertisements";
             this.DeleteAdvertisementBtn.Id = 15;
             this.DeleteAdvertisementBtn.Name = "DeleteAdvertisementBtn";
+            this.DeleteAdvertisementBtn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.DeleteAdvertisementBtn_ItemClick);
             // 
             // AddGroupsBtn
             // 

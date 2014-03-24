@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.GridEditBtn = new DevExpress.XtraEditors.SimpleButton();
             this.SaveCustomersimpleButton1 = new DevExpress.XtraEditors.SimpleButton();
@@ -35,6 +36,7 @@
             this.EditCustomerPhonetextEdit = new DevExpress.XtraEditors.TextEdit();
             this.EditCustomertextEdit = new DevExpress.XtraEditors.TextEdit();
             this.SelectCostumerlookUpEdit = new DevExpress.XtraEditors.LookUpEdit();
+            this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.SelectCostumerNamelayoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.EditCustomerNamelayoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -42,13 +44,13 @@
             this.EditCustomerEmaillayoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.customersBindingSource = new System.Windows.Forms.BindingSource();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.EditCoustmerEmailtextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EditCustomerPhonetextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EditCustomertextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SelectCostumerlookUpEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SelectCostumerNamelayoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EditCustomerNamelayoutControlItem2)).BeginInit();
@@ -56,7 +58,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.EditCustomerEmaillayoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
@@ -71,7 +72,7 @@
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(402, 290);
+            this.layoutControl1.Size = new System.Drawing.Size(402, 234);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -82,7 +83,7 @@
             this.GridEditBtn.Size = new System.Drawing.Size(378, 22);
             this.GridEditBtn.StyleController = this.layoutControl1;
             this.GridEditBtn.TabIndex = 10;
-            this.GridEditBtn.Text = "simpleButton1";
+            this.GridEditBtn.Text = "Custom Edit";
             this.GridEditBtn.Click += new System.EventHandler(this.GridEditBtn_Click);
             // 
             // SaveCustomersimpleButton1
@@ -134,6 +135,11 @@
             this.SelectCostumerlookUpEdit.TabIndex = 4;
             this.SelectCostumerlookUpEdit.EditValueChanged += new System.EventHandler(this.SelectCostumerlookUpEdit_EditValueChanged);
             // 
+            // customersBindingSource
+            // 
+            this.customersBindingSource.DataMember = "Customers";
+            this.customersBindingSource.DataSource = typeof(Xprema.Data.Xdb);
+            // 
             // layoutControlGroup1
             // 
             this.layoutControlGroup1.CustomizationFormText = "layoutControlGroup1";
@@ -148,7 +154,7 @@
             this.layoutControlItem1});
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "layoutControlGroup1";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(402, 290);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(402, 234);
             this.layoutControlGroup1.Text = "layoutControlGroup1";
             this.layoutControlGroup1.TextVisible = false;
             // 
@@ -214,22 +220,17 @@
             this.layoutControlItem1.CustomizationFormText = "layoutControlItem1";
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 186);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(382, 84);
+            this.layoutControlItem1.Size = new System.Drawing.Size(382, 28);
             this.layoutControlItem1.Text = "layoutControlItem1";
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextToControlDistance = 0;
             this.layoutControlItem1.TextVisible = false;
             // 
-            // customersBindingSource
-            // 
-            this.customersBindingSource.DataMember = "Customers";
-            this.customersBindingSource.DataSource = typeof(Xprema.Data.Xdb);
-            // 
             // EditCustomersFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(402, 290);
+            this.ClientSize = new System.Drawing.Size(402, 234);
             this.Controls.Add(this.layoutControl1);
             this.Name = "EditCustomersFrm";
             this.Text = "EditCustomersFrm";
@@ -240,6 +241,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.EditCustomerPhonetextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EditCustomertextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SelectCostumerlookUpEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SelectCostumerNamelayoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EditCustomerNamelayoutControlItem2)).EndInit();
@@ -247,7 +249,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.EditCustomerEmaillayoutControlItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

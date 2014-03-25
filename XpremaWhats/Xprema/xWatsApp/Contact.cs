@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace WinAppNET.AppCode
+namespace Xprema.Services
+
 {
     public class Contact
     {

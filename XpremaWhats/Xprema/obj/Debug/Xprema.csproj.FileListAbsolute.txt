@@ -20,3 +20,14 @@ C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xprema\bin\Debug\Google.GData.
 C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xprema\bin\Debug\PhoneNumbers.dll
 C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xprema\bin\Debug\System.Data.SQLite.dll
 C:\Users\Heroo\Documents\GitHub\Whats\XpremaWhats\Xprema\bin\Debug\WhatsAppApi.dll
+C:\Users\abu_ehab\Documents\GitHub\Whats\XpremaWhats\Xprema\bin\Debug\Xprema.dll
+C:\Users\abu_ehab\Documents\GitHub\Whats\XpremaWhats\Xprema\bin\Debug\Xprema.pdb
+C:\Users\abu_ehab\Documents\GitHub\Whats\XpremaWhats\Xprema\bin\Debug\Google.GData.Client.dll
+C:\Users\abu_ehab\Documents\GitHub\Whats\XpremaWhats\Xprema\bin\Debug\Google.GData.Contacts.dll
+C:\Users\abu_ehab\Documents\GitHub\Whats\XpremaWhats\Xprema\bin\Debug\Google.GData.Extensions.dll
+C:\Users\abu_ehab\Documents\GitHub\Whats\XpremaWhats\Xprema\bin\Debug\PhoneNumbers.dll
+C:\Users\abu_ehab\Documents\GitHub\Whats\XpremaWhats\Xprema\bin\Debug\System.Data.SQLite.dll
+C:\Users\abu_ehab\Documents\GitHub\Whats\XpremaWhats\Xprema\bin\Debug\WhatsAppApi.dll
+C:\Users\abu_ehab\Documents\GitHub\Whats\XpremaWhats\Xprema\obj\Debug\Xprema.dll
+C:\Users\abu_ehab\Documents\GitHub\Whats\XpremaWhats\Xprema\obj\Debug\Xprema.pdb
+C:\Users\abu_ehab\Documents\GitHub\Whats\XpremaWhats\Xprema\bin\Debug\Alerts.dll

@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using Xprema.Data;
 using Xprema.Commands;
+using DevExpress.XtraGrid.Columns;
 
 namespace Xaina.CustomersForms
 {
@@ -25,7 +26,7 @@ namespace Xaina.CustomersForms
         {
             FillGridView();
            
-            gridView1.ViewCaption = "Customers Data";
+           
 
         }
 
@@ -37,12 +38,30 @@ namespace Xaina.CustomersForms
 
         private void simpleButton1_Click(object sender, EventArgs e)
         {
-            customersBindingSource.EndEdit();
-            cmd.CommitData();
-
-            FillGridView();
+            
 
 
+        }
+
+        private void StartEditBtn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+          
+            this.gridView1.OptionsBehavior.ReadOnly = false;
+            fr.Show_Info_MSG(this, "Start To Edit");
+        
+        }
+
+        private void SaveChangesBtn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (DevExpress.XtraEditors.XtraMessageBox.Show("would you like to save changes", "Save", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                customersBindingSource.EndEdit();
+                cmd.CommitData();
+
+                FillGridView();
+                fr.Show_Info_MSG(this, "Save Changes Done");
+                this.gridView1.OptionsBehavior.ReadOnly = true;
+            }
         }
     }
 }

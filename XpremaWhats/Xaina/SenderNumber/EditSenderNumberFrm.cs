@@ -51,8 +51,14 @@ namespace Xaina.SenderNumber
             if (DevExpress.XtraEditors.XtraMessageBox.Show("would you like to save changes", "Save", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 sendNumClass.EditSender(new PhoneNumber("", "", EditNumbertextEdit.Text), EditpasswordtextEdit.Text, int.Parse(EditNumberMessagetextEdit.Text),bool.Parse(EditStatuscomboBoxEdit.Text), int.Parse(SelectNumberlookUpEdit.EditValue.ToString()), int.Parse(EditCountertextEdit.Text));
-                fr.Show_Info_MSG(this, "Done");
+                fr.Show_Info_MSG(this, "Save Changes Done");
             }
+        }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            GridEditSenderNumbersFrm GridEdit = new GridEditSenderNumbersFrm();
+            GridEdit.ShowDialog();
         }
 
         

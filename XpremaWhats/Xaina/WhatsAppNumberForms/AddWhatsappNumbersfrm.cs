@@ -23,8 +23,7 @@ namespace Xaina.WhatsAppNumberForms
         private Alerts.Alerts fr = new Alerts.Alerts();
         private void WhatsAppNumberAddBtn_Click(object sender, EventArgs e)
         {
-            cmd = new XpremaFileManager();
-            //WtsappClss.AddPhone()
+
         }
     }
 }

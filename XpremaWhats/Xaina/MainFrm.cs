@@ -70,5 +70,17 @@ namespace Xaina
             EditAdvertisementFrm editAdvFrm = new EditAdvertisementFrm();
             editAdvFrm.ShowDialog();
         }
+
+        private void DeleteCustomersBtn_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            DeleteCustomersFrm CusDelFrm = new DeleteCustomersFrm();
+            CusDelFrm.ShowDialog();
+        }
+
+        private void DeleteAdvertisementBtn_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            deleteAdvertisementFrm delAdvFrm = new deleteAdvertisementFrm();
+            delAdvFrm.ShowDialog();
+        }
     }
 }

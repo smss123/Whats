@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using WhatsAppApi.Helper;
 
-namespace WinAppNET.AppCode
+namespace Xprema.Services
 {
     public class WappMessage
     {

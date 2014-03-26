@@ -31,7 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Alerts">
-      <HintPath>E:\برمجة\DLlFile\Alerts.dll</HintPath>
+      <HintPath>E:\All Systems\Alerts.dll</HintPath>
     </Reference>
     <Reference Include="Google.GData.Client, Version=2.1.0.0, Culture=neutral, PublicKeyToken=04a59ca9b0273830, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>

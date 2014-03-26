@@ -9,9 +9,9 @@ using Google.GData.Contacts;
 using Google.GData.Extensions;
 using WhatsAppApi.Helper;
 
-namespace WinAppNET.AppCode
+namespace Xprema.Services
 {
-    class ContactStore
+   public  class ContactStore
     {
         public const string ConnectionString = "Data Source=data/sqlite/contacts.db3";
 
@@ -114,7 +114,7 @@ namespace WinAppNET.AppCode
             }
         }
 
-        public static Contact[] GetAllContacts()
+        public   static  Contact[] GetAllContacts()
         {
             List<Contact> contacts = new List<Contact>();
 

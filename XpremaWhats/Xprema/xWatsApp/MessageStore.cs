@@ -5,7 +5,7 @@ using System.Text;
 using System.Data.Common;
 using System.Data.SQLite;
 
-namespace WinAppNET.AppCode
+namespace Xprema.Services
 {
     class MessageStore
     {

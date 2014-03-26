@@ -3,18 +3,42 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Xprema.XdataType;
+using Xprema.Data;
+using Xprema.Services;
+
 namespace Xprema.Commands
 {
   public   class WhatsAppNumberCommand
+      
     {
       public WhatsAppNumberCommand()
       {
 
       }
 
+
+
+      XpremaFileManager cmd = new XpremaFileManager();
+      CheckNumbers CheckNumbersCmd = new CheckNumbers();
+
+
       public bool AddPhone(PhoneNumber Phone, DateTime Date, Name name, bool status, string Contry)
       {
-          throw new NotImplementedException();
+          try
+          {
+
+
+
+
+              return true;
+          }
+          catch (Exception)
+          {
+              
+              throw;
+          }
+  
+     
       }
 
       public bool EditPhone(PhoneNumber Phone, DateTime Date, Name name, bool status, string Contry, int ID)

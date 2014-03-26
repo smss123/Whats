@@ -28,15 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditSenderNumberFrm));
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.EditNumberMessagetextEdit = new DevExpress.XtraEditors.TextEdit();
             this.EditSenderNumberBtn = new DevExpress.XtraEditors.SimpleButton();
-            this.EditCountrycomboBoxEdit = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.EditStatuscomboBoxEdit = new DevExpress.XtraEditors.ComboBoxEdit();
             this.EditCountertextEdit = new DevExpress.XtraEditors.TextEdit();
             this.EditpasswordtextEdit = new DevExpress.XtraEditors.TextEdit();
             this.EditNumbertextEdit = new DevExpress.XtraEditors.TextEdit();
             this.SelectNumberlookUpEdit = new DevExpress.XtraEditors.LookUpEdit();
+            this.senderNumberBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.SelectNumberlayoutControlItem = new DevExpress.XtraLayout.LayoutControlItem();
             this.EditNumberlayoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -45,10 +48,6 @@
             this.EditStatuslayoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             this.EditNumberMessagelayoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.NAmelayoutControlItem = new DevExpress.XtraLayout.LayoutControlItem();
-            this.NumberOfmassagelayoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.CounterlayoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.CountrylayoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.simpleSeparator1 = new DevExpress.XtraLayout.SimpleSeparator();
             this.simpleSeparator2 = new DevExpress.XtraLayout.SimpleSeparator();
             this.simpleSeparator3 = new DevExpress.XtraLayout.SimpleSeparator();
@@ -58,16 +57,20 @@
             this.simpleSeparator7 = new DevExpress.XtraLayout.SimpleSeparator();
             this.simpleSeparator8 = new DevExpress.XtraLayout.SimpleSeparator();
             this.simpleSeparator9 = new DevExpress.XtraLayout.SimpleSeparator();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.NAmelayoutControlItem = new DevExpress.XtraLayout.LayoutControlItem();
+            this.NumberOfmassagelayoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.CounterlayoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.CountrylayoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.EditNumberMessagetextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EditCountrycomboBoxEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EditStatuscomboBoxEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EditCountertextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EditpasswordtextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EditNumbertextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SelectNumberlookUpEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.senderNumberBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SelectNumberlayoutControlItem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EditNumberlayoutControlItem1)).BeginInit();
@@ -76,10 +79,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.EditStatuslayoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EditNumberMessagelayoutControlItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NAmelayoutControlItem)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NumberOfmassagelayoutControlItem2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CounterlayoutControlItem4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CountrylayoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator3)).BeginInit();
@@ -90,6 +89,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NAmelayoutControlItem)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NumberOfmassagelayoutControlItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CounterlayoutControlItem4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CountrylayoutControlItem3)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
@@ -97,7 +100,7 @@
             this.layoutControl1.Controls.Add(this.simpleButton1);
             this.layoutControl1.Controls.Add(this.EditNumberMessagetextEdit);
             this.layoutControl1.Controls.Add(this.EditSenderNumberBtn);
-            this.layoutControl1.Controls.Add(this.EditCountrycomboBoxEdit);
+            this.layoutControl1.Controls.Add(this.EditStatuscomboBoxEdit);
             this.layoutControl1.Controls.Add(this.EditCountertextEdit);
             this.layoutControl1.Controls.Add(this.EditpasswordtextEdit);
             this.layoutControl1.Controls.Add(this.EditNumbertextEdit);
@@ -110,6 +113,16 @@
             this.layoutControl1.Size = new System.Drawing.Size(373, 334);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Location = new System.Drawing.Point(12, 300);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(349, 22);
+            this.simpleButton1.StyleController = this.layoutControl1;
+            this.simpleButton1.TabIndex = 11;
+            this.simpleButton1.Text = "Custom Edit";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // EditNumberMessagetextEdit
             // 
@@ -127,16 +140,17 @@
             this.EditSenderNumberBtn.StyleController = this.layoutControl1;
             this.EditSenderNumberBtn.TabIndex = 9;
             this.EditSenderNumberBtn.Text = "Save";
+            this.EditSenderNumberBtn.Click += new System.EventHandler(this.EditSenderNumberBtn_Click);
             // 
-            // EditCountrycomboBoxEdit
+            // EditStatuscomboBoxEdit
             // 
-            this.EditCountrycomboBoxEdit.Location = new System.Drawing.Point(12, 248);
-            this.EditCountrycomboBoxEdit.Name = "EditCountrycomboBoxEdit";
-            this.EditCountrycomboBoxEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.EditStatuscomboBoxEdit.Location = new System.Drawing.Point(12, 248);
+            this.EditStatuscomboBoxEdit.Name = "EditStatuscomboBoxEdit";
+            this.EditStatuscomboBoxEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.EditCountrycomboBoxEdit.Size = new System.Drawing.Size(347, 20);
-            this.EditCountrycomboBoxEdit.StyleController = this.layoutControl1;
-            this.EditCountrycomboBoxEdit.TabIndex = 8;
+            this.EditStatuscomboBoxEdit.Size = new System.Drawing.Size(347, 20);
+            this.EditStatuscomboBoxEdit.StyleController = this.layoutControl1;
+            this.EditStatuscomboBoxEdit.TabIndex = 8;
             // 
             // EditCountertextEdit
             // 
@@ -168,9 +182,26 @@
             this.SelectNumberlookUpEdit.Name = "SelectNumberlookUpEdit";
             this.SelectNumberlookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.SelectNumberlookUpEdit.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("ID", "ID", 34, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("SenderNumber", "Sender Number", 84, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Password", "Password", 56, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("NumberOfMessageInDay", "Number Of Message In Day", 142, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Counter", "Counter", 49, DevExpress.Utils.FormatType.Numeric, "", true, DevExpress.Utils.HorzAlignment.Far),
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Status", "Status", 41, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near)});
+            this.SelectNumberlookUpEdit.Properties.DataSource = this.senderNumberBindingSource;
+            this.SelectNumberlookUpEdit.Properties.DisplayMember = "SenderNumber";
+            this.SelectNumberlookUpEdit.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
+            this.SelectNumberlookUpEdit.Properties.ValueMember = "ID";
             this.SelectNumberlookUpEdit.Size = new System.Drawing.Size(347, 20);
             this.SelectNumberlookUpEdit.StyleController = this.layoutControl1;
             this.SelectNumberlookUpEdit.TabIndex = 4;
+            this.SelectNumberlookUpEdit.EditValueChanged += new System.EventHandler(this.SelectNumberlookUpEdit_EditValueChanged);
+            // 
+            // senderNumberBindingSource
+            // 
+            this.senderNumberBindingSource.DataMember = "SenderNumber";
+            this.senderNumberBindingSource.DataSource = typeof(Xprema.Data.Xdb);
             // 
             // layoutControlGroup1
             // 
@@ -256,7 +287,7 @@
             // 
             // EditStatuslayoutControlItem4
             // 
-            this.EditStatuslayoutControlItem4.Control = this.EditCountrycomboBoxEdit;
+            this.EditStatuslayoutControlItem4.Control = this.EditStatuscomboBoxEdit;
             this.EditStatuslayoutControlItem4.CustomizationFormText = "layoutControlItem4";
             this.EditStatuslayoutControlItem4.Location = new System.Drawing.Point(0, 220);
             this.EditStatuslayoutControlItem4.Name = "EditStatuslayoutControlItem4";
@@ -287,50 +318,6 @@
             this.EditNumberMessagelayoutControlItem1.Text = "Edit Number of Message In Day:";
             this.EditNumberMessagelayoutControlItem1.TextLocation = DevExpress.Utils.Locations.Top;
             this.EditNumberMessagelayoutControlItem1.TextSize = new System.Drawing.Size(155, 13);
-            // 
-            // NAmelayoutControlItem
-            // 
-            this.NAmelayoutControlItem.CustomizationFormText = "Nmer";
-            this.NAmelayoutControlItem.Location = new System.Drawing.Point(0, 44);
-            this.NAmelayoutControlItem.Name = "NAmelayoutControlItem";
-            this.NAmelayoutControlItem.Size = new System.Drawing.Size(334, 40);
-            this.NAmelayoutControlItem.Text = "Name:";
-            this.NAmelayoutControlItem.TextLocation = DevExpress.Utils.Locations.Top;
-            this.NAmelayoutControlItem.TextSize = new System.Drawing.Size(132, 13);
-            this.NAmelayoutControlItem.TextToControlDistance = 5;
-            // 
-            // NumberOfmassagelayoutControlItem2
-            // 
-            this.NumberOfmassagelayoutControlItem2.CustomizationFormText = "Number Of Message In Day";
-            this.NumberOfmassagelayoutControlItem2.Location = new System.Drawing.Point(0, 84);
-            this.NumberOfmassagelayoutControlItem2.Name = "NumberOfmassagelayoutControlItem2";
-            this.NumberOfmassagelayoutControlItem2.Size = new System.Drawing.Size(334, 40);
-            this.NumberOfmassagelayoutControlItem2.Text = "Number Of Message In Day";
-            this.NumberOfmassagelayoutControlItem2.TextLocation = DevExpress.Utils.Locations.Top;
-            this.NumberOfmassagelayoutControlItem2.TextSize = new System.Drawing.Size(132, 13);
-            this.NumberOfmassagelayoutControlItem2.TextToControlDistance = 5;
-            // 
-            // CounterlayoutControlItem4
-            // 
-            this.CounterlayoutControlItem4.CustomizationFormText = "Counter";
-            this.CounterlayoutControlItem4.Location = new System.Drawing.Point(0, 124);
-            this.CounterlayoutControlItem4.Name = "CounterlayoutControlItem4";
-            this.CounterlayoutControlItem4.Size = new System.Drawing.Size(334, 40);
-            this.CounterlayoutControlItem4.Text = "Counter";
-            this.CounterlayoutControlItem4.TextLocation = DevExpress.Utils.Locations.Top;
-            this.CounterlayoutControlItem4.TextSize = new System.Drawing.Size(132, 13);
-            this.CounterlayoutControlItem4.TextToControlDistance = 5;
-            // 
-            // CountrylayoutControlItem3
-            // 
-            this.CountrylayoutControlItem3.CustomizationFormText = "Country";
-            this.CountrylayoutControlItem3.Location = new System.Drawing.Point(0, 164);
-            this.CountrylayoutControlItem3.Name = "CountrylayoutControlItem3";
-            this.CountrylayoutControlItem3.Size = new System.Drawing.Size(334, 40);
-            this.CountrylayoutControlItem3.Text = "Country:";
-            this.CountrylayoutControlItem3.TextLocation = DevExpress.Utils.Locations.Top;
-            this.CountrylayoutControlItem3.TextSize = new System.Drawing.Size(132, 13);
-            this.CountrylayoutControlItem3.TextToControlDistance = 5;
             // 
             // simpleSeparator1
             // 
@@ -413,15 +400,6 @@
             this.simpleSeparator9.Size = new System.Drawing.Size(351, 2);
             this.simpleSeparator9.Text = "simpleSeparator9";
             // 
-            // simpleButton1
-            // 
-            this.simpleButton1.Location = new System.Drawing.Point(12, 300);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(349, 22);
-            this.simpleButton1.StyleController = this.layoutControl1;
-            this.simpleButton1.TabIndex = 11;
-            this.simpleButton1.Text = "Custom Edit";
-            // 
             // layoutControlItem1
             // 
             this.layoutControlItem1.Control = this.simpleButton1;
@@ -434,6 +412,50 @@
             this.layoutControlItem1.TextToControlDistance = 0;
             this.layoutControlItem1.TextVisible = false;
             // 
+            // NAmelayoutControlItem
+            // 
+            this.NAmelayoutControlItem.CustomizationFormText = "Nmer";
+            this.NAmelayoutControlItem.Location = new System.Drawing.Point(0, 44);
+            this.NAmelayoutControlItem.Name = "NAmelayoutControlItem";
+            this.NAmelayoutControlItem.Size = new System.Drawing.Size(334, 40);
+            this.NAmelayoutControlItem.Text = "Name:";
+            this.NAmelayoutControlItem.TextLocation = DevExpress.Utils.Locations.Top;
+            this.NAmelayoutControlItem.TextSize = new System.Drawing.Size(132, 13);
+            this.NAmelayoutControlItem.TextToControlDistance = 5;
+            // 
+            // NumberOfmassagelayoutControlItem2
+            // 
+            this.NumberOfmassagelayoutControlItem2.CustomizationFormText = "Number Of Message In Day";
+            this.NumberOfmassagelayoutControlItem2.Location = new System.Drawing.Point(0, 84);
+            this.NumberOfmassagelayoutControlItem2.Name = "NumberOfmassagelayoutControlItem2";
+            this.NumberOfmassagelayoutControlItem2.Size = new System.Drawing.Size(334, 40);
+            this.NumberOfmassagelayoutControlItem2.Text = "Number Of Message In Day";
+            this.NumberOfmassagelayoutControlItem2.TextLocation = DevExpress.Utils.Locations.Top;
+            this.NumberOfmassagelayoutControlItem2.TextSize = new System.Drawing.Size(132, 13);
+            this.NumberOfmassagelayoutControlItem2.TextToControlDistance = 5;
+            // 
+            // CounterlayoutControlItem4
+            // 
+            this.CounterlayoutControlItem4.CustomizationFormText = "Counter";
+            this.CounterlayoutControlItem4.Location = new System.Drawing.Point(0, 124);
+            this.CounterlayoutControlItem4.Name = "CounterlayoutControlItem4";
+            this.CounterlayoutControlItem4.Size = new System.Drawing.Size(334, 40);
+            this.CounterlayoutControlItem4.Text = "Counter";
+            this.CounterlayoutControlItem4.TextLocation = DevExpress.Utils.Locations.Top;
+            this.CounterlayoutControlItem4.TextSize = new System.Drawing.Size(132, 13);
+            this.CounterlayoutControlItem4.TextToControlDistance = 5;
+            // 
+            // CountrylayoutControlItem3
+            // 
+            this.CountrylayoutControlItem3.CustomizationFormText = "Country";
+            this.CountrylayoutControlItem3.Location = new System.Drawing.Point(0, 164);
+            this.CountrylayoutControlItem3.Name = "CountrylayoutControlItem3";
+            this.CountrylayoutControlItem3.Size = new System.Drawing.Size(334, 40);
+            this.CountrylayoutControlItem3.Text = "Country:";
+            this.CountrylayoutControlItem3.TextLocation = DevExpress.Utils.Locations.Top;
+            this.CountrylayoutControlItem3.TextSize = new System.Drawing.Size(132, 13);
+            this.CountrylayoutControlItem3.TextToControlDistance = 5;
+            // 
             // EditSenderNumberFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -442,14 +464,16 @@
             this.Controls.Add(this.layoutControl1);
             this.Name = "EditSenderNumberFrm";
             this.Text = "EditSenderNumberFrm";
+            this.Load += new System.EventHandler(this.EditSenderNumberFrm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.EditNumberMessagetextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EditCountrycomboBoxEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EditStatuscomboBoxEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EditCountertextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EditpasswordtextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EditNumbertextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SelectNumberlookUpEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.senderNumberBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SelectNumberlayoutControlItem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EditNumberlayoutControlItem1)).EndInit();
@@ -458,10 +482,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.EditStatuslayoutControlItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EditNumberMessagelayoutControlItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NAmelayoutControlItem)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NumberOfmassagelayoutControlItem2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CounterlayoutControlItem4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CountrylayoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator3)).EndInit();
@@ -472,6 +492,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NAmelayoutControlItem)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NumberOfmassagelayoutControlItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CounterlayoutControlItem4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CountrylayoutControlItem3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -493,7 +517,7 @@
         private DevExpress.XtraEditors.TextEdit EditCountertextEdit;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
         private DevExpress.XtraEditors.SimpleButton EditSenderNumberBtn;
-        private DevExpress.XtraEditors.ComboBoxEdit EditCountrycomboBoxEdit;
+        private DevExpress.XtraEditors.ComboBoxEdit EditStatuscomboBoxEdit;
         private DevExpress.XtraLayout.LayoutControlItem EditStatuslayoutControlItem4;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
         private DevExpress.XtraEditors.TextEdit EditNumberMessagetextEdit;
@@ -509,5 +533,6 @@
         private DevExpress.XtraLayout.SimpleSeparator simpleSeparator9;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
+        private System.Windows.Forms.BindingSource senderNumberBindingSource;
     }
 }

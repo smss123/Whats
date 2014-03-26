@@ -106,7 +106,7 @@
             this.ribbonGalleryBarItem1,
             this.ribbonGalleryBarItem2});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
-            this.ribbon.MaxItemId = 24;
+            this.ribbon.MaxItemId = 26;
             this.ribbon.Name = "ribbon";
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.WhatsUpNumberribbonPage,
@@ -204,24 +204,28 @@
             toolTipTitleItem3.Text = "Delete Customer";
             superToolTip3.Items.Add(toolTipTitleItem3);
             this.DeleteCustomersBtn.SuperTip = superToolTip3;
+            this.DeleteCustomersBtn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.DeleteCustomersBtn_ItemClick);
             // 
             // addAdvertisementsBtn
             // 
             this.addAdvertisementsBtn.Caption = "Add Advertisement";
             this.addAdvertisementsBtn.Id = 13;
             this.addAdvertisementsBtn.Name = "addAdvertisementsBtn";
+            this.addAdvertisementsBtn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.addAdvertisementsBtn_ItemClick);
             // 
             // EditAdvertisementsBtn
             // 
             this.EditAdvertisementsBtn.Caption = "Edit Advertisement";
             this.EditAdvertisementsBtn.Id = 14;
             this.EditAdvertisementsBtn.Name = "EditAdvertisementsBtn";
+            this.EditAdvertisementsBtn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.EditAdvertisementsBtn_ItemClick);
             // 
             // DeleteAdvertisementBtn
             // 
             this.DeleteAdvertisementBtn.Caption = "Delete Advertisements";
             this.DeleteAdvertisementBtn.Id = 15;
             this.DeleteAdvertisementBtn.Name = "DeleteAdvertisementBtn";
+            this.DeleteAdvertisementBtn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.DeleteAdvertisementBtn_ItemClick);
             // 
             // AddGroupsBtn
             // 

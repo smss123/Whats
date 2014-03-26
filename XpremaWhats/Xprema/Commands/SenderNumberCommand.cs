@@ -18,9 +18,10 @@ public     class SenderNumberCommand
             Xdb.SenderNumberRow row = cmd.DB.SenderNumber.NewSenderNumberRow();
             row.SenderNumber = phone.FullPhoneNumber;
             row.Password = Password;
-            row.NumberOfMessageInDay = numberOfMessageInDay.ToString();
+            row.NumberOfMessageInDay = numberOfMessageInDay;
             row.Counter = counter;
             row.Status = status;
+            cmd.DB.SenderNumber.AddSenderNumberRow(row);
             cmd.CommitData();
             return true;
         }
@@ -36,11 +37,11 @@ public     class SenderNumberCommand
         XpremaFileManager cmd = new XpremaFileManager();
         foreach (Xdb.SenderNumberRow  item in cmd.DB.SenderNumber.Rows) 
         {
-            if (item.ID==ID.ToString())
+            if (item.ID==ID)
             {
                 item.SenderNumber = phone.FullPhoneNumber;
                 item.Password = Password;
-                item.NumberOfMessageInDay = numberOfMessageInDay.ToString();
+                item.NumberOfMessageInDay = numberOfMessageInDay;
                 item.Status = status;
                 item.Counter = counter;
                 cmd.CommitData();
@@ -56,7 +57,7 @@ public     class SenderNumberCommand
         XpremaFileManager cmd = new XpremaFileManager();
         foreach (Xdb.SenderNumberRow item in cmd.DB.SenderNumber.Rows)
         {
-            if (item.ID == ID.ToString())
+            if (item.ID == ID)
             {
                 item.Delete();
                 cmd.CommitData();
@@ -77,10 +78,10 @@ public     class SenderNumberCommand
     public Data.Xdb.SenderNumberRow GetById(int ID)
     {
         XpremaFileManager cmd = new XpremaFileManager();
-        var q = (from i in cmd.DB.SenderNumber.AsQueryable() where i.ID ==ID.ToString() select i).Take(1).SingleOrDefault();
+        var q = (from i in cmd.DB.SenderNumber.AsQueryable() where i.ID ==ID select i).Take(1).SingleOrDefault();
         return q;
     }
-
+    
 
     }
 }

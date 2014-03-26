@@ -2,260 +2,123 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using System.Threading;
 namespace Xprema.Services
 {
+
     class GeneratNumbers
     {
+        // {Abu Ehab}
 
-        string[] Countries = {
-		"AF:Afghanistan (‫افغانستان‬‎):93",
-		"AX:Åland Islands (Åland):358",
-		"AL:Albania (Shqipëria):355",
-		"DZ:Algeria (‫الجزائر‬‎):213",
-		"AS:American Samoa:1",
-		"AD:Andorra:376",
-		"AO:Angola:244",
-		"AI:Anguilla:1",
-		"AG:Antigua and Barbuda:1",
-		"AR:Argentina:54",
-		"AM:Armenia (Հայաստան):374",
-		"AW:Aruba:297",
-		"AC:Ascension Island:247",
-		"AU:Australia:61",
-		"AT:Austria (Österreich):43",
-		"AZ:Azerbaijan (Azərbaycan):994",
-		"BS:Bahamas:1",
-		"BH:Bahrain (‫البحرين‬‎):973",
-		"BD:Bangladesh (বাংলাদেশ):880",
-		"BB:Barbados:1",
-		"BY:Belarus (Беларусь):375",
-		"BE:Belgium (België):32",
-		"BZ:Belize:501",
-		"BJ:Benin (Bénin):229",
-		"BM:Bermuda:1",
-		"BT:Bhutan (འབྲུག):975",
-		"BO:Bolivia:591",
-		"BA:Bosnia and Herzegovina (Босна и Херцеговина):387",
-		"BW:Botswana:267",
-		"BR:Brazil (Brasil):55",
-		"IO:British Indian Ocean Territory:246",
-		"VG:British Virgin Islands:1",
-		"BN:Brunei:673",
-		"BG:Bulgaria (България):359",
-		"BF:Burkina Faso:226",
-		"BI:Burundi (Uburundi):257",
-		"KH:Cambodia (កម្ពុជា):855",
-		"CM:Cameroon (Cameroun):237",
-		"CA:Canada:1",
-		"CV:Cape Verde (Kabu Verdi):238",
-		"BQ:Caribbean Netherlands:599",
-		"KY:Cayman Islands:1",
-		"CF:Central African Republic (République centrafricaine):236",
-		"TD:Chad (Tchad):235",
-		"CL:Chile:56",
-		"CN:China (中国):86",
-		"CX:Christmas Island:61",
-		"CC:Cocos [Keeling] Islands:61",
-		"CO:Colombia:57",
-		"KM:Comoros (‫جزر القمر‬‎):269",
-		"CD:Congo [DRC] (Jamhuri ya Kidemokrasia ya Kongo):243",
-		"CG:Congo [Republic] (Congo-Brazzaville):242",
-		"CK:Cook Islands:682",
-		"CR:Costa Rica:506",
-		"CI:Côte d’Ivoire:225",
-		"HR:Croatia (Hrvatska):385",
-		"CU:Cuba:53",
-		"CW:Curaçao:599",
-		"CY:Cyprus (Κύπρος):357",
-		"CZ:Czech Republic (Česká republika):420",
-		"DK:Denmark (Danmark):45",
-		"DJ:Djibouti:253",
-		"DM:Dominica:1",
-		"DO:Dominican Republic (República Dominicana):1",
-		"EC:Ecuador:593",
-		"EG:Egypt (‫مصر‬‎):20",
-		"SV:El Salvador:503",
-		"GQ:Equatorial Guinea (Guinea Ecuatorial):240",
-		"ER:Eritrea:291",
-		"EE:Estonia (Eesti):372",
-		"ET:Ethiopia:251",
-		"FK:Falkland Islands [Islas Malvinas]:500",
-		"FO:Faroe Islands (Føroyar):298",
-		"FJ:Fiji:679",
-		"FI:Finland (Suomi):358",
-		"FR:France:33",
-		"GF:French Guiana (Guyane française):594",
-		"PF:French Polynesia (Polynésie française):689",
-		"GA:Gabon:241",
-		"GM:Gambia:220",
-		"GE:Georgia (საქართველო):995",
-		"DE:Germany (Deutschland):49",
-		"GH:Ghana (Gaana):233",
-		"GI:Gibraltar:350",
-		"GR:Greece (Ελλάδα):30",
-		"GL:Greenland (Kalaallit Nunaat):299",
-		"GD:Grenada:1",
-		"GP:Guadeloupe:590",
-		"GU:Guam:1",
-		"GT:Guatemala:502",
-		"GG:Guernsey:44",
-		"GN:Guinea (Guinée):224",
-		"GW:Guinea-Bissau (Guiné Bissau):245",
-		"GY:Guyana:592",
-		"HT:Haiti:509",
-		"HN:Honduras:504",
-		"HK:Hong Kong (香港):852",
-		"HU:Hungary (Magyarország):36",
-		"IS:Iceland (Ísland):354",
-		"IN:India (भारत):91",
-		"ID:Indonesia:62",
-		"IR:Iran (‫ایران‬‎):98",
-		"IQ:Iraq (‫العراق‬‎):964",
-		"IE:Ireland:353",
-		"IM:Isle of Man:44",
-		"IL:Israel (‫ישראל‬‎):972",
-		"IT:Italy (Italia):39",
-		"JM:Jamaica:1",
-		"JP:Japan (日本):81",
-		"JE:Jersey:44",
-		"JO:Jordan (‫الأردن‬‎):962",
-		"KZ:Kazakhstan (Казахстан):7",
-		"KE:Kenya:254",
-		"KI:Kiribati:686",
-		"KW:Kuwait (‫الكويت‬‎):965",
-		"KG:Kyrgyzstan:996",
-		"LA:Laos (ສ.ປ.ປ ລາວ):856",
-		"LV:Latvia (Latvija):371",
-		"LB:Lebanon (‫لبنان‬‎):961",
-		"LS:Lesotho:266",
-		"LR:Liberia:231",
-		"LY:Libya (‫ليبيا‬‎):218",
-		"LI:Liechtenstein:423",
-		"LT:Lithuania (Lietuva):370",
-		"LU:Luxembourg:352",
-		"MO:Macau (澳門):853",
-		"MK:Macedonia [FYROM] (Македонија):389",
-		"MG:Madagascar (Madagasikara):261",
-		"MW:Malawi:265",
-		"MY:Malaysia:60",
-		"MV:Maldives:960",
-		"ML:Mali:223",
-		"MT:Malta:356",
-		"MH:Marshall Islands:692",
-		"MQ:Martinique:596",
-		"MR:Mauritania (‫موريتانيا‬‎):222",
-		"MU:Mauritius (Moris):230",
-		"YT:Mayotte:262",
-		"MX:Mexico (México):52",
-		"FM:Micronesia:691",
-		"MD:Moldova (Republica Moldova):373",
-		"MC:Monaco:377",
-		"MN:Mongolia (Монгол):976",
-		"ME:Montenegro (Crna Gora):382",
-		"MS:Montserrat:1",
-		"MA:Morocco (‫المغرب‬‎):212",
-		"MZ:Mozambique (Moçambique):258",
-		"MM:Myanmar [Burma] (မြန်မာ):95",
-		"NA:Namibia:264",
-		"NR:Nauru:674",
-		"NP:Nepal (नेपाल):977",
-		"NL:Netherlands (Nederland):31",
-		"NC:New Caledonia (Nouvelle-Calédonie):687",
-		"NZ:New Zealand:64",
-		"NI:Nicaragua:505",
-		"NE:Niger (Nijar):227",
-		"NG:Nigeria:234",
-		"NU:Niue:683",
-		"NF:Norfolk Island:672",
-		"MP:Northern Mariana Islands:1",
-		"KP:North Korea (조선 민주주의 인민 공화국):850",
-		"NO:Norway (Norge):47",
-		"OM:Oman (‫عُمان‬‎):968",
-		"PK:Pakistan (‫پاکستان‬‎):92",
-		"PW:Palau:680",
-		"PS:Palestine (‫فلسطين‬‎):970",
-		"PA:Panama (Panamá):507",
-		"PG:Papua New Guinea:675",
-		"PY:Paraguay:595",
-		"PE:Peru (Perú):51",
-		"PH:Philippines:63",
-		"PL:Poland (Polska):48",
-		"PT:Portugal:351",
-		"PR:Puerto Rico:1",
-		"QA:Qatar (‫قطر‬‎):974",
-		"RE:Réunion:262",
-		"RO:Romania (România):40",
-		"RU:Russia (Россия):7",
-		"RW:Rwanda:250",
-		"BL:Saint Barthélemy (Saint-Barthélémy):590",
-		"SH:Saint Helena:290",
-		"KN:Saint Kitts and Nevis:1",
-		"LC:Saint Lucia:1",
-		"MF:Saint Martin (Saint-Martin [partie française]):590",
-		"PM:Saint Pierre and Miquelon (Saint-Pierre-et-Miquelon):508",
-		"VC:Saint Vincent and the Grenadines:1",
-		"WS:Samoa:685",
-		"SM:San Marino:378",
-		"ST:São Tomé and Príncipe (São Tomé e Príncipe):239",
-		"SA:Saudi Arabia (‫المملكة العربية السعودية‬‎):966",
-		"SN:Senegal (Sénégal):221",
-		"RS:Serbia (Србија):381",
-		"SC:Seychelles:248",
-		"SL:Sierra Leone:232",
-		"SG:Singapore:65",
-		"SX:Sint Maarten:1",
-		"SK:Slovakia (Slovensko):421",
-		"SI:Slovenia (Slovenija):386",
-		"SB:Solomon Islands:677",
-		"SO:Somalia (Soomaaliya):252",
-		"ZA:South Africa:27",
-		"KR:South Korea (대한민국):82",
-		"SS:South Sudan (‫جنوب السودان‬‎):211",
-		"ES:Spain (España):34",
-		"LK:Sri Lanka (ශ්‍රී ලංකාව):94",
-		"SD:Sudan (‫السودان‬‎):249",
-		"SR:Suriname:597",
-		"SJ:Svalbard and Jan Mayen (Svalbard og Jan Mayen):47",
-		"SZ:Swaziland:268",
-		"SE:Sweden (Sverige):46",
-		"CH:Switzerland (Schweiz):41",
-		"SY:Syria (‫سوريا‬‎):963",
-		"TW:Taiwan (台灣):886",
-		"TJ:Tajikistan:992",
-		"TZ:Tanzania:255",
-		"TH:Thailand (ไทย):66",
-		"TL:Timor-Leste:670",
-		"TG:Togo:228",
-		"TK:Tokelau:690",
-		"TO:Tonga:676",
-		"TT:Trinidad and Tobago:1",
-		"TA:Tristan da Cunha:290",
-		"TN:Tunisia (‫تونس‬‎):216",
-		"TR:Turkey (Türkiye):90",
-		"TM:Turkmenistan:993",
-		"TC:Turks and Caicos Islands:1",
-		"TV:Tuvalu:688",
-		"VI:U.S. Virgin Islands:1",
-		"UG:Uganda:256",
-		"UA:Ukraine (Україна):380",
-		"AE:United Arab Emirates (‫الإمارات العربية المتحدة‬‎):971",
-		"GB:United Kingdom:44",
-		"US:United States:1",
-		"UY:Uruguay:598",
-		"UZ:Uzbekistan (Ўзбекистон):998",
-		"VU:Vanuatu:678",
-		"VA:Vatican City (Città del Vaticano):379",
-		"VE:Venezuela:58",
-		"VN:Vietnam (Việt Nam):84",
-		"WF:Wallis and Futuna:681",
-		"EH:Western Sahara (‫الصحراء الغربية‬‎):212",
-		"YE:Yemen (‫اليمن‬‎):967",
-		"ZM:Zambia:260",
-		"ZW:Zimbabwe:263"
+        #region " List Of All Countries "
+        string[] Countries = { 
+                                 "فلسطين 972","غانا 233 ","غيانا 592","غيانا الفرنسية 594 ",
+                                "اتحاد روسيا الفدرالي 7 ", "غينيا الاستوائية 0240","غينيا بيساو 245 ",
+                                "اثيوبا 251","مصر 20",
+                                "اروبه 297 ",
+                                "اريتريا 291",
+                                "اسبانيا 34 ",
+                                "استراليا 61",
+                                "استراليا - المناطق المدارة 672 ",
+                                "استونيا 372",
+                                "افغانستان 93 ",
+                                "الأردن 962",
+                                "الارجنتين 54 ",
+                                "الاسكا1907 ",
+                                "الاكوادو 593 ",
+                                "الامارات العربية 971",
+                                "البانيا 355 ",
+                                "البحرين 973",
+                                "البرازيل 55 ",
+                                "البرتغال 351",
+                                "البوسنة/هرسك 387 ",
+                                "الجابون 241",
+                                "الجزائر 213 ",
+                                "الجمهورية اليمنية 968",
+                                "الدنمارك 45 ",
+                                "السلفادور 503",
+                                "السنغال 221 ",
+                                "السودان 249",
+                                "السويد 46 ",
+                                "الصومال 252",
+                                "الصين 86 ",
+                                "العراق 964",
+                                "الفاتيكان 3966982 ",
+                                "الفلبين 63",
+                                "الكنغو 242 ",
+                                "المكسيك 52",
+                                "المملكة السعودية 966 ",
+                                "المملكة المتحدة 44",
+                                "المملكة المغربية 212 ",
+                                "النرويج 47","فنلندا 0358",
+                                "النمسا 43 ",
+                                "النيجر 227","فيتنام 84 ",
+                                "الهند 91 ", "كوريا الجنوبية 82","كوريا الشمالية 850 ","كوستاريكا 506",
+                                "الولايات المتحدة 1",
+                                "اليابان 81 ", "فرنسا 33 ",
+                                "اليونان 30",
+                                "انتيجوا وباربودا 1268 ", "فنزويلا 58 ",
+                                "انجولا 244",
+                                "انجويلا 1264 ",
+                                "اندورا 376",
+                                "اندونيسيا 62 ",
+                                "اورجواي 598",
+                                "اوغندا 256 ",
+                                "ايران 98","لبنان 961","ليبيا 218 ","مالطا 356", "مالي 223",
+                                "ايرلندا 353 ",
+                                "ايسلندا 354",
+                                "ايطاليا 39 ","هنجاريا 036 ","هولندا 031 ",
+                                "غينيا الجديدة 675",
+                                "باراجواي 595 ",
+                                "باكستان 92", "فيجي 679", "هونج كونج 852",
+                                "بالو 680 ",
+                                "بربادوس 1246","نيجيريا 234 ",
+                                "برمودا 1441 ",
+                                "بروني 673",
+                                "بلغاريا 359 ","كندا 1", " يوغسلافيا 381",
+                                "بليجكا 32",
+                                "بليز 501 ","ماليزيا 60 ",
+                                "بنغلاديش 880","كوبا 53 ","مدغششقر 261 ",
+                                "بنما 507 ", "موريشيوس 230 ",
+                                "بنين 229",
+                                "بهاما 1242 ","كولومبيا 57 ","كينيا 254 ", "موزامبيق 258",
+                                "بوتان 975",
+                                "بوتسوانا 267 ",
+                                "بورتوريكو 1787", "ناميبيا 264", "ناورو 674 ","نيبال 977",
+                                "بوركينافاسو 226 ",
+                                "بورما (مينمار ) 95",
+                                "بوروندي 257","قرغيزستان 996",
+                                "بولندا 48","جزر فارو 298 ","جزر كايمان 1345","جزر كوك 682 ","جزر كيب فيردي 238","جزر مارشال 692 ",
+                                "بوليفيا 591 ",  "كاميرون 237 ",
+                                "بولينيسيا الفرنسية (تاهيتي ) 689",
+                                "بيرو 51 ", "كلدونيا الجديدة 687",
+                                "تايلاند 66","كمبوديا 855 ",
+                                "تايوان 886 ","جزر الكريسماس 619164","جزر الكناري 34 ","جزر انتيلس (الهولندية ) 599","جزر تركس وكيكوس 1649 ","جزر سلمون 677",
+                                 "تركيا 90",  "قبرص 357 ",
+                                 "ترينداد وتوباجوا 1868 ", "لاتفيا 371",
+                                 "تشاد 235", "لاوس 856 ",
+                                 "تشيك 420 ","تشيلي 56","تنزانيا 255 ","توجو 228","توفالو 688 ","تونجا 676","تونس 216 ",
+                                 "جامايكا 1876","جبل طارق 350 ","جرينادا 1473","جرينلاند 299 ","جزر العذراء الأمريكية 1340",
+                                 "جزر الفوكلاند 500","جزر القمر 269 "
+                                 ,"جزرماريانا 247","جزيرة اسينشن 247 ","جزيرة كوكوز 6722"," 6723   جزيرة نورفولك ","جزيرة نيوي 683","جمهورية اذربيجان 994 ","جمهورية ارمينا 374" ,
+                                 "جمهورية افريقيا 236 ","جمهورية الدومينيكان 1809",
+                                 "جمهورية الكنغو الديمقراطية 243 ","جمهورية اليمن 967","جمهورية اوزباكستان 998 ","جمهورية اوكرانيا 380","جمهورية بيلاروس 375" ,
+                                 "توركمنيستان 993","جمهورية جورجيا 995 ","جمهورية سلوفاكيا 421","جمهورية طاجيكستان 7377","جمهورية غينيا 224"
+                                 ,"جمهورية كازاخستان 7 ","جمهورية كرواتيا 385","جمهورية ليتوانيا 370 ","جمهورية مصر ","جنوب أفريقيا 27 ","جواد يلوب 595",
+                                 "جوام 1671 ","جيبوتي 253","دولة قطر 974 ","دومينيكا 1767","دييجوجارسيا 46 ","رواندا 250"
+                                 ,"رومانيا 40","ريونيون 262","زامبيا 260 ","زيمبابوي 263","ساحل العاج 225",
+                                 "سامو (الولايات المتحدة ) 684","ساموالغربية 685 ","سان مارينو 378","ساوتامي وبرنسيبه 239 ","سلطنة عمان 968","سلوفينيا 386 "           
+                                 ,"سنت بيري وميقيولون 508","سنت فينسنت 180945","سنت كيت ونينس 1869","سنت لوسيا 1758 ","سنت هيكلينا 290"
+                                 ,"سنغافورة 65 ","سوازيلاند 268","سوريا 963 ",
+                                 "سورينام 597","سويسرا 41","سيراليون 232"
+                               
 
-	};
-        // This Function Populate Countries Whith It's Keys
+
+                                                  
+                            };
+        #endregion
+
+        #region " This Function Populate Countries Whith It's Keys "
         public List<string> PopulateCountries()
         {
             List<string> List = new List<string>();
@@ -266,7 +129,9 @@ namespace Xprema.Services
             }
             return List;
         }
+        #endregion
 
+        #region" Get All Countries Keyes "
         public List<string> AllKeys()
         {
 
@@ -287,45 +152,32 @@ namespace Xprema.Services
             }
             return List;
         }
+        #endregion 
 
+        #region " Generate Phone Numbers  "
 
-
-        public List<string> CreateNumbers()
-
+        public IEnumerable<string> GeneratePhoneNumbers()
         {
 
-            List<string> C = new List<string>();
-            //Get Keys Once Againe
-            string b = string.Empty;
-            List<string> List = new List<string>();
-            List.Clear();
-            foreach (string item in Countries)
+            var Kyss = from k in AllKeys() select k;
+            foreach (var Ky in Kyss)
             {
-                for (int i = 0; i < item.Length; i++)
+                for (int i = 0; i < 100000000; ++i)
                 {
-                    if (Char.IsDigit(item[i]))
-                    {
-                        b += item[i];
+                    if (!ContactStore.numberExists(Ky + i.ToString("00000000") + "@s.whatsapp.net")) {
+
+                        ContactStore.AddContact(new Contact(0, Ky + i.ToString("00000000") +
+                                               "@s.whatsapp.net", "", "whatsAppUser" + i.ToString(), "", ""));
                     }
-                }
-                List.Add(b);
-                b = null;
-            }
-
-            
-            
-            // Start Generate Numbers : 000000000
-
-            foreach (var item in List)
-            {
-                for (int i = 0; i < 9999999; i++)
-                {
-                    C.Add(item + i);
+                   
+                   yield return Ky + i.ToString("00000000");
+                    
                 }
             }
 
-            return C;
         }
+        #endregion
+
 
     }
 }

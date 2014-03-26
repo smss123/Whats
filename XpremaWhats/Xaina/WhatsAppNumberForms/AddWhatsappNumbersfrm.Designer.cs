@@ -33,11 +33,9 @@
             this.ContrycomboBoxEdit = new DevExpress.XtraEditors.ComboBoxEdit();
             this.StatuscomboBoxEdit = new DevExpress.XtraEditors.ComboBoxEdit();
             this.NametextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.CreatedDatedateEdit = new DevExpress.XtraEditors.DateEdit();
             this.PhoneNumbertextEdit = new DevExpress.XtraEditors.TextEdit();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.PhoneNumberlayoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.CreatedDatelayoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.NamelayoutControlItem = new DevExpress.XtraLayout.LayoutControlItem();
             this.StatuslayoutControlItem = new DevExpress.XtraLayout.LayoutControlItem();
             this.ContrylayoutControlItem = new DevExpress.XtraLayout.LayoutControlItem();
@@ -52,12 +50,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.ContrycomboBoxEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StatuscomboBoxEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NametextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CreatedDatedateEdit.Properties.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CreatedDatedateEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PhoneNumbertextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PhoneNumberlayoutControlItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CreatedDatelayoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NamelayoutControlItem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StatuslayoutControlItem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ContrylayoutControlItem)).BeginInit();
@@ -75,7 +70,6 @@
             this.layoutControl1.Controls.Add(this.ContrycomboBoxEdit);
             this.layoutControl1.Controls.Add(this.StatuscomboBoxEdit);
             this.layoutControl1.Controls.Add(this.NametextEdit);
-            this.layoutControl1.Controls.Add(this.CreatedDatedateEdit);
             this.layoutControl1.Controls.Add(this.PhoneNumbertextEdit);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.layoutControl1.ForeColor = System.Drawing.Color.Red;
@@ -88,7 +82,7 @@
             // 
             // WhatsAppNumberAddBtn
             // 
-            this.WhatsAppNumberAddBtn.Location = new System.Drawing.Point(12, 222);
+            this.WhatsAppNumberAddBtn.Location = new System.Drawing.Point(12, 182);
             this.WhatsAppNumberAddBtn.Name = "WhatsAppNumberAddBtn";
             this.WhatsAppNumberAddBtn.Size = new System.Drawing.Size(310, 22);
             this.WhatsAppNumberAddBtn.StyleController = this.layoutControl1;
@@ -98,7 +92,7 @@
             // 
             // ContrycomboBoxEdit
             // 
-            this.ContrycomboBoxEdit.Location = new System.Drawing.Point(12, 196);
+            this.ContrycomboBoxEdit.Location = new System.Drawing.Point(12, 156);
             this.ContrycomboBoxEdit.Name = "ContrycomboBoxEdit";
             this.ContrycomboBoxEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -108,7 +102,7 @@
             // 
             // StatuscomboBoxEdit
             // 
-            this.StatuscomboBoxEdit.Location = new System.Drawing.Point(12, 154);
+            this.StatuscomboBoxEdit.Location = new System.Drawing.Point(12, 114);
             this.StatuscomboBoxEdit.Name = "StatuscomboBoxEdit";
             this.StatuscomboBoxEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -118,24 +112,11 @@
             // 
             // NametextEdit
             // 
-            this.NametextEdit.Location = new System.Drawing.Point(12, 112);
+            this.NametextEdit.Location = new System.Drawing.Point(12, 72);
             this.NametextEdit.Name = "NametextEdit";
             this.NametextEdit.Size = new System.Drawing.Size(310, 20);
             this.NametextEdit.StyleController = this.layoutControl1;
             this.NametextEdit.TabIndex = 6;
-            // 
-            // CreatedDatedateEdit
-            // 
-            this.CreatedDatedateEdit.EditValue = null;
-            this.CreatedDatedateEdit.Location = new System.Drawing.Point(12, 70);
-            this.CreatedDatedateEdit.Name = "CreatedDatedateEdit";
-            this.CreatedDatedateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.CreatedDatedateEdit.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.CreatedDatedateEdit.Size = new System.Drawing.Size(310, 20);
-            this.CreatedDatedateEdit.StyleController = this.layoutControl1;
-            this.CreatedDatedateEdit.TabIndex = 5;
             // 
             // PhoneNumbertextEdit
             // 
@@ -152,7 +133,6 @@
             this.layoutControlGroup1.GroupBordersVisible = false;
             this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.PhoneNumberlayoutControlItem1,
-            this.CreatedDatelayoutControlItem2,
             this.NamelayoutControlItem,
             this.StatuslayoutControlItem,
             this.ContrylayoutControlItem,
@@ -178,22 +158,11 @@
             this.PhoneNumberlayoutControlItem1.TextLocation = DevExpress.Utils.Locations.Top;
             this.PhoneNumberlayoutControlItem1.TextSize = new System.Drawing.Size(74, 13);
             // 
-            // CreatedDatelayoutControlItem2
-            // 
-            this.CreatedDatelayoutControlItem2.Control = this.CreatedDatedateEdit;
-            this.CreatedDatelayoutControlItem2.CustomizationFormText = "Created Date:";
-            this.CreatedDatelayoutControlItem2.Location = new System.Drawing.Point(0, 42);
-            this.CreatedDatelayoutControlItem2.Name = "CreatedDatelayoutControlItem2";
-            this.CreatedDatelayoutControlItem2.Size = new System.Drawing.Size(314, 40);
-            this.CreatedDatelayoutControlItem2.Text = "Created Date:";
-            this.CreatedDatelayoutControlItem2.TextLocation = DevExpress.Utils.Locations.Top;
-            this.CreatedDatelayoutControlItem2.TextSize = new System.Drawing.Size(74, 13);
-            // 
             // NamelayoutControlItem
             // 
             this.NamelayoutControlItem.Control = this.NametextEdit;
             this.NamelayoutControlItem.CustomizationFormText = "Name:";
-            this.NamelayoutControlItem.Location = new System.Drawing.Point(0, 84);
+            this.NamelayoutControlItem.Location = new System.Drawing.Point(0, 44);
             this.NamelayoutControlItem.Name = "NamelayoutControlItem";
             this.NamelayoutControlItem.Size = new System.Drawing.Size(314, 40);
             this.NamelayoutControlItem.Text = "Name:";
@@ -204,7 +173,7 @@
             // 
             this.StatuslayoutControlItem.Control = this.StatuscomboBoxEdit;
             this.StatuslayoutControlItem.CustomizationFormText = "Status:";
-            this.StatuslayoutControlItem.Location = new System.Drawing.Point(0, 126);
+            this.StatuslayoutControlItem.Location = new System.Drawing.Point(0, 86);
             this.StatuslayoutControlItem.Name = "StatuslayoutControlItem";
             this.StatuslayoutControlItem.Size = new System.Drawing.Size(314, 40);
             this.StatuslayoutControlItem.Text = "Status:";
@@ -216,7 +185,7 @@
             this.ContrylayoutControlItem.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.False;
             this.ContrylayoutControlItem.Control = this.ContrycomboBoxEdit;
             this.ContrylayoutControlItem.CustomizationFormText = "Contry:";
-            this.ContrylayoutControlItem.Location = new System.Drawing.Point(0, 168);
+            this.ContrylayoutControlItem.Location = new System.Drawing.Point(0, 128);
             this.ContrylayoutControlItem.Name = "ContrylayoutControlItem";
             this.ContrylayoutControlItem.Size = new System.Drawing.Size(314, 40);
             this.ContrylayoutControlItem.Tag = "Contry";
@@ -228,9 +197,9 @@
             // 
             this.layoutControlItem6.Control = this.WhatsAppNumberAddBtn;
             this.layoutControlItem6.CustomizationFormText = "layoutControlItem6";
-            this.layoutControlItem6.Location = new System.Drawing.Point(0, 210);
+            this.layoutControlItem6.Location = new System.Drawing.Point(0, 170);
             this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(314, 38);
+            this.layoutControlItem6.Size = new System.Drawing.Size(314, 78);
             this.layoutControlItem6.Text = "layoutControlItem6";
             this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem6.TextToControlDistance = 0;
@@ -249,7 +218,7 @@
             // 
             this.simpleSeparator2.AllowHotTrack = false;
             this.simpleSeparator2.CustomizationFormText = "simpleSeparator2";
-            this.simpleSeparator2.Location = new System.Drawing.Point(0, 82);
+            this.simpleSeparator2.Location = new System.Drawing.Point(0, 42);
             this.simpleSeparator2.Name = "simpleSeparator2";
             this.simpleSeparator2.Size = new System.Drawing.Size(314, 2);
             this.simpleSeparator2.Text = "simpleSeparator2";
@@ -258,7 +227,7 @@
             // 
             this.simpleSeparator3.AllowHotTrack = false;
             this.simpleSeparator3.CustomizationFormText = "simpleSeparator3";
-            this.simpleSeparator3.Location = new System.Drawing.Point(0, 124);
+            this.simpleSeparator3.Location = new System.Drawing.Point(0, 84);
             this.simpleSeparator3.Name = "simpleSeparator3";
             this.simpleSeparator3.Size = new System.Drawing.Size(314, 2);
             this.simpleSeparator3.Text = "simpleSeparator3";
@@ -267,7 +236,7 @@
             // 
             this.simpleSeparator4.AllowHotTrack = false;
             this.simpleSeparator4.CustomizationFormText = "simpleSeparator4";
-            this.simpleSeparator4.Location = new System.Drawing.Point(0, 166);
+            this.simpleSeparator4.Location = new System.Drawing.Point(0, 126);
             this.simpleSeparator4.Name = "simpleSeparator4";
             this.simpleSeparator4.Size = new System.Drawing.Size(314, 2);
             this.simpleSeparator4.Text = "simpleSeparator4";
@@ -276,7 +245,7 @@
             // 
             this.simpleSeparator5.AllowHotTrack = false;
             this.simpleSeparator5.CustomizationFormText = "simpleSeparator5";
-            this.simpleSeparator5.Location = new System.Drawing.Point(0, 208);
+            this.simpleSeparator5.Location = new System.Drawing.Point(0, 168);
             this.simpleSeparator5.Name = "simpleSeparator5";
             this.simpleSeparator5.Size = new System.Drawing.Size(314, 2);
             this.simpleSeparator5.Text = "simpleSeparator5";
@@ -285,7 +254,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(334, 269);
+            this.ClientSize = new System.Drawing.Size(334, 221);
             this.Controls.Add(this.layoutControl1);
             this.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
             this.Name = "AddWhatsappNumbersfrm";
@@ -295,12 +264,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.ContrycomboBoxEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.StatuscomboBoxEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NametextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CreatedDatedateEdit.Properties.CalendarTimeProperties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CreatedDatedateEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PhoneNumbertextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PhoneNumberlayoutControlItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CreatedDatelayoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NamelayoutControlItem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.StatuslayoutControlItem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ContrylayoutControlItem)).EndInit();
@@ -318,10 +284,8 @@
 
         private DevExpress.XtraLayout.LayoutControl layoutControl1;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup1;
-        private DevExpress.XtraEditors.DateEdit CreatedDatedateEdit;
         private DevExpress.XtraEditors.TextEdit PhoneNumbertextEdit;
         private DevExpress.XtraLayout.LayoutControlItem PhoneNumberlayoutControlItem1;
-        private DevExpress.XtraLayout.LayoutControlItem CreatedDatelayoutControlItem2;
         private DevExpress.XtraEditors.SimpleButton WhatsAppNumberAddBtn;
         private DevExpress.XtraEditors.ComboBoxEdit ContrycomboBoxEdit;
         private DevExpress.XtraEditors.ComboBoxEdit StatuscomboBoxEdit;

@@ -112,6 +112,7 @@
             this.SearchDateBtn.StyleController = this.layoutControl1;
             this.SearchDateBtn.TabIndex = 9;
             this.SearchDateBtn.Text = "Search By date";
+            this.SearchDateBtn.Click += new System.EventHandler(this.SearchDateBtn_Click);
             // 
             // SelectDateTodateEdit
             // 

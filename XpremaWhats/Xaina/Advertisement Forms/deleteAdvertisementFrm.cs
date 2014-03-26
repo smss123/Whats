@@ -16,5 +16,10 @@ namespace Xaina.Advertisement_Forms
         {
             InitializeComponent();
         }
+
+        private void SearchDateBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

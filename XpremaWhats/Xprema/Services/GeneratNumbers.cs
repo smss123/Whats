@@ -311,7 +311,10 @@ namespace Xprema.Services
                 List.Add(b);
                 b = null;
             }
-            // Start Generate Numbers : 9999999
+
+            
+            
+            // Start Generate Numbers : 000000000
 
             foreach (var item in List)
             {

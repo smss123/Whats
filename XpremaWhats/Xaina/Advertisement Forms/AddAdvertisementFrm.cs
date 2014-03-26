@@ -16,5 +16,10 @@ namespace Xaina.Advertisement_Forms
         {
             InitializeComponent();
         }
+
+        private void AddAdvertisementFrm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

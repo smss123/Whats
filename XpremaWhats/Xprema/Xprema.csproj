@@ -91,6 +91,7 @@
     <Compile Include="Services\CheckNumbers.cs" />
     <Compile Include="Services\CheckSending.cs" />
     <Compile Include="Services\GeneratNumbers.cs" />
+    <Compile Include="Services\IXpremaService.cs" />
     <Compile Include="XdataType\Email.cs" />
     <Compile Include="XdataType\Name.cs" />
     <Compile Include="XdataType\PhoneNumber.cs" />

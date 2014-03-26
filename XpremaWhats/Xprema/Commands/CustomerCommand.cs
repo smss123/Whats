@@ -70,7 +70,8 @@ public     class CustomerCommand
         return false;
     }
 
-    public List<Data.Xdb.CustomersRow> GetAll()
+    public List<Data.Xdb.CustomersRow> GetAllCustomers()
+
     {
        XpremaFileManager cmd = new XpremaFileManager();
        var q = (from i  in cmd.DB.Customers.AsQueryable() select i).ToList();
@@ -83,7 +84,9 @@ public     class CustomerCommand
     public Data.Xdb.CustomersRow GetCustomerByID(int ID)
     {
         XpremaFileManager cmd = new XpremaFileManager();
-        var q = (from i in cmd.DB.Customers where i.ID == ID select i).SingleOrDefault();
+        var q = (from i in cmd.DB.Customers
+                 where i.ID == ID 
+                 select i).SingleOrDefault();
         cmd.Dispose();
         return q;
 

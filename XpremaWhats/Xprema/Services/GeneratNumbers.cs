@@ -6,7 +6,7 @@ using System.Threading;
 namespace Xprema.Services
 {
 
-    class GeneratNumbers
+   public  class GeneratNumbers
     {
         // {Abu Ehab}
 

@@ -102,4 +102,3 @@ C:\Users\abu_ehab\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.cspro
 C:\Users\abu_ehab\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.exe.licenses
 C:\Users\abu_ehab\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.exe
 C:\Users\abu_ehab\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.pdb
-C:\Users\abu_ehab\Documents\GitHub\Whats\XpremaWhats\Xaina\bin\Debug\Xaina.exe.config

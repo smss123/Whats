@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-            this.WhatsAppNumberAddBtn = new DevExpress.XtraEditors.SimpleButton();
-            this.ContrycomboBoxEdit = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.StatuscomboBoxEdit = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.NametextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.PhoneNumbertextEdit = new DevExpress.XtraEditors.TextEdit();
+            this.AddBtn = new DevExpress.XtraEditors.SimpleButton();
+            this.CmbCountries = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.StatusBox = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.NameBox = new DevExpress.XtraEditors.TextEdit();
+            this.PhoneBox = new DevExpress.XtraEditors.TextEdit();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.PhoneNumberlayoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.NamelayoutControlItem = new DevExpress.XtraLayout.LayoutControlItem();
@@ -47,10 +47,10 @@
             this.simpleSeparator5 = new DevExpress.XtraLayout.SimpleSeparator();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ContrycomboBoxEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.StatuscomboBoxEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NametextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PhoneNumbertextEdit.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CmbCountries.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StatusBox.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NameBox.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PhoneBox.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PhoneNumberlayoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NamelayoutControlItem)).BeginInit();
@@ -66,11 +66,11 @@
             // 
             // layoutControl1
             // 
-            this.layoutControl1.Controls.Add(this.WhatsAppNumberAddBtn);
-            this.layoutControl1.Controls.Add(this.ContrycomboBoxEdit);
-            this.layoutControl1.Controls.Add(this.StatuscomboBoxEdit);
-            this.layoutControl1.Controls.Add(this.NametextEdit);
-            this.layoutControl1.Controls.Add(this.PhoneNumbertextEdit);
+            this.layoutControl1.Controls.Add(this.AddBtn);
+            this.layoutControl1.Controls.Add(this.CmbCountries);
+            this.layoutControl1.Controls.Add(this.StatusBox);
+            this.layoutControl1.Controls.Add(this.NameBox);
+            this.layoutControl1.Controls.Add(this.PhoneBox);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.layoutControl1.ForeColor = System.Drawing.Color.Red;
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
@@ -80,51 +80,51 @@
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
-            // WhatsAppNumberAddBtn
+            // AddBtn
             // 
-            this.WhatsAppNumberAddBtn.Location = new System.Drawing.Point(12, 182);
-            this.WhatsAppNumberAddBtn.Name = "WhatsAppNumberAddBtn";
-            this.WhatsAppNumberAddBtn.Size = new System.Drawing.Size(310, 22);
-            this.WhatsAppNumberAddBtn.StyleController = this.layoutControl1;
-            this.WhatsAppNumberAddBtn.TabIndex = 9;
-            this.WhatsAppNumberAddBtn.Text = "Add";
-            this.WhatsAppNumberAddBtn.Click += new System.EventHandler(this.WhatsAppNumberAddBtn_Click);
+            this.AddBtn.Location = new System.Drawing.Point(12, 182);
+            this.AddBtn.Name = "AddBtn";
+            this.AddBtn.Size = new System.Drawing.Size(310, 22);
+            this.AddBtn.StyleController = this.layoutControl1;
+            this.AddBtn.TabIndex = 9;
+            this.AddBtn.Text = "Add";
+            this.AddBtn.Click += new System.EventHandler(this.WhatsAppNumberAddBtn_Click);
             // 
-            // ContrycomboBoxEdit
+            // CmbCountries
             // 
-            this.ContrycomboBoxEdit.Location = new System.Drawing.Point(12, 156);
-            this.ContrycomboBoxEdit.Name = "ContrycomboBoxEdit";
-            this.ContrycomboBoxEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.CmbCountries.Location = new System.Drawing.Point(12, 156);
+            this.CmbCountries.Name = "CmbCountries";
+            this.CmbCountries.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.ContrycomboBoxEdit.Size = new System.Drawing.Size(310, 20);
-            this.ContrycomboBoxEdit.StyleController = this.layoutControl1;
-            this.ContrycomboBoxEdit.TabIndex = 8;
+            this.CmbCountries.Size = new System.Drawing.Size(310, 20);
+            this.CmbCountries.StyleController = this.layoutControl1;
+            this.CmbCountries.TabIndex = 8;
             // 
-            // StatuscomboBoxEdit
+            // StatusBox
             // 
-            this.StatuscomboBoxEdit.Location = new System.Drawing.Point(12, 114);
-            this.StatuscomboBoxEdit.Name = "StatuscomboBoxEdit";
-            this.StatuscomboBoxEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.StatusBox.Location = new System.Drawing.Point(12, 114);
+            this.StatusBox.Name = "StatusBox";
+            this.StatusBox.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.StatuscomboBoxEdit.Size = new System.Drawing.Size(310, 20);
-            this.StatuscomboBoxEdit.StyleController = this.layoutControl1;
-            this.StatuscomboBoxEdit.TabIndex = 7;
+            this.StatusBox.Size = new System.Drawing.Size(310, 20);
+            this.StatusBox.StyleController = this.layoutControl1;
+            this.StatusBox.TabIndex = 7;
             // 
-            // NametextEdit
+            // NameBox
             // 
-            this.NametextEdit.Location = new System.Drawing.Point(12, 72);
-            this.NametextEdit.Name = "NametextEdit";
-            this.NametextEdit.Size = new System.Drawing.Size(310, 20);
-            this.NametextEdit.StyleController = this.layoutControl1;
-            this.NametextEdit.TabIndex = 6;
+            this.NameBox.Location = new System.Drawing.Point(12, 72);
+            this.NameBox.Name = "NameBox";
+            this.NameBox.Size = new System.Drawing.Size(310, 20);
+            this.NameBox.StyleController = this.layoutControl1;
+            this.NameBox.TabIndex = 6;
             // 
-            // PhoneNumbertextEdit
+            // PhoneBox
             // 
-            this.PhoneNumbertextEdit.Location = new System.Drawing.Point(12, 28);
-            this.PhoneNumbertextEdit.Name = "PhoneNumbertextEdit";
-            this.PhoneNumbertextEdit.Size = new System.Drawing.Size(310, 20);
-            this.PhoneNumbertextEdit.StyleController = this.layoutControl1;
-            this.PhoneNumbertextEdit.TabIndex = 4;
+            this.PhoneBox.Location = new System.Drawing.Point(12, 28);
+            this.PhoneBox.Name = "PhoneBox";
+            this.PhoneBox.Size = new System.Drawing.Size(310, 20);
+            this.PhoneBox.StyleController = this.layoutControl1;
+            this.PhoneBox.TabIndex = 4;
             // 
             // layoutControlGroup1
             // 
@@ -149,7 +149,7 @@
             // 
             // PhoneNumberlayoutControlItem1
             // 
-            this.PhoneNumberlayoutControlItem1.Control = this.PhoneNumbertextEdit;
+            this.PhoneNumberlayoutControlItem1.Control = this.PhoneBox;
             this.PhoneNumberlayoutControlItem1.CustomizationFormText = "Phone Number:";
             this.PhoneNumberlayoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.PhoneNumberlayoutControlItem1.Name = "PhoneNumberlayoutControlItem1";
@@ -160,7 +160,7 @@
             // 
             // NamelayoutControlItem
             // 
-            this.NamelayoutControlItem.Control = this.NametextEdit;
+            this.NamelayoutControlItem.Control = this.NameBox;
             this.NamelayoutControlItem.CustomizationFormText = "Name:";
             this.NamelayoutControlItem.Location = new System.Drawing.Point(0, 44);
             this.NamelayoutControlItem.Name = "NamelayoutControlItem";
@@ -171,7 +171,7 @@
             // 
             // StatuslayoutControlItem
             // 
-            this.StatuslayoutControlItem.Control = this.StatuscomboBoxEdit;
+            this.StatuslayoutControlItem.Control = this.StatusBox;
             this.StatuslayoutControlItem.CustomizationFormText = "Status:";
             this.StatuslayoutControlItem.Location = new System.Drawing.Point(0, 86);
             this.StatuslayoutControlItem.Name = "StatuslayoutControlItem";
@@ -183,7 +183,7 @@
             // ContrylayoutControlItem
             // 
             this.ContrylayoutControlItem.AllowGlyphSkinning = DevExpress.Utils.DefaultBoolean.False;
-            this.ContrylayoutControlItem.Control = this.ContrycomboBoxEdit;
+            this.ContrylayoutControlItem.Control = this.CmbCountries;
             this.ContrylayoutControlItem.CustomizationFormText = "Contry:";
             this.ContrylayoutControlItem.Location = new System.Drawing.Point(0, 128);
             this.ContrylayoutControlItem.Name = "ContrylayoutControlItem";
@@ -195,7 +195,7 @@
             // 
             // layoutControlItem6
             // 
-            this.layoutControlItem6.Control = this.WhatsAppNumberAddBtn;
+            this.layoutControlItem6.Control = this.AddBtn;
             this.layoutControlItem6.CustomizationFormText = "layoutControlItem6";
             this.layoutControlItem6.Location = new System.Drawing.Point(0, 170);
             this.layoutControlItem6.Name = "layoutControlItem6";
@@ -259,12 +259,13 @@
             this.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
             this.Name = "AddWhatsappNumbersfrm";
             this.Text = "AddWhatsappNumbers";
+            this.Load += new System.EventHandler(this.AddWhatsappNumbersfrm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ContrycomboBoxEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.StatuscomboBoxEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NametextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PhoneNumbertextEdit.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CmbCountries.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.StatusBox.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NameBox.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PhoneBox.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PhoneNumberlayoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NamelayoutControlItem)).EndInit();
@@ -284,12 +285,12 @@
 
         private DevExpress.XtraLayout.LayoutControl layoutControl1;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup1;
-        private DevExpress.XtraEditors.TextEdit PhoneNumbertextEdit;
+        private DevExpress.XtraEditors.TextEdit PhoneBox;
         private DevExpress.XtraLayout.LayoutControlItem PhoneNumberlayoutControlItem1;
-        private DevExpress.XtraEditors.SimpleButton WhatsAppNumberAddBtn;
-        private DevExpress.XtraEditors.ComboBoxEdit ContrycomboBoxEdit;
-        private DevExpress.XtraEditors.ComboBoxEdit StatuscomboBoxEdit;
-        private DevExpress.XtraEditors.TextEdit NametextEdit;
+        private DevExpress.XtraEditors.SimpleButton AddBtn;
+        private DevExpress.XtraEditors.ComboBoxEdit CmbCountries;
+        private DevExpress.XtraEditors.ComboBoxEdit StatusBox;
+        private DevExpress.XtraEditors.TextEdit NameBox;
         private DevExpress.XtraLayout.LayoutControlItem NamelayoutControlItem;
         private DevExpress.XtraLayout.LayoutControlItem StatuslayoutControlItem;
         private DevExpress.XtraLayout.LayoutControlItem ContrylayoutControlItem;

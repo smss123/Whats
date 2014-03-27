@@ -10,7 +10,6 @@ namespace Xprema.Services
       void StartService();
       void StopService();
        bool  Status { get; set; }
-
         double  CurrntStep { get; set; }
     }
 }

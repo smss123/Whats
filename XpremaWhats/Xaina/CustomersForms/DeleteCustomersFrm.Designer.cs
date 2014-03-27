@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DeleteCustomersFrm));
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
@@ -51,16 +51,16 @@
             this.bar2 = new DevExpress.XtraBars.Bar();
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.bar3 = new DevExpress.XtraBars.Bar();
+            this.barHeaderItem1 = new DevExpress.XtraBars.BarHeaderItem();
+            this.StartDeleteBtn = new DevExpress.XtraBars.BarButtonItem();
+            this.barHeaderItem2 = new DevExpress.XtraBars.BarHeaderItem();
+            this.SaveChangesBtn = new DevExpress.XtraBars.BarButtonItem();
             this.bar4 = new DevExpress.XtraBars.Bar();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
-            this.barHeaderItem1 = new DevExpress.XtraBars.BarHeaderItem();
-            this.StartDeleteBtn = new DevExpress.XtraBars.BarButtonItem();
-            this.barHeaderItem2 = new DevExpress.XtraBars.BarHeaderItem();
-            this.SaveChangesBtn = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
@@ -82,7 +82,7 @@
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupControl1.Location = new System.Drawing.Point(0, 40);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(907, 73);
+            this.groupControl1.Size = new System.Drawing.Size(917, 73);
             this.groupControl1.TabIndex = 6;
             this.groupControl1.Text = "groupControl1";
             // 
@@ -94,15 +94,15 @@
             this.layoutControl1.Location = new System.Drawing.Point(2, 21);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(903, 50);
+            this.layoutControl1.Size = new System.Drawing.Size(913, 50);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
             // simpleButton1
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(813, 12);
+            this.simpleButton1.Location = new System.Drawing.Point(822, 12);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(78, 22);
+            this.simpleButton1.Size = new System.Drawing.Size(79, 22);
             this.simpleButton1.StyleController = this.layoutControl1;
             this.simpleButton1.TabIndex = 5;
             this.simpleButton1.Text = "simpleButton1";
@@ -114,7 +114,7 @@
             this.CustomerSearchlookUpEdit.Name = "CustomerSearchlookUpEdit";
             this.CustomerSearchlookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.CustomerSearchlookUpEdit.Size = new System.Drawing.Size(663, 20);
+            this.CustomerSearchlookUpEdit.Size = new System.Drawing.Size(672, 20);
             this.CustomerSearchlookUpEdit.StyleController = this.layoutControl1;
             this.CustomerSearchlookUpEdit.TabIndex = 4;
             // 
@@ -128,7 +128,7 @@
             this.layoutControlItem1});
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "layoutControlGroup1";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(903, 50);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(913, 50);
             this.layoutControlGroup1.Text = "layoutControlGroup1";
             this.layoutControlGroup1.TextVisible = false;
             // 
@@ -138,7 +138,7 @@
             this.CustomerSearchlayoutControlItem.CustomizationFormText = "CustomerSearchlayoutControlItem";
             this.CustomerSearchlayoutControlItem.Location = new System.Drawing.Point(0, 0);
             this.CustomerSearchlayoutControlItem.Name = "CustomerSearchlayoutControlItem";
-            this.CustomerSearchlayoutControlItem.Size = new System.Drawing.Size(801, 30);
+            this.CustomerSearchlayoutControlItem.Size = new System.Drawing.Size(810, 30);
             this.CustomerSearchlayoutControlItem.Text = "Search By Customer Name:";
             this.CustomerSearchlayoutControlItem.TextSize = new System.Drawing.Size(131, 13);
             // 
@@ -146,9 +146,9 @@
             // 
             this.layoutControlItem1.Control = this.simpleButton1;
             this.layoutControlItem1.CustomizationFormText = "layoutControlItem1";
-            this.layoutControlItem1.Location = new System.Drawing.Point(801, 0);
+            this.layoutControlItem1.Location = new System.Drawing.Point(810, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(82, 30);
+            this.layoutControlItem1.Size = new System.Drawing.Size(83, 30);
             this.layoutControlItem1.Text = "layoutControlItem1";
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextToControlDistance = 0;
@@ -163,7 +163,7 @@
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.DeleteButtonEdit1});
-            this.gridControl1.Size = new System.Drawing.Size(907, 475);
+            this.gridControl1.Size = new System.Drawing.Size(917, 475);
             this.gridControl1.TabIndex = 7;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -235,7 +235,7 @@
             // 
             this.DeleteButtonEdit1.AutoHeight = false;
             this.DeleteButtonEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, ((System.Drawing.Image)(resources.GetObject("DeleteButtonEdit1.Buttons"))), new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject4, "", null, null, true)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, DevExpress.XtraEditors.ImageLocation.MiddleCenter, ((System.Drawing.Image)(resources.GetObject("DeleteButtonEdit1.Buttons"))), new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, "", null, null, true)});
             this.DeleteButtonEdit1.Name = "DeleteButtonEdit1";
             this.DeleteButtonEdit1.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             this.DeleteButtonEdit1.Click += new System.EventHandler(this.DeleteButtonEdit1_Click);
@@ -284,53 +284,6 @@
             this.bar3.OptionsBar.UseWholeRow = true;
             this.bar3.Text = "Main menu";
             // 
-            // bar4
-            // 
-            this.bar4.BarName = "Status bar";
-            this.bar4.CanDockStyle = DevExpress.XtraBars.BarCanDockStyle.Bottom;
-            this.bar4.DockCol = 0;
-            this.bar4.DockRow = 0;
-            this.bar4.DockStyle = DevExpress.XtraBars.BarDockStyle.Bottom;
-            this.bar4.OptionsBar.AllowQuickCustomization = false;
-            this.bar4.OptionsBar.DrawDragBorder = false;
-            this.bar4.OptionsBar.UseWholeRow = true;
-            this.bar4.Text = "Status bar";
-            // 
-            // barDockControlTop
-            // 
-            this.barDockControlTop.CausesValidation = false;
-            this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
-            this.barDockControlTop.Size = new System.Drawing.Size(907, 40);
-            // 
-            // barDockControlBottom
-            // 
-            this.barDockControlBottom.CausesValidation = false;
-            this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 588);
-            this.barDockControlBottom.Size = new System.Drawing.Size(907, 23);
-            // 
-            // barDockControlLeft
-            // 
-            this.barDockControlLeft.CausesValidation = false;
-            this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 40);
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 548);
-            // 
-            // barDockControlRight
-            // 
-            this.barDockControlRight.CausesValidation = false;
-            this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(907, 40);
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 548);
-            // 
-            // barButtonItem2
-            // 
-            this.barButtonItem2.Caption = "Save Changes";
-            this.barButtonItem2.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.Glyph")));
-            this.barButtonItem2.Id = 4;
-            this.barButtonItem2.Name = "barButtonItem2";
-            // 
             // barHeaderItem1
             // 
             this.barHeaderItem1.Caption = "Start Delete";
@@ -359,11 +312,58 @@
             this.SaveChangesBtn.Name = "SaveChangesBtn";
             this.SaveChangesBtn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.SaveChangesBtn_ItemClick);
             // 
+            // bar4
+            // 
+            this.bar4.BarName = "Status bar";
+            this.bar4.CanDockStyle = DevExpress.XtraBars.BarCanDockStyle.Bottom;
+            this.bar4.DockCol = 0;
+            this.bar4.DockRow = 0;
+            this.bar4.DockStyle = DevExpress.XtraBars.BarDockStyle.Bottom;
+            this.bar4.OptionsBar.AllowQuickCustomization = false;
+            this.bar4.OptionsBar.DrawDragBorder = false;
+            this.bar4.OptionsBar.UseWholeRow = true;
+            this.bar4.Text = "Status bar";
+            // 
+            // barDockControlTop
+            // 
+            this.barDockControlTop.CausesValidation = false;
+            this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
+            this.barDockControlTop.Size = new System.Drawing.Size(917, 40);
+            // 
+            // barDockControlBottom
+            // 
+            this.barDockControlBottom.CausesValidation = false;
+            this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 588);
+            this.barDockControlBottom.Size = new System.Drawing.Size(917, 23);
+            // 
+            // barDockControlLeft
+            // 
+            this.barDockControlLeft.CausesValidation = false;
+            this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 40);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 548);
+            // 
+            // barDockControlRight
+            // 
+            this.barDockControlRight.CausesValidation = false;
+            this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
+            this.barDockControlRight.Location = new System.Drawing.Point(917, 40);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 548);
+            // 
+            // barButtonItem2
+            // 
+            this.barButtonItem2.Caption = "Save Changes";
+            this.barButtonItem2.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.Glyph")));
+            this.barButtonItem2.Id = 4;
+            this.barButtonItem2.Name = "barButtonItem2";
+            // 
             // DeleteCustomersFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(907, 611);
+            this.ClientSize = new System.Drawing.Size(917, 611);
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.barDockControlLeft);

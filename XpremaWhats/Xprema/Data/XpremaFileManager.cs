@@ -129,16 +129,16 @@ public     class XpremaFileManager  :IDisposable
         }
 
         public XpremaFileManager() {
-     Dir = Application.StartupPath+"\\XpremaData";
-      if (!Directory.Exists(Dir) )
+             Dir = Application.StartupPath+"\\XpremaData";
+             if (!Directory.Exists(Dir) )
 	        {
             	Directory.CreateDirectory(Dir);	 
         	}
-      DB = new Xdb();
+              DB = new Xdb();
       //------------------------- End Createing Directory
-        DataFileName = "Data.Xprema";
-        FullPath = Dir+"\\"+DataFileName;
-        ReadData(FullPath);
+              DataFileName = "Data.Xprema";
+              FullPath = Dir+"\\"+DataFileName;
+              ReadData(FullPath);
         //--------------------- Read Data
     }
 

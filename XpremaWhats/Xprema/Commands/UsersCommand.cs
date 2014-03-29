@@ -92,23 +92,21 @@ namespace Xprema.Commands
       }
 #endregion
 
-#region "Start User  Login      [Un Completed]" 
+#region " User  Login " 
 
       public bool Login(Name UserName, string Password)
       {
-          try
+        
+         XpremaFileManager UserCmd = new XpremaFileManager();
+          var Usr = (from ur in UserCmd.DB.Users
+                     where ur.UserName  == UserName.FullName  
+                     && ur.Password == Password
+                     select ur).Single();
+          if (Usr.ID != 0)
           {
-
-
-
-
-
               return true;
           }
-          catch (Exception)
-          {              
-              throw;
-          }
+          return false;         
       }
 
 #endregion

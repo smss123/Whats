@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Windows.Forms;
-
+using Alerts;
 
 namespace Xprema.Services
 {
@@ -28,6 +28,7 @@ namespace Xprema.Services
 
       public Thread ThrdChecker;
       int Counter;
+
       public void chkforNumbers() {
 
           List<Data.Xdb.SenderNumberRow> AllPhones = new List<Data.Xdb.SenderNumberRow>();
@@ -51,10 +52,10 @@ namespace Xprema.Services
       {
           WappSocket.Instance.Disconnect();
       }
-
+     // Alerts.Alerts Alrt = new Alerts.Alerts();
       void Instance_OnConnectFailed(Exception ex)
       {
-        
+        //  Alrt.Show_Error_MSG(this, "Connect Failed");
       }
 
       void Instance_OnConnectSuccess()
@@ -90,10 +91,9 @@ namespace Xprema.Services
 
         public double CurrntStep
         {
-            get
-            {
-                return CurrntStep;
-            }
+            get{return CurrntStep;}
+
+           // set { CurrntStep = Counter; }                         
         }
 
 

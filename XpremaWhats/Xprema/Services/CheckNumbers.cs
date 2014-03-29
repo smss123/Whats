@@ -23,8 +23,7 @@ namespace Xprema.Commands
             ContactStore.SyncWaContacts(c.GetAll()[0].SenderNumber ,c.GetAll()[0].Password );       
         }
   
-      
-
+     
        public void StartSaveAllWhatsNoAtXMLFile() {
            Control.CheckForIllegalCrossThreadCalls = true;
            Thread ThrdFilter = new Thread(new ThreadStart(SaveAllWhatsAppNoAtXMLFile));
@@ -87,13 +86,13 @@ namespace Xprema.Commands
        }
   
 
-       public readonly  double CurrntStep
+       public double CurrntStep
        {
            get
            {
                return CurrntStep  ;
            }
-          
+           set { CurrntStep = Counter; }
        }
 
 

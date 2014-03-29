@@ -120,7 +120,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Libraries\Google.GData.Client.dll" />
-    <Content Include="Libraries\Google.GData.Contacts.dll" />
     <Content Include="Libraries\Google.GData.Extensions.dll" />
     <Content Include="Libraries\PhoneNumbers.dll" />
     <Content Include="Libraries\System.Data.SQLite.dll" />

@@ -102,3 +102,6 @@ C:\Users\abu_ehab\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.cspro
 C:\Users\abu_ehab\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.exe.licenses
 C:\Users\abu_ehab\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.exe
 C:\Users\abu_ehab\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.pdb
+C:\Users\user\Documents\GitHub\Whats\XpremaWhats\Xaina\obj\Debug\Xaina.Advertisement_Forms.GridEditAdvertisementFrm.resources
+C:\Users\user\Documents\GitHub\Whats\XpremaWhats\Xaina\bin\Debug\WhatsAppApi.dll
+C:\Users\user\Documents\GitHub\Whats\XpremaWhats\Xaina\bin\Debug\System.Data.SQLite.dll

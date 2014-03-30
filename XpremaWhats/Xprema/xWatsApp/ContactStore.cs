@@ -5,8 +5,6 @@ using System.Text;
 using System.Data;
 using System.Data.Common;
 using System.Data.SQLite;
-using Google.GData.Contacts;
-using Google.GData.Extensions;
 using WhatsAppApi.Helper;
 
 namespace Xprema.Services

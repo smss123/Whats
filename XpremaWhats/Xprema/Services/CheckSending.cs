@@ -93,7 +93,7 @@ namespace Xprema.Services
         {
             get{return CurrntStep;}
 
-           // set { CurrntStep = Counter; }                         
+           set { CurrntStep = Counter; }                         
         }
 
 

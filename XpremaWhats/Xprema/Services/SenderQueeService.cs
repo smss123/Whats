@@ -9,17 +9,19 @@ namespace Xprema.Services
 {
    public  class SenderQueeService   :IXpremaService
     {
-       private SenderNumberCommand Snd = new SenderNumberCommand();
+       private SenderNumberCommand snd = new SenderNumberCommand();
        private WhatsAppNumberCommand wt = new WhatsAppNumberCommand();
-       private ServiceWappSocket WhatsAppCommand = new ServiceWappSocket();
        private SenderQueeCommand cmd = new SenderQueeCommand();
+       private ServiceSend Sv = new ServiceSend();
 
+       private int Counter = 0;
+       private int Pos=0;
        private void Configer()
        {
-           var SenderList = Snd.GetAll();
-           var WhatsAppNumbers = wt.GetAllWhatsAppNumbers();
-           int Counter=0;
-           foreach (var item in cmd.GetAll())
+
+           var SenderList = snd.GetAll();
+
+           foreach (var item in wt.GetAllWhatsAppNumbers())
            {
                if (Counter == SenderList.Count )
                {
@@ -31,17 +33,14 @@ namespace Xprema.Services
                }
 
                var SenderNumber = SenderList[Counter];
-               WhatsAppCommand.Create(SenderNumber.SenderNumber, SenderNumber.Password, "Xprema", false);
-               WhatsAppCommand.Instance.OnConnectSuccess += Instance_OnConnectSuccess;
-
+               Sv.PhoneNumber = SenderNumber.SenderNumber;
+               Sv.Password = SenderNumber.Password;
            }
+
+
        }
 
-       void Instance_OnConnectSuccess()
-       {
-           WhatsAppCommand.Instance.Login();
-       }
-
+       
         public void StartService()
         {
             throw new NotImplementedException();

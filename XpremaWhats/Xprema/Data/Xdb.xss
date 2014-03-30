@@ -9,36 +9,32 @@
     <Shape ID="DesignTable:Users" ZOrder="3" X="6" Y="226" Height="86" Width="150" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="82" />
     <Shape ID="DesignTable:SenderNumber" ZOrder="1" X="377" Y="78" Height="143" Width="178" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="139" />
     <Shape ID="DesignTable:SenderQuee" ZOrder="2" X="191" Y="80" Height="125" Width="150" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="121" />
-    <Shape ID="DesignTable:WhatsUpNumber" ZOrder="9" X="391" Y="248" Height="143" Width="167" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="139" />
-    <Shape ID="DesignTable:Customers" ZOrder="8" X="208" Y="376" Height="124" Width="150" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="120" />
-    <Shape ID="DesignTable:Advertisments" ZOrder="7" X="208" Y="241" Height="106" Width="150" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="102" />
+    <Shape ID="DesignTable:WhatsUpNumber" ZOrder="9" X="476" Y="255" Height="143" Width="167" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="139" />
+    <Shape ID="DesignTable:Customers" ZOrder="8" X="183" Y="450" Height="124" Width="150" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="120" />
+    <Shape ID="DesignTable:Advertisments" ZOrder="7" X="192" Y="291" Height="106" Width="150" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="102" />
     <Shape ID="DesignTable:NumberGroups" ZOrder="4" X="7" Y="92" Height="90" Width="158" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="86" />
   </Shapes>
   <Connectors>
     <Connector ID="DesignRelation:Customers_Advertisments" ZOrder="6" LineWidth="11">
       <RoutePoints>
         <Point>
-          <X>230</X>
-          <Y>376</Y>
+          <X>254</X>
+          <Y>450</Y>
         </Point>
         <Point>
-          <X>230</X>
-          <Y>347</Y>
+          <X>254</X>
+          <Y>397</Y>
         </Point>
       </RoutePoints>
     </Connector>
     <Connector ID="DesignRelation:Advertisments_SenderQuee" ZOrder="5" LineWidth="11">
       <RoutePoints>
         <Point>
-          <X>208</X>
-          <Y>258</Y>
+          <X>266</X>
+          <Y>291</Y>
         </Point>
         <Point>
-          <X>200</X>
-          <Y>258</Y>
-        </Point>
-        <Point>
-          <X>200</X>
+          <X>266</X>
           <Y>205</Y>
         </Point>
       </RoutePoints>

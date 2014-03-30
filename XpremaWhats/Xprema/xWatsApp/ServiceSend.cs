@@ -22,6 +22,7 @@ namespace Xprema.xWatsApp
             this.FaildNumbers = new List<string>();
             this.PhoneNumber = null;
             this.Password = null;
+            this.jid = null;
         }
 
         public void Initlizations()

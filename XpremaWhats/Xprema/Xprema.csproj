@@ -30,16 +30,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Alerts">
-      <HintPath>E:\All Systems\Alerts.dll</HintPath>
+    <Reference Include="Alerts, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libraries\Alerts.dll</HintPath>
     </Reference>
     <Reference Include="Google.GData.Client, Version=2.1.0.0, Culture=neutral, PublicKeyToken=04a59ca9b0273830, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\Downloads\WinApp.NET-master\WinApp.NET-master\Libraries\Google.GData.Client.dll</HintPath>
-    </Reference>
-    <Reference Include="Google.GData.Contacts, Version=2.1.0.0, Culture=neutral, PublicKeyToken=7e065189dd4b982f, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\Downloads\WinApp.NET-master\WinApp.NET-master\Libraries\Google.GData.Contacts.dll</HintPath>
     </Reference>
     <Reference Include="Google.GData.Extensions, Version=2.1.0.0, Culture=neutral, PublicKeyToken=0b4c5df2ebf20876, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -101,6 +98,8 @@
     <Compile Include="xWatsApp\ContactStore.cs" />
     <Compile Include="xWatsApp\Message.cs" />
     <Compile Include="xWatsApp\MessageStore.cs" />
+    <Compile Include="xWatsApp\ServiceSend.cs" />
+    <Compile Include="xWatsApp\ServiceWappSocket.cs" />
     <Compile Include="xWatsApp\WappSocket.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -121,6 +120,7 @@
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Libraries\Alerts.dll" />
     <Content Include="Libraries\Google.GData.Client.dll" />
     <Content Include="Libraries\Google.GData.Extensions.dll" />
     <Content Include="Libraries\PhoneNumbers.dll" />

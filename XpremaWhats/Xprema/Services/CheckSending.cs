@@ -52,10 +52,10 @@ namespace Xprema.Services
       {
           WappSocket.Instance.Disconnect();
       }
-     // Alerts.Alerts Alrt = new Alerts.Alerts();
+      Alerts.Alerts Alrt = new Alerts.Alerts();
       void Instance_OnConnectFailed(Exception ex)
       {
-        //  Alrt.Show_Error_MSG(this, "Connect Failed");
+          Alrt.Show_Error_MSG(this, "Connect Failed");
       }
 
       void Instance_OnConnectSuccess()
@@ -93,7 +93,7 @@ namespace Xprema.Services
         {
             get{return CurrntStep;}
 
-           // set { CurrntStep = Counter; }                         
+           set { CurrntStep = Counter; }                         
         }
 
 

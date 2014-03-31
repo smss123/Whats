@@ -11,6 +11,7 @@ using WhatsAppApi.Helper;
 using Xprema.XdataType;
 using System.Threading;
 using System.Windows.Forms;
+using Xprema.Commands;
 namespace Xprema.Services
 {
     public class CheckNumbers: IXpremaService 

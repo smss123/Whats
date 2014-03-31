@@ -4,29 +4,24 @@ using System.Linq;
 using System.Text;
 using Xprema.Commands;
 using Xprema.xWatsApp;
-using System.Threading;
+
 namespace Xprema.Services
 {
    public  class SenderQueeService   :IXpremaService
     {
-       public Thread LoopThrd ;
-       private SenderNumberCommand Snd = new SenderNumberCommand();
+       private SenderNumberCommand snd = new SenderNumberCommand();
        private WhatsAppNumberCommand wt = new WhatsAppNumberCommand();
-       private ServiceWappSocket WhatsAppCommand = new ServiceWappSocket();
        private SenderQueeCommand cmd = new SenderQueeCommand();
-       int Counter = 0;
+       private ServiceSend Sv = new ServiceSend();
 
-       void StartConfig() {
-           LoopThrd = new Thread(new ThreadStart(Configer));
-           LoopThrd.IsBackground = true;
-           LoopThrd.Start();
-       }
+       private int Counter = 0;
+       private int Pos=0;
        private void Configer()
        {
-           var SenderList = Snd.GetAll();
-           var WhatsAppNumbers = wt.GetAllWhatsAppNumbers();
-           
-           foreach (var item in cmd.GetAll())
+
+           var SenderList = snd.GetAll();
+
+           foreach (var item in wt.GetAllWhatsAppNumbers())
            {
                if (Counter == SenderList.Count )
                {
@@ -38,55 +33,46 @@ namespace Xprema.Services
                }
 
                var SenderNumber = SenderList[Counter];
-               WhatsAppCommand.Create(SenderNumber.SenderNumber, SenderNumber.Password, "Xprema", false);
-               WhatsAppCommand.Instance.OnConnectSuccess += Instance_OnConnectSuccess;
-
-
-               WhatsAppCommand.Instance.OnConnectFailed += Instance_OnConnectFailed;
-
+               Sv.PhoneNumber = SenderNumber.SenderNumber;
+               Sv.Password = SenderNumber.Password;
            }
-       }
-       Alerts.Alerts Alrt = new Alerts.Alerts();
-       void Instance_OnConnectFailed(Exception ex)
-       {
-           Alrt.Show_Error_MSG(this, "Connect Failed");
-           Status = false;
+
+
        }
 
-       void Instance_OnConnectSuccess()
-       {
-           WhatsAppCommand.Instance.Login();
-           Alrt.Show_Info_MSG(this, "   Wellcome ");
-           Status = true;
-       }
-
+       
         public void StartService()
         {
-         
-            while (true) {
-                Configer();
-            }
-          
+            throw new NotImplementedException();
         }
 
         public void StopService()
         {
-            Status = false;
+            throw new NotImplementedException();
         }
 
         public bool Status
         {
-            get { return Status; }
-
-            set { Status = value; }
-         
+            get
+            {
+                throw new NotImplementedException();
+            }
+            set
+            {
+                throw new NotImplementedException();
+            }
         }
 
         public double CurrntStep
         {
-            get { return CurrntStep; }
-           
-            set { CurrntStep = Counter; }
+            get
+            {
+                throw new NotImplementedException();
+            }
+            set
+            {
+                throw new NotImplementedException();
+            }
         }
     }
 }

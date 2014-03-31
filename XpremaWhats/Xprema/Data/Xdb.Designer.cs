@@ -42,6 +42,8 @@ namespace Xprema.Data {
         
         private global::System.Data.DataRelation relationAdvertisments_SenderQuee;
         
+        private global::System.Data.DataRelation relationNumberGroups_Advertisments;
+        
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -344,6 +346,7 @@ namespace Xprema.Data {
             }
             this.relationCustomers_Advertisments = this.Relations["Customers_Advertisments"];
             this.relationAdvertisments_SenderQuee = this.Relations["Advertisments_SenderQuee"];
+            this.relationNumberGroups_Advertisments = this.Relations["NumberGroups_Advertisments"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -376,6 +379,10 @@ namespace Xprema.Data {
                         this.tableAdvertisments.IDColumn}, new global::System.Data.DataColumn[] {
                         this.tableSenderQuee.AdvertismentIDColumn}, false);
             this.Relations.Add(this.relationAdvertisments_SenderQuee);
+            this.relationNumberGroups_Advertisments = new global::System.Data.DataRelation("NumberGroups_Advertisments", new global::System.Data.DataColumn[] {
+                        this.tableNumberGroups.IDColumn}, new global::System.Data.DataColumn[] {
+                        this.tableAdvertisments.GroupIDColumn}, false);
+            this.Relations.Add(this.relationNumberGroups_Advertisments);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2074,6 +2081,8 @@ namespace Xprema.Data {
             
             private global::System.Data.DataColumn columnCustomerID;
             
+            private global::System.Data.DataColumn columnGroupID;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public AdvertismentsDataTable() {
@@ -2141,6 +2150,14 @@ namespace Xprema.Data {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn GroupIDColumn {
+                get {
+                    return this.columnGroupID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -2176,15 +2193,19 @@ namespace Xprema.Data {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public AdvertismentsRow AddAdvertismentsRow(string MessageText, System.DateTime CreatedDate, CustomersRow parentCustomersRowByCustomers_Advertisments) {
+            public AdvertismentsRow AddAdvertismentsRow(string MessageText, System.DateTime CreatedDate, CustomersRow parentCustomersRowByCustomers_Advertisments, NumberGroupsRow parentNumberGroupsRowByNumberGroups_Advertisments) {
                 AdvertismentsRow rowAdvertismentsRow = ((AdvertismentsRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         MessageText,
                         CreatedDate,
+                        null,
                         null};
                 if ((parentCustomersRowByCustomers_Advertisments != null)) {
                     columnValuesArray[3] = parentCustomersRowByCustomers_Advertisments[0];
+                }
+                if ((parentNumberGroupsRowByNumberGroups_Advertisments != null)) {
+                    columnValuesArray[4] = parentNumberGroupsRowByNumberGroups_Advertisments[0];
                 }
                 rowAdvertismentsRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowAdvertismentsRow);
@@ -2219,6 +2240,7 @@ namespace Xprema.Data {
                 this.columnMessageText = base.Columns["MessageText"];
                 this.columnCreatedDate = base.Columns["CreatedDate"];
                 this.columnCustomerID = base.Columns["CustomerID"];
+                this.columnGroupID = base.Columns["GroupID"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2232,6 +2254,8 @@ namespace Xprema.Data {
                 base.Columns.Add(this.columnCreatedDate);
                 this.columnCustomerID = new global::System.Data.DataColumn("CustomerID", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCustomerID);
+                this.columnGroupID = new global::System.Data.DataColumn("GroupID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGroupID);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("AdvertismentsKey1", new global::System.Data.DataColumn[] {
                                 this.columnID}, true));
                 this.columnID.AutoIncrement = true;
@@ -3428,12 +3452,39 @@ namespace Xprema.Data {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int GroupID {
+                get {
+                    try {
+                        return ((int)(this[this.tableAdvertisments.GroupIDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'GroupID\' in table \'Advertisments\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableAdvertisments.GroupIDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public CustomersRow CustomersRow {
                 get {
                     return ((CustomersRow)(this.GetParentRow(this.Table.ParentRelations["Customers_Advertisments"])));
                 }
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["Customers_Advertisments"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public NumberGroupsRow NumberGroupsRow {
+                get {
+                    return ((NumberGroupsRow)(this.GetParentRow(this.Table.ParentRelations["NumberGroups_Advertisments"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["NumberGroups_Advertisments"]);
                 }
             }
             
@@ -3471,6 +3522,18 @@ namespace Xprema.Data {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetCustomerIDNull() {
                 this[this.tableAdvertisments.CustomerIDColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsGroupIDNull() {
+                return this.IsNull(this.tableAdvertisments.GroupIDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetGroupIDNull() {
+                this[this.tableAdvertisments.GroupIDColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3564,6 +3627,17 @@ namespace Xprema.Data {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetCountOfNumbrNull() {
                 this[this.tableNumberGroups.CountOfNumbrColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public AdvertismentsRow[] GetAdvertismentsRows() {
+                if ((this.Table.ChildRelations["NumberGroups_Advertisments"] == null)) {
+                    return new AdvertismentsRow[0];
+                }
+                else {
+                    return ((AdvertismentsRow[])(base.GetChildRows(this.Table.ChildRelations["NumberGroups_Advertisments"])));
+                }
             }
         }
         

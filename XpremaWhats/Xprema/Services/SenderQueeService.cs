@@ -20,7 +20,7 @@ namespace Xprema.Services
        {
 
            var SenderList = snd.GetAll();
-
+           Sv = new ServiceSend();
            foreach (var item in wt.GetAllWhatsAppNumbers())
            {
                if (Counter == SenderList.Count )
@@ -35,6 +35,8 @@ namespace Xprema.Services
                var SenderNumber = SenderList[Counter];
                Sv.PhoneNumber = SenderNumber.SenderNumber;
                Sv.Password = SenderNumber.Password;
+               Sv.Message = "";
+
            }
 
 

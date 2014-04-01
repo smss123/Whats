@@ -4,77 +4,61 @@ using System.Linq;
 using System.Text;
 using Xprema.Commands;
 using Xprema.xWatsApp;
-
+using System .Threading ;
+using System.Windows.Forms;
 namespace Xprema.Services
 {
    public  class SenderQueeService   :IXpremaService
     {
-       private SenderNumberCommand snd = new SenderNumberCommand();
-       private WhatsAppNumberCommand wt = new WhatsAppNumberCommand();
        private SenderQueeCommand cmd = new SenderQueeCommand();
-       private ServiceSend Sv = new ServiceSend();
-
-       private int Counter = 0;
-       private int Pos=0;
+       public virtual List<string> FaildNumbers = new List<string>();
+       public virtual List<string> NotSendNumber = new List<string>();
        private void Configer()
        {
+           var Adver  = cmd.GetAll();
 
-           var SenderList = snd.GetAll();
-           Sv = new ServiceSend();
-           foreach (var item in wt.GetAllWhatsAppNumbers())
+           SenderSubService sv = new SenderSubService(0);
+           sv.Init();
+           foreach (var item in Adver )
            {
-               if (Counter == SenderList.Count )
-               {
-                   Counter = 0;
-               }
-               else
-               {
-                   Counter++;
-               }
-
-               var SenderNumber = SenderList[Counter];
-               Sv.PhoneNumber = SenderNumber.SenderNumber;
-               Sv.Password = SenderNumber.Password;
-               Sv.Message = "";
+               sv.CountOfNumber = item.AdvertismentsRow.NumberGroupsRow.CountOfNumbr;
+               sv.GetWhatsAppNumber();
+               sv.BeginSend();
+               FaildNumbers = sv.FailNumbers;
+               NotSendNumber = sv.NotSendNumber;
 
            }
+       }             
+                                   
+      
 
-
-       }
-
-       
+       public Thread Thrd;
         public void StartService()
         {
-            throw new NotImplementedException();
+            Control.CheckForIllegalCrossThreadCalls = true;
+            Thrd = new Thread(new ThreadStart(Configer));
+            Thrd.IsBackground = true;
+            Thrd.Start();
         }
 
+        #region "  xx  "
         public void StopService()
-        {
-            throw new NotImplementedException();
+        {        
+            Status = false;
         }
 
         public bool Status
         {
-            get
-            {
-                throw new NotImplementedException();
-            }
-            set
-            {
-                throw new NotImplementedException();
-            }
+            get { return Status;}        
+            set { Status = value;}        
         }
 
         public double CurrntStep
         {
-            get
-            {
-                throw new NotImplementedException();
-            }
-            set
-            {
-                throw new NotImplementedException();
-            }
+           get { return CurrntStep;}        
+           set { CurrntStep = Counter;}
         }
+        #endregion
+
     }
 }

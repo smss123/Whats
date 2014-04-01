@@ -90,6 +90,7 @@
     <Compile Include="Services\GeneratNumbers.cs" />
     <Compile Include="Services\IXpremaService.cs" />
     <Compile Include="Services\SenderQueeService.cs" />
+    <Compile Include="Services\SenderSubService.cs" />
     <Compile Include="Services\ServiceManager.cs" />
     <Compile Include="XdataType\Email.cs" />
     <Compile Include="XdataType\Name.cs" />

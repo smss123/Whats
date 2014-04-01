@@ -944,7 +944,7 @@ namespace Xprema.Data {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public SenderNumberRow FindByID(long ID) {
+            public SenderNumberRow FindByID(int ID) {
                 return ((SenderNumberRow)(this.Rows.Find(new object[] {
                             ID})));
             }
@@ -977,7 +977,7 @@ namespace Xprema.Data {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
-                this.columnID = new global::System.Data.DataColumn("ID", typeof(long), null, global::System.Data.MappingType.Element);
+                this.columnID = new global::System.Data.DataColumn("ID", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnID);
                 this.columnSenderNumber = new global::System.Data.DataColumn("SenderNumber", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnSenderNumber);
@@ -2774,9 +2774,9 @@ namespace Xprema.Data {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public long ID {
+            public int ID {
                 get {
-                    return ((long)(this[this.tableSenderNumber.IDColumn]));
+                    return ((int)(this[this.tableSenderNumber.IDColumn]));
                 }
                 set {
                     this[this.tableSenderNumber.IDColumn] = value;

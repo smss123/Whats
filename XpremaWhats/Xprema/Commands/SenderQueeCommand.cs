@@ -76,7 +76,8 @@ public     class SenderQueeCommand
     public Data.Xdb.SenderQueeRow GetByID(int ID)
     {
         XpremaFileManager cmd = new XpremaFileManager();
-        var q = (from i in cmd.DB.SenderQuee.AsQueryable() where i.ID ==ID select i).Take(1).SingleOrDefault();
+        var q = (from i in cmd.DB.SenderQuee.AsQueryable()
+                 where i.ID ==ID select i).Take(1).SingleOrDefault();
         cmd.Dispose();
         return q;
     }

@@ -37,6 +37,7 @@ namespace Xprema.xWatsApp
             SendManager.Instance.PollMessages();
         }
 
+        #region "   Events     "
         void Instance_OnGetMessageReceivedServer(string from, string id)
         {
             string path = Application.StartupPath +"\\ReMessages";
@@ -59,7 +60,8 @@ namespace Xprema.xWatsApp
 
         void Instance_OnLoginSuccess(byte[] data)
         {
-            SendManager.Instance.Message(this.jid, this.Message); 
+            SendManager.Instance.Message(this.jid, this.Message);
+            SendManager.Instance.Disconnect();
         }
 
         void Instance_OnConnectFailed(Exception ex)
@@ -71,5 +73,8 @@ namespace Xprema.xWatsApp
         {
             SendManager.Instance.Login();
         }
+
+        #endregion
+
     }
 }

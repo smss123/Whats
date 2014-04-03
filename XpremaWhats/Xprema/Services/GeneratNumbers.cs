@@ -156,24 +156,32 @@ namespace Xprema.Services
 
         #region " Generate Phone Numbers  "
 
-        public IEnumerable<string> GeneratePhoneNumbers()
+        public IEnumerable<string> GeneratePhoneNumbers(int Ky ,string  Nbr)
         {
 
             var Kyss = from k in AllKeys() select k;
-            foreach (var Ky in Kyss)
-            {
-                for (int i = 0; i < 100000000; ++i)
-                {
-                    if (!ContactStore.numberExists(Ky + i.ToString("00000000") + "@s.whatsapp.net")) {
+           List<string> xNumbers = new List <string>();
+           var place = Nbr.ToCharArray();
+          
+               StringBuilder  XCount =new StringBuilder();
+               for (int i = 0; i < place.Count(); i++)
+               {
+                   XCount .Append ("0");
+               }
+            
+                for (int i = 0; i < place.Length  ; ++i)
+               {
+                    if (!ContactStore.numberExists(Ky + i.ToString("Nbr") + "@s.whatsapp.net")) {
 
-                        ContactStore.AddContact(new Contact(0, Ky + i.ToString("00000000") +
+                        ContactStore.AddContact(new Contact(0, Ky + i.ToString(XCount .ToString () ) +
                                                "@s.whatsapp.net", "", "whatsAppUser" + i.ToString(), "", ""));
                     }
-                   
-                   yield return Ky + i.ToString("00000000");
+
+                    xNumbers.Add(Ky + i.ToString(XCount.ToString()));
                     
                 }
-            }
+                return xNumbers;
+   
 
         }
         #endregion

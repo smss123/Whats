@@ -16,7 +16,7 @@ namespace Xprema.Services
        private void Configer()
        {
            var Adver  = cmd.GetAll();
-
+            
            SenderSubService sv = new SenderSubService(0);
            sv.Init();
            foreach (var item in Adver )
@@ -26,12 +26,10 @@ namespace Xprema.Services
                sv.BeginSend();
                FaildNumbers = sv.FailNumbers;
                NotSendNumber = sv.NotSendNumber;
-
            }
        }             
                                    
       
-
        public Thread Thrd;
         public void StartService()
         {
@@ -41,24 +39,7 @@ namespace Xprema.Services
             Thrd.Start();
         }
 
-        #region "  xx  "
-        public void StopService()
-        {        
-            Status = false;
-        }
-
-        public bool Status
-        {
-            get { return Status;}        
-            set { Status = value;}        
-        }
-
-        public double CurrntStep
-        {
-           get { return CurrntStep;}        
-           set { CurrntStep = Counter;}
-        }
-        #endregion
+  
 
     }
 }

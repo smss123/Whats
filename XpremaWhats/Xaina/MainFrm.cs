@@ -11,6 +11,7 @@ using Xaina.WhatsAppNumberForms;
 using Xaina.SenderNumber;
 using Xaina.CustomersForms;
 using Xaina.Advertisement_Forms;
+using Xaina.ServicesForms;
 
 namespace Xaina
 {
@@ -81,6 +82,12 @@ namespace Xaina
         {
             deleteAdvertisementFrm delAdvFrm = new deleteAdvertisementFrm();
             delAdvFrm.ShowDialog();
+        }
+
+        private void GenaretNumberClick_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            GeneratNumberFrm Gerfrm = new GeneratNumberFrm();
+            Gerfrm.ShowDialog();
         }
     }
 }

@@ -11,12 +11,12 @@ namespace Xprema.Services
    public  class SenderQueeService   :IXpremaService
     {
        private SenderQueeCommand cmd = new SenderQueeCommand();
-       public virtual List<string> FaildNumbers = new List<string>();
-       public virtual List<string> NotSendNumber = new List<string>();
+       public  List<string> FaildNumbers = new List<string>();
+       public  List<string> NotSendNumber = new List<string>();
        private void Configer()
        {
            var Adver  = cmd.GetAll();
-
+            
            SenderSubService sv = new SenderSubService(0);
            sv.Init();
            foreach (var item in Adver )
@@ -26,12 +26,10 @@ namespace Xprema.Services
                sv.BeginSend();
                FaildNumbers = sv.FailNumbers;
                NotSendNumber = sv.NotSendNumber;
-
            }
        }             
                                    
       
-
        public Thread Thrd;
         public void StartService()
         {
@@ -41,24 +39,37 @@ namespace Xprema.Services
             Thrd.Start();
         }
 
-        #region "  xx  "
+
+
+
+
         public void StopService()
-        {        
-            Status = false;
+        {
+            throw new NotImplementedException();
         }
 
         public bool Status
         {
-            get { return Status;}        
-            set { Status = value;}        
+            get
+            {
+                throw new NotImplementedException();
+            }
+            set
+            {
+                throw new NotImplementedException();
+            }
         }
 
         public double CurrntStep
         {
-           get { return CurrntStep;}        
-           set { CurrntStep = Counter;}
+            get
+            {
+                throw new NotImplementedException();
+            }
+            set
+            {
+                throw new NotImplementedException();
+            }
         }
-        #endregion
-
     }
 }

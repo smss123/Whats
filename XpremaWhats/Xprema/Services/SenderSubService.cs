@@ -14,7 +14,7 @@ namespace Xprema.Services
        private List<string> ListOfWhatsAppNumber = new List<string>();
       private  SenderNumberCommand SenderCmd = new SenderNumberCommand();
        private ServiceSend  SVsnd = new ServiceSend();
-
+       WhatsAppNumberCommand WhatsCmd = new WhatsAppNumberCommand();
        public SenderSubService(Int64 counter)
        {
            this.CountOfNumber = counter;
@@ -27,9 +27,33 @@ namespace Xprema.Services
            this.FailNumbers = new List<string>();
            this.MemberwiseClone();
        }
+
+    //   ===========================================================
+       private static readonly Random GetRandom = new Random();
+       private static readonly object syncLock = new object();
+       public static int GetRandomNumber(int  max)
+       {
+           lock (syncLock)
+           {
+               return GetRandom.Next( max);
+
+           }
+       }
+       //============================================================
        public void GetWhatsAppNumber()
        {
-           //:: تجلب ارقام عشوائيه غير مكررة من جدول الواتساب نمر بمعلمويه counter
+          
+           WhatsCmd = new WhatsAppNumberCommand ();
+           List<string> xNumbers = new List<string>();
+           var WhatsNumbers = (from w in WhatsCmd.GetAllWhatsAppNumbers()
+                                orderby w.PhoneNumber ascending 
+                                select w.PhoneNumber).ToList();
+          
+
+           for (int i = 0; i < CountOfNumber  ; i++)
+           {
+               xNumbers.Add(WhatsCmd.GetNumberByID(GetRandom.Next(0, WhatsNumbers.Count)).PhoneNumber  ); 
+           }
        }
        public List<string> NotSendNumber { get; set; }
         public List<string> FailNumbers { get; set; }
@@ -53,7 +77,7 @@ namespace Xprema.Services
                 }
                 else if (Snd.Status == true)
                 {
-                    SVsnd.jid = item + "@s.Whatsapp.Net";//Get Jid; مراجعه ال كد هنا
+                    SVsnd.jid = item + "@s.whatsapp.net";
                     SVsnd.Message = this.MessageText;
                     SVsnd.PhoneNumber = Snd.SenderNumber;
                     SVsnd.Password = Snd.Password;

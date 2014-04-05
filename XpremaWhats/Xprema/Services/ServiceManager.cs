@@ -10,6 +10,8 @@ namespace Xprema.Services
       public static CheckSending checksender = new CheckSending();
       public static GeneratNumbers generatNumber = new GeneratNumbers();
       public static CheckNumbers checknumber = new CheckNumbers();
+      public static SenderQueeService SendQuee = new SenderQueeService();
+
 
     }
 }

@@ -89,5 +89,11 @@ namespace Xaina
             GeneratNumberFrm Gerfrm = new GeneratNumberFrm();
             Gerfrm.ShowDialog();
         }
+
+        private void CheckSenderService_LinkClicked(object sender, DevExpress.XtraNavBar.NavBarLinkEventArgs e)
+        {
+            frmCheckSenders sen = new frmCheckSenders();
+            sen.ShowDialog();
+        }
     }
 }

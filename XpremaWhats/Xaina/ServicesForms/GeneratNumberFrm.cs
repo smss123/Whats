@@ -18,22 +18,24 @@ namespace Xaina.ServicesForms
         {
             InitializeComponent();
         }
-        GeneratNumbers Cntry = new GeneratNumbers();
+        //GeneratNumbers Cntry = new GeneratNumbers();
         Thread Thrd;
         void PopulateCmbs()
         {
             CmbCountries.Properties.Items.Clear();
             CmbKeys.Properties.Items.Clear();
-            Cntry = new GeneratNumbers();
-            foreach (var Country in Cntry.PopulateCountries())
+            this.Cursor = Cursors.WaitCursor;
+
+            foreach (var Country in ServiceManager.generatNumber.PopulateCountries())
             {
                 CmbCountries.Properties.Items.Add(Country);
             //    label1.Text = "Total Countries Is :   " + CmbCountries.Items.Count;
             }
+            this.Cursor = Cursors.Default;
 
 
-            Cntry = new GeneratNumbers();
-            var Kys = from k in Cntry.AllKeys() where k != null select k;
+            
+            var Kys = from k in ServiceManager.generatNumber.AllKeys() where k != null select k;
             foreach (var Ky in Kys)
             {
                 CmbKeys.Properties.Items.Add(Ky);
@@ -53,18 +55,50 @@ namespace Xaina.ServicesForms
 
         void GNumbers()
         {
-            Cntry = new GeneratNumbers();
-            CmbPhones.Properties.Items.Clear();
+           
+                //Edit By Samer
+            if (this.InvokeRequired )
+            {
+                this.BeginInvoke((MethodInvoker)delegate {
+                    CmbPhones.Properties.Items.Clear();
+                    progressBarControl1.Visible = true;
+          
+                });
 
-            progressBarControl1.Visible = true;
-            // var Keyss = from k in Cntry.AllKeys( ) select k;
-            var Nmbrs = from N in Cntry.GeneratePhoneNumbers(int.Parse(XKeys.Text), NumbersBox.Text) select N;
+            }
+            else
+            {
+                this.BeginInvoke((MethodInvoker)delegate
+                {
+
+                    progressBarControl1.Visible = true;
+
+                });
+            }
+             // var Keyss = from k in Cntry.AllKeys( ) select k;
+            var Nmbrs = from N in ServiceManager.generatNumber.GeneratePhoneNumbers(int.Parse(XKeys.Text), NumbersBox.Text) select N;
 
 
             // foreach ( var j in Keyss ) { 
             foreach (var Nbr in Nmbrs)
             {
-                CmbPhones.Properties.Items.Add(Nbr);
+                if (this.InvokeRequired)
+                {
+                    this.BeginInvoke((MethodInvoker)delegate {
+
+                        CmbPhones.Properties.Items.Add(Nbr);
+                    });
+                }
+                else
+                {
+                    this.BeginInvoke((MethodInvoker)delegate
+                    {
+
+                        CmbPhones.Properties.Items.Add(Nbr);
+                    });
+                }
+                
+               
             }
             //   }
         //    progressBarControl1.Visible = false;
@@ -143,11 +177,21 @@ namespace Xaina.ServicesForms
 
         private void simpleButton1_Click(object sender, EventArgs e)
         {
-            Control.CheckForIllegalCrossThreadCalls = false;
+            //Control.CheckForIllegalCrossThreadCalls = false;  edit By Samer
+
             Thrd = new Thread(new ThreadStart(GNumbers));
             Thrd.IsBackground = true;
-            Thrd.Start();
-            MessageBox.Show("xx");
+
+            //Edited By Samer
+            if (Thrd.IsAlive)
+            {
+                Thrd.Resume();
+            }
+            else
+            {
+                Thrd.Start();
+            }
+            
         }
 
         private void CmbKeys_SelectedIndexChanged_1(object sender, EventArgs e)
@@ -158,6 +202,12 @@ namespace Xaina.ServicesForms
                 CmbCountries.Text = CmbCountries.Properties.Items[CmbKeys.SelectedIndex].ToString();
                 XKeys.Text = CmbKeys.Text;
             }
+        }
+
+        private void simpleButton2_Click(object sender, EventArgs e)
+        {
+            Thrd.Suspend();
+            progressBarControl1.Visible = false;
         }
     }
 }

@@ -76,8 +76,9 @@
             this.navBarGroup1 = new DevExpress.XtraNavBar.NavBarGroup();
             this.GenaretNumberClick = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarSeparatorItem1 = new DevExpress.XtraNavBar.NavBarSeparatorItem();
-            this.navBarItem2 = new DevExpress.XtraNavBar.NavBarItem();
+            this.CheckSenderService = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarSeparatorItem2 = new DevExpress.XtraNavBar.NavBarSeparatorItem();
+            this.navBarGroup2 = new DevExpress.XtraNavBar.NavBarGroup();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
             this.SuspendLayout();
@@ -398,11 +399,12 @@
             this.navBarControl1.ActiveGroup = this.navBarGroup1;
             this.navBarControl1.Dock = System.Windows.Forms.DockStyle.Left;
             this.navBarControl1.Groups.AddRange(new DevExpress.XtraNavBar.NavBarGroup[] {
-            this.navBarGroup1});
+            this.navBarGroup1,
+            this.navBarGroup2});
             this.navBarControl1.Items.AddRange(new DevExpress.XtraNavBar.NavBarItem[] {
             this.GenaretNumberClick,
             this.navBarSeparatorItem1,
-            this.navBarItem2,
+            this.CheckSenderService,
             this.navBarSeparatorItem2});
             this.navBarControl1.Location = new System.Drawing.Point(0, 195);
             this.navBarControl1.Name = "navBarControl1";
@@ -418,7 +420,7 @@
             this.navBarGroup1.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
             new DevExpress.XtraNavBar.NavBarItemLink(this.GenaretNumberClick),
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarSeparatorItem1),
-            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem2),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.CheckSenderService),
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarSeparatorItem2)});
             this.navBarGroup1.Name = "navBarGroup1";
             // 
@@ -439,10 +441,11 @@
             this.navBarSeparatorItem1.SmallImageIndex = 0;
             this.navBarSeparatorItem1.SmallImageSize = new System.Drawing.Size(0, 0);
             // 
-            // navBarItem2
+            // CheckSenderService
             // 
-            this.navBarItem2.Caption = "navBarItem2";
-            this.navBarItem2.Name = "navBarItem2";
+            this.CheckSenderService.Caption = "Check Sender";
+            this.CheckSenderService.Name = "CheckSenderService";
+            this.CheckSenderService.LinkClicked += new DevExpress.XtraNavBar.NavBarLinkEventHandler(this.CheckSenderService_LinkClicked);
             // 
             // navBarSeparatorItem2
             // 
@@ -454,6 +457,11 @@
             this.navBarSeparatorItem2.Name = "navBarSeparatorItem2";
             this.navBarSeparatorItem2.SmallImageIndex = 0;
             this.navBarSeparatorItem2.SmallImageSize = new System.Drawing.Size(0, 0);
+            // 
+            // navBarGroup2
+            // 
+            this.navBarGroup2.Caption = "navBarGroup2";
+            this.navBarGroup2.Name = "navBarGroup2";
             // 
             // MainFrm
             // 
@@ -514,7 +522,8 @@
         private DevExpress.XtraBars.RibbonGalleryBarItem ribbonGalleryBarItem2;
         private DevExpress.XtraNavBar.NavBarItem GenaretNumberClick;
         private DevExpress.XtraNavBar.NavBarSeparatorItem navBarSeparatorItem1;
-        private DevExpress.XtraNavBar.NavBarItem navBarItem2;
+        private DevExpress.XtraNavBar.NavBarItem CheckSenderService;
         private DevExpress.XtraNavBar.NavBarSeparatorItem navBarSeparatorItem2;
+        private DevExpress.XtraNavBar.NavBarGroup navBarGroup2;
     }
 }

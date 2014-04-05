@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading;
+using System.Windows.Forms;
 namespace Xprema.Services
 {
 
-   public  class GeneratNumbers
+   public  class GeneratNumbers  :IXpremaService 
     {
         // {Abu Ehab}
 
@@ -156,6 +157,7 @@ namespace Xprema.Services
 
         #region " Generate Phone Numbers  "
        // 
+     
         public IEnumerable<string> GeneratePhoneNumbers(int Ky ,string  Nbr)
         {
 
@@ -188,17 +190,20 @@ namespace Xprema.Services
             {
                 Itm = Itm + "0";
             }
-            
+
+            Commands.WhatsAppNumberCommand cmd = new Commands.WhatsAppNumberCommand();
 
             for (int i = 0; i < int.Parse(Nbr); ++i)
 
             {
-                    if (!ContactStore.numberExists(Ky + i.ToString("Nbr") + "@s.whatsapp.net"))
-                    {
+                cmd.AddPhone(new XdataType.PhoneNumber(Ky.ToString(), "", i.ToString(Itm)), DateTime.Now, new XdataType.Name("WhatsAppUser", "", ""), true, "");
+                Application.DoEvents();
+                    //if (!ContactStore.numberExists(Ky + i.ToString("Nbr") + "@s.whatsapp.net"))
+                    //{
 
-                        ContactStore.AddContact(new Contact(0, Ky + i.ToString(Itm.ToString()) +
-                                               "@s.whatsapp.net", "", "whatsAppUser" + i.ToString(), "", ""));
-                    }
+                    //    ContactStore.AddContact(new Contact(0, Ky + i.ToString(Itm.ToString()) +
+                    //                           "@s.whatsapp.net", "", "whatsAppUser" + i.ToString(), "", ""));
+                    //}
 
                 yield return Ky + i.ToString(Itm);   
             }
@@ -207,5 +212,39 @@ namespace Xprema.Services
         #endregion
 
 
+
+        public void StartService()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void StopService()
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool Status
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+            set
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        public double CurrntStep
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+            set
+            {
+                throw new NotImplementedException();
+            }
+        }
     }
 }

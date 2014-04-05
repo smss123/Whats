@@ -59,12 +59,12 @@
             // 
             this.NumbersBox.Location = new System.Drawing.Point(294, 73);
             this.NumbersBox.Name = "NumbersBox";
-            this.NumbersBox.Size = new System.Drawing.Size(188, 20);
+            this.NumbersBox.Size = new System.Drawing.Size(114, 20);
             this.NumbersBox.TabIndex = 1;
             // 
             // simpleButton1
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(115, 141);
+            this.simpleButton1.Location = new System.Drawing.Point(104, 126);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(122, 36);
             this.simpleButton1.TabIndex = 2;
@@ -83,11 +83,11 @@
             // 
             // CmbCountries
             // 
-            this.CmbCountries.Location = new System.Drawing.Point(168, 27);
+            this.CmbCountries.Location = new System.Drawing.Point(104, 24);
             this.CmbCountries.Name = "CmbCountries";
             this.CmbCountries.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.CmbCountries.Size = new System.Drawing.Size(314, 20);
+            this.CmbCountries.Size = new System.Drawing.Size(152, 20);
             this.CmbCountries.TabIndex = 4;
             this.CmbCountries.SelectedIndexChanged += new System.EventHandler(this.CmbCountries_SelectedIndexChanged_1);
             // 
@@ -102,15 +102,16 @@
             // 
             // simpleButton2
             // 
-            this.simpleButton2.Location = new System.Drawing.Point(349, 141);
+            this.simpleButton2.Location = new System.Drawing.Point(104, 168);
             this.simpleButton2.Name = "simpleButton2";
             this.simpleButton2.Size = new System.Drawing.Size(122, 36);
             this.simpleButton2.TabIndex = 7;
             this.simpleButton2.Text = "Stop";
+            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(87, 30);
+            this.labelControl1.Location = new System.Drawing.Point(23, 27);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(75, 13);
             this.labelControl1.TabIndex = 8;
@@ -135,7 +136,7 @@
             // progressBarControl1
             // 
             this.progressBarControl1.EditValue = 0;
-            this.progressBarControl1.Location = new System.Drawing.Point(104, 323);
+            this.progressBarControl1.Location = new System.Drawing.Point(87, 338);
             this.progressBarControl1.Name = "progressBarControl1";
             this.progressBarControl1.Size = new System.Drawing.Size(404, 27);
             this.progressBarControl1.TabIndex = 11;

@@ -85,6 +85,15 @@
       <DependentUpon>Xdb.xsd</DependentUpon>
     </Compile>
     <Compile Include="Data\XpremaFileManager.cs" />
+    <Compile Include="MainFrm.cs" />
+    <Compile Include="MainFrm.Designer.cs">
+      <DependentUpon>MainFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
     <Compile Include="Services\CheckNumbers.cs" />
     <Compile Include="Services\CheckSending.cs" />
     <Compile Include="Services\GeneratNumbers.cs" />
@@ -104,6 +113,9 @@
     <Compile Include="xWatsApp\WappSocket.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Data\Xdb.xsc">
       <DependentUpon>Xdb.xsd</DependentUpon>
     </None>
@@ -116,9 +128,15 @@
     <None Include="Data\Xdb.xss">
       <DependentUpon>Xdb.xsd</DependentUpon>
     </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Properties\" />
+    <EmbeddedResource Include="MainFrm.resx">
+      <DependentUpon>MainFrm.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Libraries\Alerts.dll" />

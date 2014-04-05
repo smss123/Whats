@@ -52,12 +52,12 @@
     <Reference Include="DevExpress.XtraRichEdit.v13.2, Version=13.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
-    <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
@@ -165,6 +165,12 @@
     <Compile Include="SenderNumber\GridEditSenderNumbersFrm.Designer.cs">
       <DependentUpon>GridEditSenderNumbersFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ServicesForms\frmCheckSenders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServicesForms\frmCheckSenders.Designer.cs">
+      <DependentUpon>frmCheckSenders.cs</DependentUpon>
+    </Compile>
     <Compile Include="ServicesForms\GeneratNumberFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -250,6 +256,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SenderNumber\GridEditSenderNumbersFrm.resx">
       <DependentUpon>GridEditSenderNumbersFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServicesForms\frmCheckSenders.resx">
+      <DependentUpon>frmCheckSenders.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ServicesForms\GeneratNumberFrm.resx">
       <DependentUpon>GeneratNumberFrm.cs</DependentUpon>

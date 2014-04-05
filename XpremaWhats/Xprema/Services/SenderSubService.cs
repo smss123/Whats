@@ -28,7 +28,7 @@ namespace Xprema.Services
            this.MemberwiseClone();
        }
 
-       ===========================================================
+    //   ===========================================================
        private static readonly Random GetRandom = new Random();
        private static readonly object syncLock = new object();
        public static int GetRandomNumber(int  max)

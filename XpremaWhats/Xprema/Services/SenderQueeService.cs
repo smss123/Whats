@@ -11,8 +11,8 @@ namespace Xprema.Services
    public  class SenderQueeService   :IXpremaService
     {
        private SenderQueeCommand cmd = new SenderQueeCommand();
-       public virtual List<string> FaildNumbers = new List<string>();
-       public virtual List<string> NotSendNumber = new List<string>();
+       public  List<string> FaildNumbers = new List<string>();
+       public  List<string> NotSendNumber = new List<string>();
        private void Configer()
        {
            var Adver  = cmd.GetAll();
@@ -39,7 +39,37 @@ namespace Xprema.Services
             Thrd.Start();
         }
 
-  
 
+
+
+
+        public void StopService()
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool Status
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+            set
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        public double CurrntStep
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+            set
+            {
+                throw new NotImplementedException();
+            }
+        }
     }
 }

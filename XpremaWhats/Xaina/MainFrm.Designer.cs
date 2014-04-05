@@ -74,10 +74,15 @@
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.navBarControl1 = new DevExpress.XtraNavBar.NavBarControl();
             this.navBarGroup1 = new DevExpress.XtraNavBar.NavBarGroup();
-            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.tileControl1 = new DevExpress.XtraEditors.TileControl();
+            this.imageSlider1 = new DevExpress.XtraEditors.Controls.ImageSlider();
+            this.navBarItem1 = new DevExpress.XtraNavBar.NavBarItem();
+            this.navBarSeparatorItem1 = new DevExpress.XtraNavBar.NavBarSeparatorItem();
+            this.navBarItem2 = new DevExpress.XtraNavBar.NavBarItem();
+            this.navBarSeparatorItem2 = new DevExpress.XtraNavBar.NavBarSeparatorItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imageSlider1)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbon
@@ -117,7 +122,7 @@
             this.UsersribbonPage,
             this.ReportsribbonPage});
             this.ribbon.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
-            this.ribbon.Size = new System.Drawing.Size(889, 195);
+            this.ribbon.Size = new System.Drawing.Size(908, 195);
             this.ribbon.StatusBar = this.ribbonStatusBar;
             // 
             // AddWhatsUpNumberBtn
@@ -386,10 +391,10 @@
             // 
             // ribbonStatusBar
             // 
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 513);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 535);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbon;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(889, 31);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(908, 31);
             // 
             // navBarControl1
             // 
@@ -397,10 +402,15 @@
             this.navBarControl1.Dock = System.Windows.Forms.DockStyle.Left;
             this.navBarControl1.Groups.AddRange(new DevExpress.XtraNavBar.NavBarGroup[] {
             this.navBarGroup1});
+            this.navBarControl1.Items.AddRange(new DevExpress.XtraNavBar.NavBarItem[] {
+            this.navBarItem1,
+            this.navBarSeparatorItem1,
+            this.navBarItem2,
+            this.navBarSeparatorItem2});
             this.navBarControl1.Location = new System.Drawing.Point(0, 195);
             this.navBarControl1.Name = "navBarControl1";
-            this.navBarControl1.OptionsNavPane.ExpandedWidth = 163;
-            this.navBarControl1.Size = new System.Drawing.Size(163, 318);
+            this.navBarControl1.OptionsNavPane.ExpandedWidth = 218;
+            this.navBarControl1.Size = new System.Drawing.Size(218, 340);
             this.navBarControl1.TabIndex = 5;
             this.navBarControl1.Text = "navBarControl1";
             // 
@@ -408,23 +418,73 @@
             // 
             this.navBarGroup1.Caption = "navBarGroup1";
             this.navBarGroup1.Expanded = true;
+            this.navBarGroup1.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
+            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem1),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarSeparatorItem1),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem2),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.navBarSeparatorItem2)});
             this.navBarGroup1.Name = "navBarGroup1";
             // 
-            // groupControl1
+            // tileControl1
             // 
-            this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupControl1.Location = new System.Drawing.Point(163, 195);
-            this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(726, 318);
-            this.groupControl1.TabIndex = 6;
-            this.groupControl1.Text = "groupControl1";
+            this.tileControl1.Location = new System.Drawing.Point(242, 201);
+            this.tileControl1.Name = "tileControl1";
+            this.tileControl1.Size = new System.Drawing.Size(654, 328);
+            this.tileControl1.TabIndex = 9;
+            this.tileControl1.Text = "tileControl1";
+            // 
+            // imageSlider1
+            // 
+            this.imageSlider1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.imageSlider1.Images.Add(((System.Drawing.Image)(resources.GetObject("imageSlider1.Images"))));
+            this.imageSlider1.Images.Add(((System.Drawing.Image)(resources.GetObject("imageSlider1.Images1"))));
+            this.imageSlider1.Images.Add(((System.Drawing.Image)(resources.GetObject("imageSlider1.Images2"))));
+            this.imageSlider1.LayoutMode = DevExpress.Utils.Drawing.ImageLayoutMode.Stretch;
+            this.imageSlider1.Location = new System.Drawing.Point(218, 195);
+            this.imageSlider1.Name = "imageSlider1";
+            this.imageSlider1.Size = new System.Drawing.Size(690, 340);
+            this.imageSlider1.TabIndex = 10;
+            this.imageSlider1.Text = "imageSlider1";
+            // 
+            // navBarItem1
+            // 
+            this.navBarItem1.Caption = "navBarItem1";
+            this.navBarItem1.Name = "navBarItem1";
+            // 
+            // navBarSeparatorItem1
+            // 
+            this.navBarSeparatorItem1.CanDrag = false;
+            this.navBarSeparatorItem1.Enabled = false;
+            this.navBarSeparatorItem1.Hint = null;
+            this.navBarSeparatorItem1.LargeImageIndex = 0;
+            this.navBarSeparatorItem1.LargeImageSize = new System.Drawing.Size(0, 0);
+            this.navBarSeparatorItem1.Name = "navBarSeparatorItem1";
+            this.navBarSeparatorItem1.SmallImageIndex = 0;
+            this.navBarSeparatorItem1.SmallImageSize = new System.Drawing.Size(0, 0);
+            // 
+            // navBarItem2
+            // 
+            this.navBarItem2.Caption = "navBarItem2";
+            this.navBarItem2.Name = "navBarItem2";
+            // 
+            // navBarSeparatorItem2
+            // 
+            this.navBarSeparatorItem2.CanDrag = false;
+            this.navBarSeparatorItem2.Enabled = false;
+            this.navBarSeparatorItem2.Hint = null;
+            this.navBarSeparatorItem2.LargeImageIndex = 0;
+            this.navBarSeparatorItem2.LargeImageSize = new System.Drawing.Size(0, 0);
+            this.navBarSeparatorItem2.Name = "navBarSeparatorItem2";
+            this.navBarSeparatorItem2.SmallImageIndex = 0;
+            this.navBarSeparatorItem2.SmallImageSize = new System.Drawing.Size(0, 0);
             // 
             // MainFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(889, 544);
-            this.Controls.Add(this.groupControl1);
+            this.ClientSize = new System.Drawing.Size(908, 566);
+            this.Controls.Add(this.imageSlider1);
+            this.Controls.Add(this.tileControl1);
             this.Controls.Add(this.navBarControl1);
             this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.ribbon);
@@ -434,7 +494,7 @@
             this.Text = "MainFrm";
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imageSlider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -476,8 +536,13 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
         private DevExpress.XtraNavBar.NavBarControl navBarControl1;
         private DevExpress.XtraNavBar.NavBarGroup navBarGroup1;
-        private DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraBars.RibbonGalleryBarItem ribbonGalleryBarItem1;
         private DevExpress.XtraBars.RibbonGalleryBarItem ribbonGalleryBarItem2;
+        private DevExpress.XtraEditors.TileControl tileControl1;
+        private DevExpress.XtraEditors.Controls.ImageSlider imageSlider1;
+        private DevExpress.XtraNavBar.NavBarItem navBarItem1;
+        private DevExpress.XtraNavBar.NavBarSeparatorItem navBarSeparatorItem1;
+        private DevExpress.XtraNavBar.NavBarItem navBarItem2;
+        private DevExpress.XtraNavBar.NavBarSeparatorItem navBarSeparatorItem2;
     }
 }

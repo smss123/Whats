@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GridEditSenderNumbersFrm));
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
@@ -39,29 +38,15 @@
             this.SenderNumbersSearchlayoutControlItem = new DevExpress.XtraLayout.LayoutControlItem();
             this.StatuslayoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.xdb = new Xprema.Data.Xdb();
-            this.senderNumberBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.senderNumberBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.senderNumberBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.senderNumberGridControl = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.cardView1 = new DevExpress.XtraGrid.Views.Card.CardView();
             this.colID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colSenderNumber = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colPassword = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colNumberOfMessageInDay = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colCounter = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colStatus = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.senderNumberBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
@@ -72,12 +57,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.SenderNumbersSearchlayoutControlItem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StatuslayoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xdb)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.senderNumberBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.senderNumberBindingNavigator)).BeginInit();
-            this.senderNumberBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.senderNumberGridControl)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupControl1
@@ -180,163 +162,31 @@
             this.layoutControlItem1.TextToControlDistance = 0;
             this.layoutControlItem1.TextVisible = false;
             // 
-            // xdb
+            // gridControl1
             // 
-            this.xdb.DataSetName = "Xdb";
-            this.xdb.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.gridControl1.DataSource = this.senderNumberBindingSource;
+            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl1.Location = new System.Drawing.Point(0, 73);
+            this.gridControl1.MainView = this.cardView1;
+            this.gridControl1.Name = "gridControl1";
+            this.gridControl1.Size = new System.Drawing.Size(851, 520);
+            this.gridControl1.TabIndex = 5;
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.cardView1});
             // 
-            // senderNumberBindingSource
+            // cardView1
             // 
-            this.senderNumberBindingSource.DataMember = "SenderNumber";
-            this.senderNumberBindingSource.DataSource = this.xdb;
-            // 
-            // senderNumberBindingNavigator
-            // 
-            this.senderNumberBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.senderNumberBindingNavigator.BindingSource = this.senderNumberBindingSource;
-            this.senderNumberBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.senderNumberBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.senderNumberBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bindingNavigatorMoveFirstItem,
-            this.bindingNavigatorMovePreviousItem,
-            this.bindingNavigatorSeparator,
-            this.bindingNavigatorPositionItem,
-            this.bindingNavigatorCountItem,
-            this.bindingNavigatorSeparator1,
-            this.bindingNavigatorMoveNextItem,
-            this.bindingNavigatorMoveLastItem,
-            this.bindingNavigatorSeparator2,
-            this.bindingNavigatorAddNewItem,
-            this.bindingNavigatorDeleteItem,
-            this.senderNumberBindingNavigatorSaveItem});
-            this.senderNumberBindingNavigator.Location = new System.Drawing.Point(0, 73);
-            this.senderNumberBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.senderNumberBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.senderNumberBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.senderNumberBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.senderNumberBindingNavigator.Name = "senderNumberBindingNavigator";
-            this.senderNumberBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.senderNumberBindingNavigator.Size = new System.Drawing.Size(851, 25);
-            this.senderNumberBindingNavigator.TabIndex = 5;
-            this.senderNumberBindingNavigator.Text = "bindingNavigator1";
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
-            // 
-            // bindingNavigatorMoveFirstItem
-            // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveFirstItem.Text = "Move first";
-            // 
-            // bindingNavigatorMovePreviousItem
-            // 
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
-            // 
-            // bindingNavigatorSeparator
-            // 
-            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorPositionItem
-            // 
-            this.bindingNavigatorPositionItem.AccessibleName = "Position";
-            this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
-            this.bindingNavigatorPositionItem.Text = "0";
-            this.bindingNavigatorPositionItem.ToolTipText = "Current position";
-            // 
-            // bindingNavigatorSeparator1
-            // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorMoveNextItem
-            // 
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveNextItem.Text = "Move next";
-            // 
-            // bindingNavigatorMoveLastItem
-            // 
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorMoveLastItem.Text = "Move last";
-            // 
-            // bindingNavigatorSeparator2
-            // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // senderNumberBindingNavigatorSaveItem
-            // 
-            this.senderNumberBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.senderNumberBindingNavigatorSaveItem.Enabled = false;
-            this.senderNumberBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("senderNumberBindingNavigatorSaveItem.Image")));
-            this.senderNumberBindingNavigatorSaveItem.Name = "senderNumberBindingNavigatorSaveItem";
-            this.senderNumberBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
-            this.senderNumberBindingNavigatorSaveItem.Text = "Save Data";
-            // 
-            // senderNumberGridControl
-            // 
-            this.senderNumberGridControl.DataSource = this.senderNumberBindingSource;
-            this.senderNumberGridControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.senderNumberGridControl.Location = new System.Drawing.Point(0, 98);
-            this.senderNumberGridControl.MainView = this.gridView1;
-            this.senderNumberGridControl.Name = "senderNumberGridControl";
-            this.senderNumberGridControl.Size = new System.Drawing.Size(851, 495);
-            this.senderNumberGridControl.TabIndex = 5;
-            this.senderNumberGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
-            // 
-            // gridView1
-            // 
-            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.cardView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colID,
             this.colSenderNumber,
             this.colPassword,
             this.colNumberOfMessageInDay,
             this.colCounter,
             this.colStatus});
-            this.gridView1.GridControl = this.senderNumberGridControl;
-            this.gridView1.Name = "gridView1";
+            this.cardView1.FocusedCardTopFieldIndex = 0;
+            this.cardView1.GridControl = this.gridControl1;
+            this.cardView1.Name = "cardView1";
+            this.cardView1.VertScrollVisibility = DevExpress.XtraGrid.Views.Base.ScrollVisibility.Auto;
             // 
             // colID
             // 
@@ -380,13 +230,17 @@
             this.colStatus.Visible = true;
             this.colStatus.VisibleIndex = 5;
             // 
+            // senderNumberBindingSource
+            // 
+            this.senderNumberBindingSource.DataMember = "SenderNumber";
+            this.senderNumberBindingSource.DataSource = typeof(Xprema.Data.Xdb);
+            // 
             // GridEditSenderNumbersFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(851, 593);
-            this.Controls.Add(this.senderNumberGridControl);
-            this.Controls.Add(this.senderNumberBindingNavigator);
+            this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.groupControl1);
             this.Name = "GridEditSenderNumbersFrm";
             this.Text = "GridEditSenderNumbersFrm";
@@ -401,15 +255,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.SenderNumbersSearchlayoutControlItem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.StatuslayoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xdb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.senderNumberBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.senderNumberBindingNavigator)).EndInit();
-            this.senderNumberBindingNavigator.ResumeLayout(false);
-            this.senderNumberBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.senderNumberGridControl)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -424,28 +273,14 @@
         private DevExpress.XtraLayout.LayoutControlItem StatuslayoutControlItem1;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
-        private Xprema.Data.Xdb xdb;
-        private System.Windows.Forms.BindingSource senderNumberBindingSource;
-        private System.Windows.Forms.BindingNavigator senderNumberBindingNavigator;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
-        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
-        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton senderNumberBindingNavigatorSaveItem;
-        private DevExpress.XtraGrid.GridControl senderNumberGridControl;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraGrid.GridControl gridControl1;
+        private DevExpress.XtraGrid.Views.Card.CardView cardView1;
         private DevExpress.XtraGrid.Columns.GridColumn colID;
         private DevExpress.XtraGrid.Columns.GridColumn colSenderNumber;
         private DevExpress.XtraGrid.Columns.GridColumn colPassword;
         private DevExpress.XtraGrid.Columns.GridColumn colNumberOfMessageInDay;
         private DevExpress.XtraGrid.Columns.GridColumn colCounter;
         private DevExpress.XtraGrid.Columns.GridColumn colStatus;
+        private System.Windows.Forms.BindingSource senderNumberBindingSource;
     }
 }

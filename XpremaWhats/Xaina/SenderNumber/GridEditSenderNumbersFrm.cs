@@ -24,22 +24,24 @@ namespace Xaina.SenderNumber
         private Alerts.Alerts fr = new Alerts.Alerts();
         private   void GridEditSenderNumbersFrm_Load(object sender, EventArgs e)
         {
-            FillSenderNumberGridView();
+            // cmd = new XpremaFileManager();
+
+            senderNumberBindingSource.DataSource = cmd.DB.SenderNumber;
+            gridControl1.RefreshDataSource();
             
 
         }
 
         private void FillSenderNumberGridView()
         {
-            cmd = new XpremaFileManager();
-
-            senderNumberBindingSource.DataSource = cmd.DB.SenderNumber;
+         
         }
 
         private void simpleButton1_Click(object sender, EventArgs e)
         {
             if (DevExpress.XtraEditors.XtraMessageBox.Show("would you like to Save Changes", "Save", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
+                this.Validate();
                 senderNumberBindingSource.EndEdit();
                 cmd.CommitData();
                 fr.Show_Info_MSG(this, "Save Changes Done");

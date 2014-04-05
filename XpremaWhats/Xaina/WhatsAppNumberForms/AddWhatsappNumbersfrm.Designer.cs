@@ -45,6 +45,10 @@
             this.simpleSeparator3 = new DevExpress.XtraLayout.SimpleSeparator();
             this.simpleSeparator4 = new DevExpress.XtraLayout.SimpleSeparator();
             this.simpleSeparator5 = new DevExpress.XtraLayout.SimpleSeparator();
+            this.simpleSeparator6 = new DevExpress.XtraLayout.SimpleSeparator();
+            this.KeyBox = new DevExpress.XtraEditors.TextEdit();
+            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.CmbAllKeyes = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CmbCountries.Properties)).BeginInit();
@@ -62,10 +66,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KeyBox.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
             // 
+            this.layoutControl1.Controls.Add(this.KeyBox);
             this.layoutControl1.Controls.Add(this.AddBtn);
             this.layoutControl1.Controls.Add(this.CmbCountries);
             this.layoutControl1.Controls.Add(this.StatusBox);
@@ -75,8 +83,9 @@
             this.layoutControl1.ForeColor = System.Drawing.Color.Red;
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
             this.layoutControl1.Name = "layoutControl1";
+            this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(569, 94, 250, 350);
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(334, 268);
+            this.layoutControl1.Size = new System.Drawing.Size(447, 268);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -84,7 +93,7 @@
             // 
             this.AddBtn.Location = new System.Drawing.Point(12, 182);
             this.AddBtn.Name = "AddBtn";
-            this.AddBtn.Size = new System.Drawing.Size(310, 22);
+            this.AddBtn.Size = new System.Drawing.Size(423, 22);
             this.AddBtn.StyleController = this.layoutControl1;
             this.AddBtn.TabIndex = 9;
             this.AddBtn.Text = "Add";
@@ -96,9 +105,10 @@
             this.CmbCountries.Name = "CmbCountries";
             this.CmbCountries.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.CmbCountries.Size = new System.Drawing.Size(310, 20);
+            this.CmbCountries.Size = new System.Drawing.Size(423, 20);
             this.CmbCountries.StyleController = this.layoutControl1;
             this.CmbCountries.TabIndex = 8;
+            this.CmbCountries.SelectedIndexChanged += new System.EventHandler(this.CmbCountries_SelectedIndexChanged);
             // 
             // StatusBox
             // 
@@ -106,7 +116,7 @@
             this.StatusBox.Name = "StatusBox";
             this.StatusBox.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.StatusBox.Size = new System.Drawing.Size(310, 20);
+            this.StatusBox.Size = new System.Drawing.Size(423, 20);
             this.StatusBox.StyleController = this.layoutControl1;
             this.StatusBox.TabIndex = 7;
             // 
@@ -114,15 +124,15 @@
             // 
             this.NameBox.Location = new System.Drawing.Point(12, 72);
             this.NameBox.Name = "NameBox";
-            this.NameBox.Size = new System.Drawing.Size(310, 20);
+            this.NameBox.Size = new System.Drawing.Size(423, 20);
             this.NameBox.StyleController = this.layoutControl1;
             this.NameBox.TabIndex = 6;
             // 
             // PhoneBox
             // 
-            this.PhoneBox.Location = new System.Drawing.Point(12, 28);
+            this.PhoneBox.Location = new System.Drawing.Point(145, 28);
             this.PhoneBox.Name = "PhoneBox";
-            this.PhoneBox.Size = new System.Drawing.Size(310, 20);
+            this.PhoneBox.Size = new System.Drawing.Size(290, 20);
             this.PhoneBox.StyleController = this.layoutControl1;
             this.PhoneBox.TabIndex = 4;
             // 
@@ -141,22 +151,24 @@
             this.simpleSeparator2,
             this.simpleSeparator3,
             this.simpleSeparator4,
-            this.simpleSeparator5});
+            this.simpleSeparator5,
+            this.simpleSeparator6,
+            this.layoutControlItem2});
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(334, 268);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(447, 268);
             this.layoutControlGroup1.Text = "Root";
             // 
             // PhoneNumberlayoutControlItem1
             // 
             this.PhoneNumberlayoutControlItem1.Control = this.PhoneBox;
             this.PhoneNumberlayoutControlItem1.CustomizationFormText = "Phone Number:";
-            this.PhoneNumberlayoutControlItem1.Location = new System.Drawing.Point(0, 0);
+            this.PhoneNumberlayoutControlItem1.Location = new System.Drawing.Point(133, 0);
             this.PhoneNumberlayoutControlItem1.Name = "PhoneNumberlayoutControlItem1";
-            this.PhoneNumberlayoutControlItem1.Size = new System.Drawing.Size(314, 40);
+            this.PhoneNumberlayoutControlItem1.Size = new System.Drawing.Size(294, 40);
             this.PhoneNumberlayoutControlItem1.Text = "Phone Number:";
             this.PhoneNumberlayoutControlItem1.TextLocation = DevExpress.Utils.Locations.Top;
-            this.PhoneNumberlayoutControlItem1.TextSize = new System.Drawing.Size(74, 13);
+            this.PhoneNumberlayoutControlItem1.TextSize = new System.Drawing.Size(93, 13);
             // 
             // NamelayoutControlItem
             // 
@@ -164,10 +176,10 @@
             this.NamelayoutControlItem.CustomizationFormText = "Name:";
             this.NamelayoutControlItem.Location = new System.Drawing.Point(0, 44);
             this.NamelayoutControlItem.Name = "NamelayoutControlItem";
-            this.NamelayoutControlItem.Size = new System.Drawing.Size(314, 40);
+            this.NamelayoutControlItem.Size = new System.Drawing.Size(427, 40);
             this.NamelayoutControlItem.Text = "Name:";
             this.NamelayoutControlItem.TextLocation = DevExpress.Utils.Locations.Top;
-            this.NamelayoutControlItem.TextSize = new System.Drawing.Size(74, 13);
+            this.NamelayoutControlItem.TextSize = new System.Drawing.Size(93, 13);
             // 
             // StatuslayoutControlItem
             // 
@@ -175,10 +187,10 @@
             this.StatuslayoutControlItem.CustomizationFormText = "Status:";
             this.StatuslayoutControlItem.Location = new System.Drawing.Point(0, 86);
             this.StatuslayoutControlItem.Name = "StatuslayoutControlItem";
-            this.StatuslayoutControlItem.Size = new System.Drawing.Size(314, 40);
+            this.StatuslayoutControlItem.Size = new System.Drawing.Size(427, 40);
             this.StatuslayoutControlItem.Text = "Status:";
             this.StatuslayoutControlItem.TextLocation = DevExpress.Utils.Locations.Top;
-            this.StatuslayoutControlItem.TextSize = new System.Drawing.Size(74, 13);
+            this.StatuslayoutControlItem.TextSize = new System.Drawing.Size(93, 13);
             // 
             // ContrylayoutControlItem
             // 
@@ -187,11 +199,11 @@
             this.ContrylayoutControlItem.CustomizationFormText = "Contry:";
             this.ContrylayoutControlItem.Location = new System.Drawing.Point(0, 128);
             this.ContrylayoutControlItem.Name = "ContrylayoutControlItem";
-            this.ContrylayoutControlItem.Size = new System.Drawing.Size(314, 40);
+            this.ContrylayoutControlItem.Size = new System.Drawing.Size(427, 40);
             this.ContrylayoutControlItem.Tag = "Contry";
             this.ContrylayoutControlItem.Text = "Contry:";
             this.ContrylayoutControlItem.TextLocation = DevExpress.Utils.Locations.Top;
-            this.ContrylayoutControlItem.TextSize = new System.Drawing.Size(74, 13);
+            this.ContrylayoutControlItem.TextSize = new System.Drawing.Size(93, 13);
             // 
             // layoutControlItem6
             // 
@@ -199,7 +211,7 @@
             this.layoutControlItem6.CustomizationFormText = "layoutControlItem6";
             this.layoutControlItem6.Location = new System.Drawing.Point(0, 170);
             this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(314, 78);
+            this.layoutControlItem6.Size = new System.Drawing.Size(427, 78);
             this.layoutControlItem6.Text = "layoutControlItem6";
             this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem6.TextToControlDistance = 0;
@@ -211,7 +223,7 @@
             this.simpleSeparator1.CustomizationFormText = "simpleSeparator1";
             this.simpleSeparator1.Location = new System.Drawing.Point(0, 40);
             this.simpleSeparator1.Name = "simpleSeparator1";
-            this.simpleSeparator1.Size = new System.Drawing.Size(314, 2);
+            this.simpleSeparator1.Size = new System.Drawing.Size(427, 2);
             this.simpleSeparator1.Text = "simpleSeparator1";
             // 
             // simpleSeparator2
@@ -220,7 +232,7 @@
             this.simpleSeparator2.CustomizationFormText = "simpleSeparator2";
             this.simpleSeparator2.Location = new System.Drawing.Point(0, 42);
             this.simpleSeparator2.Name = "simpleSeparator2";
-            this.simpleSeparator2.Size = new System.Drawing.Size(314, 2);
+            this.simpleSeparator2.Size = new System.Drawing.Size(427, 2);
             this.simpleSeparator2.Text = "simpleSeparator2";
             // 
             // simpleSeparator3
@@ -229,7 +241,7 @@
             this.simpleSeparator3.CustomizationFormText = "simpleSeparator3";
             this.simpleSeparator3.Location = new System.Drawing.Point(0, 84);
             this.simpleSeparator3.Name = "simpleSeparator3";
-            this.simpleSeparator3.Size = new System.Drawing.Size(314, 2);
+            this.simpleSeparator3.Size = new System.Drawing.Size(427, 2);
             this.simpleSeparator3.Text = "simpleSeparator3";
             // 
             // simpleSeparator4
@@ -238,7 +250,7 @@
             this.simpleSeparator4.CustomizationFormText = "simpleSeparator4";
             this.simpleSeparator4.Location = new System.Drawing.Point(0, 126);
             this.simpleSeparator4.Name = "simpleSeparator4";
-            this.simpleSeparator4.Size = new System.Drawing.Size(314, 2);
+            this.simpleSeparator4.Size = new System.Drawing.Size(427, 2);
             this.simpleSeparator4.Text = "simpleSeparator4";
             // 
             // simpleSeparator5
@@ -247,14 +259,52 @@
             this.simpleSeparator5.CustomizationFormText = "simpleSeparator5";
             this.simpleSeparator5.Location = new System.Drawing.Point(0, 168);
             this.simpleSeparator5.Name = "simpleSeparator5";
-            this.simpleSeparator5.Size = new System.Drawing.Size(314, 2);
+            this.simpleSeparator5.Size = new System.Drawing.Size(427, 2);
             this.simpleSeparator5.Text = "simpleSeparator5";
+            // 
+            // simpleSeparator6
+            // 
+            this.simpleSeparator6.AllowHotTrack = false;
+            this.simpleSeparator6.CustomizationFormText = "simpleSeparator6";
+            this.simpleSeparator6.Location = new System.Drawing.Point(0, 0);
+            this.simpleSeparator6.Name = "simpleSeparator6";
+            this.simpleSeparator6.Size = new System.Drawing.Size(3, 40);
+            this.simpleSeparator6.Text = "simpleSeparator6";
+            // 
+            // KeyBox
+            // 
+            this.KeyBox.Location = new System.Drawing.Point(15, 28);
+            this.KeyBox.Name = "KeyBox";
+            this.KeyBox.Size = new System.Drawing.Size(126, 20);
+            this.KeyBox.StyleController = this.layoutControl1;
+            this.KeyBox.TabIndex = 11;
+            // 
+            // layoutControlItem2
+            // 
+            this.layoutControlItem2.Control = this.KeyBox;
+            this.layoutControlItem2.CustomizationFormText = "layoutControlItem2";
+            this.layoutControlItem2.Location = new System.Drawing.Point(3, 0);
+            this.layoutControlItem2.Name = "layoutControlItem2";
+            this.layoutControlItem2.Size = new System.Drawing.Size(130, 40);
+            this.layoutControlItem2.Text = "layoutControlItem2";
+            this.layoutControlItem2.TextLocation = DevExpress.Utils.Locations.Top;
+            this.layoutControlItem2.TextSize = new System.Drawing.Size(93, 13);
+            // 
+            // CmbAllKeyes
+            // 
+            this.CmbAllKeyes.FormattingEnabled = true;
+            this.CmbAllKeyes.Location = new System.Drawing.Point(20, 274);
+            this.CmbAllKeyes.Name = "CmbAllKeyes";
+            this.CmbAllKeyes.Size = new System.Drawing.Size(214, 21);
+            this.CmbAllKeyes.TabIndex = 1;
+            this.CmbAllKeyes.Visible = false;
             // 
             // AddWhatsappNumbersfrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(334, 216);
+            this.ClientSize = new System.Drawing.Size(447, 211);
+            this.Controls.Add(this.CmbAllKeyes);
             this.Controls.Add(this.layoutControl1);
             this.LookAndFeel.SkinName = "Visual Studio 2013 Blue";
             this.Name = "AddWhatsappNumbersfrm";
@@ -277,6 +327,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.simpleSeparator6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.KeyBox.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -300,5 +353,9 @@
         private DevExpress.XtraLayout.SimpleSeparator simpleSeparator3;
         private DevExpress.XtraLayout.SimpleSeparator simpleSeparator4;
         private DevExpress.XtraLayout.SimpleSeparator simpleSeparator5;
+        private DevExpress.XtraEditors.TextEdit KeyBox;
+        private DevExpress.XtraLayout.SimpleSeparator simpleSeparator6;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
+        private System.Windows.Forms.ComboBox CmbAllKeyes;
     }
 }

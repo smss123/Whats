@@ -19,7 +19,7 @@ namespace Xaina
             DevExpress.Skins.SkinManager.EnableFormSkins();
             DevExpress.Skins.SkinManager.EnableMdiFormSkins();
             DevExpress.UserSkins.BonusSkins.Register();
-            Application.Run(new ServicesForms.GeneratNumberFrm());
+            Application.Run(new MainFrm());
         }
     }
 }
